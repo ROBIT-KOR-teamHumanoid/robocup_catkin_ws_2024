@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/devel
+
+Name: robocup_master24
+Description: Description of robocup_master24
+Version: 0.0.0
+Cflags: -I/home/robit/catkin_ws/src/robocup_master24/include
+Libs: -L${prefix}/lib -lrobocup_master24
+Requires: msg_generate roscpp
