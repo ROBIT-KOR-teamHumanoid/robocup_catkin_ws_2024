@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: msg_generate
+Description: Description of msg_generate
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

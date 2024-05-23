@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: ebimu_v5
+Description: Description of ebimu_v5
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

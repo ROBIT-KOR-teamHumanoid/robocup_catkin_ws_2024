@@ -1,0 +1,2 @@
+ebimu_test:ebimu_v5:gamecontroller:ik_walk:irc_humanoid_sports23/local_running23:irc_humanoid_sports23/srcirc_gamecontroller23:irc_humanoid_sports23/srcirc_master23:irc_humanoid_sports23/vision_basketball_2023:irc_humanoid_sports23/vision_running_2023:load_cell:motion:msg_generate:ocam:qt_ros_nT/qt_build:qt_ros_nT/qt_create:qt_ros_nT/qt_ros:robocup_localization23:robocup_master24:robocup_vision23_yolov4:serial_mcu:tune_walk:udpcom
+-DCATKIN_DEVEL_PREFIX=/home/robit/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robit/catkin_ws/install -G Unix Makefiles

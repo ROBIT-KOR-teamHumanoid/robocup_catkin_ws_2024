@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: load_cell
+Description: Description of load_cell
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

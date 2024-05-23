@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robit/catkin_ws/src/ik_walk/include/ik_walk/walk_pattern.hpp
+iostream
+-
+algorithm
+-
+vector
+-
+cmath
+-
+
+/home/robit/catkin_ws/src/ik_walk/src/walk_pattern.cpp
+../include/ik_walk/walk_pattern.hpp
+/home/robit/catkin_ws/src/ik_walk/include/ik_walk/walk_pattern.hpp
+

@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: ik_walk
+Description: Description of ik_walk
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lik_walk
+Requires: roscpp std_msgs

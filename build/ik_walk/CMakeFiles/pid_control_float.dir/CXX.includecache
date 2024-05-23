@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robit/catkin_ws/src/ik_walk/include/ik_walk/pid_control_float.h
+
+/home/robit/catkin_ws/src/ik_walk/src/pid_control_float.cpp
+../include/ik_walk/pid_control_float.h
+/home/robit/catkin_ws/src/ik_walk/include/ik_walk/pid_control_float.h
+iostream
+-
+
