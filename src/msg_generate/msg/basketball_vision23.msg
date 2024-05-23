@@ -1,0 +1,12 @@
+int64 goal_cam_X
+int64 goal_cam_Y
+float64 goal_2d_X
+float64 goal_2d_Y
+float64 goal_local_X
+float64 goal_local_Y
+float64 goal_D
+float64 robot_local_X
+float64 robot_local_Y
+float64 PAN
+float64 TILT
+int64 Scan_mode

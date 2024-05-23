@@ -1,0 +1,6 @@
+int64 robot_num
+int64 robot_state
+int64 robot_coor_x
+int64 robot_coor_y
+int64 roboy_imu_yaw
+int64 ball_dist

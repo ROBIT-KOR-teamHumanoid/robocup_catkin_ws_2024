@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: serial_mcu
+Description: Description of serial_mcu
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

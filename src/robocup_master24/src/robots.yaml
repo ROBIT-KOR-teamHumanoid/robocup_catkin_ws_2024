@@ -1,0 +1,13 @@
+robots:
+  - number: 1
+    Kp: 15.0
+    Ki: 0.0
+    Kd: 15.0
+  - number: 2
+    Kp: 3.0
+    Ki: 0.0001
+    Kd: 0.0
+  - number: 3
+    Kp: 3.0
+    Ki: 0.0001
+    Kd: 0.0
