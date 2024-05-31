@@ -256,6 +256,8 @@ sstream
 ../include/robocup_localization23/qnode.hpp
 /home/robit/catkin_ws/src/robocup_localization23/include/robocup_localization23/qnode.hpp
 
+/home/robit/catkin_ws/src/robot_config.h
+
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h

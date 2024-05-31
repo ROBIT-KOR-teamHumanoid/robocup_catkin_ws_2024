@@ -1,0 +1,364 @@
+<?xml version="1.0" ?>
+<robot name="Assemble" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Assemble_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Assemble_description)/urdf/Assemble.trans" />
+<xacro:include filename="$(find Assemble_description)/urdf/Assemble.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0067414307525223375 -0.013635354822927987 0.011201809935214312" rpy="0 0 0"/>
+    <mass value="34.12390368667694"/>
+    <inertia ixx="0.370543" iyy="1.135956" izz="1.313929" ixy="2e-06" iyz="6e-06" ixz="-0.003202"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LLF_M_1">
+  <inertial>
+    <origin xyz="0.0904105942956015 0.01714469335711992 0.0014032860205837674" rpy="0 0 0"/>
+    <mass value="0.9575720211902021"/>
+    <inertia ixx="0.001584" iyy="0.002941" izz="0.00308" ixy="7e-06" iyz="-1.2e-05" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.205876 -0.066367 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLF_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.205876 -0.066367 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLF_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RLF_M_1">
+  <inertial>
+    <origin xyz="0.09041059429553527 -0.01717330552710379 0.0009906096634770961" rpy="0 0 0"/>
+    <mass value="0.9575720211902021"/>
+    <inertia ixx="0.001584" iyy="0.00294" izz="0.00308" ixy="-7e-06" iyz="7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.205876 0.093633 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLF_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.205876 0.093633 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLF_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RLR_M_1">
+  <inertial>
+    <origin xyz="-0.09041007132724016 -0.017162120792406366 0.0011684824341853216" rpy="0 0 0"/>
+    <mass value="0.9575720211902021"/>
+    <inertia ixx="0.001584" iyy="0.00294" izz="0.00308" ixy="7e-06" iyz="1.1e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.221124 0.093633 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLR_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.221124 0.093633 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLR_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LLR_M_1">
+  <inertial>
+    <origin xyz="-0.09041007132717493 0.01714268105462881 0.0014276586186276786" rpy="0 0 0"/>
+    <mass value="0.9575720211902021"/>
+    <inertia ixx="0.001584" iyy="0.00294" izz="0.00308" ixy="-7e-06" iyz="-1.1e-05" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.221124 -0.066367 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLR_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.221124 -0.066367 -0.012574" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLR_M_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RLR1_1">
+  <inertial>
+    <origin xyz="-0.04997923605243337 -0.03300376391631571 -0.08147313522003259" rpy="0 0 0"/>
+    <mass value="0.1256919537660636"/>
+    <inertia ixx="0.000652" iyy="0.000891" izz="0.000348" ixy="-1.6e-05" iyz="-1.8e-05" ixz="-0.000398"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.311124 0.17694 -0.018246" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLR1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.311124 0.17694 -0.018246" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLR1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LLF1_1">
+  <inertial>
+    <origin xyz="-0.032040203800089595 0.034799758238419465 -0.08937278672751037" rpy="0 0 0"/>
+    <mass value="0.12569187157082387"/>
+    <inertia ixx="0.000797" iyy="0.00089" izz="0.000204" ixy="1.8e-05" iyz="3.6e-05" ixz="-0.000305"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.295876 -0.149589 -0.019386" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLF1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.295876 -0.149589 -0.019386" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLF1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LLR1_1">
+  <inertial>
+    <origin xyz="-0.049949817097495464 0.03423244160675351 -0.08098270730776863" rpy="0 0 0"/>
+    <mass value="0.12569187157082387"/>
+    <inertia ixx="0.000652" iyy="0.000891" izz="0.000349" ixy="2.2e-05" iyz="2.7e-05" ixz="-0.000397"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.311124 -0.149579 -0.019504" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLR1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.311124 -0.149579 -0.019504" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLR1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RLF1_1">
+  <inertial>
+    <origin xyz="-0.03251207585701893 -0.03263158003824135 -0.09001730082529943" rpy="0 0 0"/>
+    <mass value="0.1256919537660636"/>
+    <inertia ixx="0.000794" iyy="0.000891" izz="0.000206" ixy="-1.1e-05" iyz="-1.9e-05" ixz="-0.000308"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.295876 0.176994 -0.017382" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLF1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.295876 0.176994 -0.017382" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLF1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RLF2_1">
+  <inertial>
+    <origin xyz="0.05390316396563402 0.00932092441043511 -0.1006065767501223" rpy="0 0 0"/>
+    <mass value="0.15213527497801774"/>
+    <inertia ixx="0.001163" iyy="0.001458" izz="0.000351" ixy="3.2e-05" iyz="-6.4e-05" ixz="0.000564"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.224164 0.228378 0.166665" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLF2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.224164 0.228378 0.166665" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLF2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RLR2_1">
+  <inertial>
+    <origin xyz="0.046341151955297144 0.008025070488530961 -0.10441340342954936" rpy="0 0 0"/>
+    <mass value="0.15213527497801774"/>
+    <inertia ixx="0.001242" iyy="0.001456" izz="0.000274" ixy="3.4e-05" iyz="-8.1e-05" ixz="0.000497"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.418271 0.229017 0.147476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLR2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.418271 0.229017 0.147476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/RLR2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LLF2_1">
+  <inertial>
+    <origin xyz="0.052455296476602103 -0.006836199133595788 -0.10156633089412964" rpy="0 0 0"/>
+    <mass value="0.1521352749880241"/>
+    <inertia ixx="0.001179" iyy="0.001454" izz="0.000339" ixy="-4.5e-05" iyz="9.2e-05" ixz="0.000551"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.225125 -0.205413 0.163738" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLF2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.225125 -0.205413 0.163738" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLF2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LLR2_1">
+  <inertial>
+    <origin xyz="0.04605106432563594 -0.006435687190014083 -0.10465159545661071" rpy="0 0 0"/>
+    <mass value="0.1521352749880241"/>
+    <inertia ixx="0.001245" iyy="0.001454" izz="0.000274" ixy="-4.1e-05" iyz="9.9e-05" ixz="0.000494"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.418212 -0.204157 0.14545" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLR2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.418212 -0.204157 0.14545" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Assemble_description/meshes/LLR2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="LLF_Roll" type="continuous">
+  <origin xyz="0.205876 0.066367 0.012574" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LLF_M_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="RLF_Roll" type="continuous">
+  <origin xyz="0.205876 -0.093633 0.012574" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RLF_M_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="RLR_Roll" type="continuous">
+  <origin xyz="-0.221124 -0.093633 0.012574" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RLR_M_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="LLR_Roll" type="continuous">
+  <origin xyz="-0.221124 0.066367 0.012574" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LLR_M_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="RLR_Pitch1" type="continuous">
+  <origin xyz="-0.09 -0.083307 0.005672" rpy="0 0 0"/>
+  <parent link="RLR_M_1"/>
+  <child link="RLR1_1"/>
+  <axis xyz="0.0 -0.99769 0.067926"/>
+</joint>
+
+<joint name="LLF_Pitch1" type="continuous">
+  <origin xyz="0.09 0.083222 0.006812" rpy="0 0 0"/>
+  <parent link="LLF_M_1"/>
+  <child link="LLF1_1"/>
+  <axis xyz="0.0 0.996667 0.081576"/>
+</joint>
+
+<joint name="LLR_Pitch1" type="continuous">
+  <origin xyz="-0.09 0.083212 0.00693" rpy="0 0 0"/>
+  <parent link="LLR_M_1"/>
+  <child link="LLR1_1"/>
+  <axis xyz="0.0 0.99655 0.082993"/>
+</joint>
+
+<joint name="RLF_Pitch1" type="continuous">
+  <origin xyz="0.09 -0.083361 0.004808" rpy="0 0 0"/>
+  <parent link="RLF_M_1"/>
+  <child link="RLF1_1"/>
+  <axis xyz="-0.0 -0.998341 0.057586"/>
+</joint>
+
+<joint name="RLF_Pitch2" type="continuous">
+  <origin xyz="-0.071712 -0.051384 -0.184047" rpy="0 0 0"/>
+  <parent link="RLF1_1"/>
+  <child link="RLF2_1"/>
+  <axis xyz="-0.0 0.998341 -0.057586"/>
+</joint>
+
+<joint name="RLR_Pitch2" type="continuous">
+  <origin xyz="-0.107147 -0.052077 -0.165722" rpy="0 0 0"/>
+  <parent link="RLR1_1"/>
+  <child link="RLR2_1"/>
+  <axis xyz="-0.0 0.99769 -0.067926"/>
+</joint>
+
+<joint name="LLF_Pitch2" type="continuous">
+  <origin xyz="-0.070751 0.055824 -0.183124" rpy="0 0 0"/>
+  <parent link="LLF1_1"/>
+  <child link="LLF2_1"/>
+  <axis xyz="0.0 0.996667 0.081576"/>
+</joint>
+
+<joint name="LLR_Pitch2" type="continuous">
+  <origin xyz="-0.107088 0.054578 -0.164954" rpy="0 0 0"/>
+  <parent link="LLR1_1"/>
+  <child link="LLR2_1"/>
+  <axis xyz="0.0 0.99655 0.082993"/>
+</joint>
+
+</robot>

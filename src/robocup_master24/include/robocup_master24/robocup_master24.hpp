@@ -5,6 +5,10 @@
 
 #include <ros/ros.h>
 #include "point.hpp"
+#include <ros/param.h>
+#include <vector>
+#include <string>
+
 
 //ebimu_v5
 #include <msg_generate/imu_msg.h>
@@ -88,6 +92,14 @@ public:
     msg_generate::game_control_data gameControlData;
     msg_generate::game_control_return_data gameControlReturnData;
     msg_generate::pid_tuning pid;
+
+
+    void paramCallback(const ros::TimerEvent& );
+    ros::Timer timer;
+    double kp;
+    double kd;
+    double ki;
+
 
 private:
     int init_argc;

@@ -48,100 +48,86 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
  add_message_files( 
    FILES
+
+
+#master
+	master2localization23.msg
+	robocup23_master2udp.msg
+	master_2_robocup_vision23.msg
+	motionNum_msg.msg
+   	ik_msg.msg
+
+#vision
+	robocup_vision23_feature.msg
+	robocup_vision23.msg
+   	#Motor_msg.msg
+
+#local
+#	Local_msg.msg
+#	Local_Info.msg
+
+
+	robocup_localization23.msg
+
+
+#ik walk
+   	ikend_msg.msg
+	Motor_msg.msg
+   	ikcoordinate_msg.msg
+	walk_pattern.msg
+	Landing_Time_Control.msg
+
+	L_LC_msg.msg
+	R_LC_msg.msg
+	com_msg.msg
+	ik_angle_sim.msg 
+
+   	
+#tune walk
+	tune2walk.msg
+
+#ebimu
+	imu_msg.msg
+	#test
+	pid_tuning.msg
+   	#imu_msg.msg
+
+#serial mcu
+	motion_end.msg
+	Serial2LC_msg.msg
+
+#udpcom
+	localv2_msg.msg
+
+#load cell
+   	zmp_msg.msg
+
+#etc
    pan_tilt_msg.msg
-
-   imu_msg.msg
-
-   motion_end.msg
-
    serial_msg.msg
-
-   Motor_msg.msg
-
-   motionNum_msg.msg
-
-   ikcoordinate_msg.msg
-
    position_msg.msg
-
-   ik_msg.msg
-
-   robocup23_master2udp.msg
-
-   ikend_msg.msg
-
    yaw_set.msg
-
    support_onestep_msg.msg
-
    Mt2Serial_msg.msg
-
-   tune2walk.msg
-
-   zmp_msg.msg
-
    localization_msg.msg
-
    robocupcontroller.msg
-
    robocupvision.msg
-
    udp_msg.msg
- 
    udp_order.msg
-
    eom_msg.msg
-
    angle2.msg
-
    wheel_msg.msg
-
    Motion_msg.msg
-   
    Step_msg.msg
-
-   Running_2020_vision.msg
-motion_stop.msg
-Local_msg.msg
-Local_Info.msg
-scv_vision.msg
-walk_pattern.msg
+   motion_stop.msg
+   scv_vision.msg
 kuro_cotton_candy.msg
-master2hanoi_vision2019msg.msg
-Serial2LC_msg.msg
-L_LC_msg.msg
-R_LC_msg.msg
-com_msg.msg
-ik_angle_sim.msg 
-localv2_msg.msg
 motion_balance.msg
-
-udp_msg_TC_Helper.msg
-udp_msg_TC_Kicker.msg
-
 Motor_msg_pt.msg
-
-Landing_Time_Control.msg
-master2vision_msg.msg
-
 game_control_data.msg
 game_control_return_data.msg
-srcirc23gcdata.msg
-basketball_vision23.msg
-running_vision23.msg
 motion_operator_data.msg
-
-master_2_robocup_vision23.msg
-robocup_vision23.msg
-
-robocup_localization23.msg
-
-robocup_vision23_feature.msg
-
-master2localization23.msg
-
-pid_tuning.msg
-
+master2vision_msg.msg
  )
 
 ## Generate services in the 'srv' folder

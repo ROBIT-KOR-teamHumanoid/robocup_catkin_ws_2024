@@ -1159,6 +1159,7 @@ robocup_localization23/CMakeFiles/robocup_localization23.dir/src/main_window.cpp
  /home/robit/catkin_ws/src/robocup_localization23/include/robocup_localization23/main_window.hpp
  /home/robit/catkin_ws/src/robocup_localization23/include/robocup_localization23/qnode.hpp
  /home/robit/catkin_ws/src/robocup_localization23/src/main_window.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
  /opt/ros/melodic/include/ros/assert.h

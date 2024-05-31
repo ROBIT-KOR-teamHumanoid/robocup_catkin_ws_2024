@@ -284,6 +284,8 @@ sstream
 ../include/load_cell/qnode.hpp
 /home/robit/catkin_ws/src/load_cell/include/load_cell/qnode.hpp
 
+/home/robit/catkin_ws/src/robot_config.h
+
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h

@@ -131,31 +131,6 @@ void Player::gameStateControl(bool control_on, int state)
     }
 }
 
-//void Player::selectRobotState()
-//{
-//    master->udp[master->gameControlData.robotNum - 1].ballDist = master->vision.Ball_D;
-
-//    int close_robot = static_cast<int>(master->gameControlData.robotNum);
-//    double ball_dist;
-//    double close_dist = 10000000;
-
-//    for(int i = 0; i < 4; i++) {
-//        ball_dist = master->udp[i].ballDist;
-//        if(ball_dist > 0 && ball_dist < close_dist) {
-//            close_dist = ball_dist;
-//            close_robot = i + 1;
-//        }
-//    }
-
-//    if(close_robot == master->gameControlData.robotNum && master->vision.Ball_D > 0) {
-//        cout << "robot state: ROBOT_STATE_CONTROLL" << endl;
-//        robot_state = ROBOT_STATE_CONTROLL;
-//    } else {
-//        cout << "robot state: ROBOT_STATE_SUPPORT" << endl;
-//        robot_state = ROBOT_STATE_SUPPORT;
-//    }
-//}
-
 bool Player::compareIndices(const std::vector<double>& arr, int i, int j) {
     return arr[i] < arr[j];
 }
@@ -218,26 +193,7 @@ void Player::selectRobotState(bool isPenalty)
         cout<<"robot "<<sortedIndices[robotn] + 1<<" dist : "<< robotDist.at(sortedIndices[robotn])<<endl;
     }
 
-//    cout << "dist1: " << dist1 << endl;
-//    cout << "dist2: " << dist2 << endl;
-
-//    cout << "index: " << endl;
-//    for (int index : sortedIndices) {
-//            std::cout << index + 1 << " ";
-//        }
-//    std::cout << std::endl;
-
-
     tempControlRobotNum =  sortedIndices.at(0);
-
-
-//    if((dist1 + 50) > dist2)
-//    {
-//        if(sortedIndices.at(0) < sortedIndices.at(1))
-//        {
-//            tempControlRobotNum = sortedIndices.at(1);
-//        }
-//    }
     tempControlRobotNum++;
 
 
@@ -346,7 +302,7 @@ bool Player::playMotion(int motion_num)
     return motion_end;
 }
 
-//protected
+//protected virtual
 
 void Player::stateReady(Point init_coor)
 {
@@ -728,7 +684,7 @@ bool Player::moveToTarget(Point current_coordinates, double current_yaw, Point t
 
 //#endif
 
-            static PIDControll yawControl(Kp, Ki, Kd, R_YAW_MAX, 1);
+            static PIDControll yawControl(master->kp, master->ki, master->kd, R_YAW_MAX, 1);
             //yawControl.setParams(master->pid.Kp, master->pid.Ki, master->pid.Kd, 1);
             yaw = yawControl.controller(reg_err);
             yawControl.print();
@@ -769,7 +725,8 @@ void Player::calcTargetAngle(Point target_coor, Point robot_coor, double robot_y
     double delta_x = target_coor.x() - robot_coor.x();
     double delta_y = -target_coor.y() + robot_coor.y();
 
-    abs_target_angle = -atan2(delta_x, delta_y);
+    //abs_target_angle = -atan2(delta_x, delta_y);
+    abs_target_angle = -atan2(delta_y,delta_x);
     abs_target_angle = abs_target_angle * 180 / PI;
 
     target_angle += abs_target_angle - robot_yaw;
@@ -879,55 +836,10 @@ void Player::dribble()
     Point globalBall(master->local.Ball_X, master->local.Ball_Y);
     Point globalRobot(master->local.Robot_X, master->local.Robot_Y);
 
-//    //보정 오차범위 파라미터
-//    double cail_threshold = 15;
-//    if(master->gameControlData.mySide == LEFT)
-//    {
-//        if(master->local.Robot_X > 800)
-//        {
-//            cail_threshold = 30;
-//        }
-//    }
-//    else
-//    {
-//        if(master->local.Robot_X < 300)
-//        {
-//            cail_threshold = 30;
-//        }
-//    }
-
-//    Point goalPoint = opponent_goal;
-
-//    //패스 여부 결정 - 골대와 가까운 로봇이 있으면 그 로봇의 목표 위치에 패스
-//    double shortestDist = calcDistance(globalRobot, opponent_goal);
-//    for(int i = 0; i < 3; i ++)
-//    {
-//        Point udpRobot(master->udp[i].local_x, master->udp[i].local_y);
-//        double isCheck = true;
-//        if(udpRobot.x() == 0 && udpRobot.y() == 0) isCheck = false;
-//        double dist = calcDistance(udpRobot, opponent_goal);
-//        if(dist < shortestDist && isCheck) {
-//            shortestDist = dist;
-//            goalPoint = setPoint(12);
-
-//            if(master->udp[i].local_y > 400) goalPoint.setY(520); //로봇 위치 기반 패스 위치 선정
-//            else                             goalPoint.setY(280);
-
-//            cail_threshold = 5;
-//            cout << "PASS" << endl;
-//        }
-//    }
-
-    //dribble
-
-    //
 
     Point home(250,400);
     move(home);
-    //move(p, ABSOLUTE, COORDINATE, angle);
-   // moveToTarget(globalRobot,master->imu.yaw,home,OPPONENT,0,true);
 
-//moveToTarget(globalRobot, master->imu.yaw, globalBall, OPPONENT, 0, true);
 
 
 }
@@ -949,6 +861,7 @@ void Player::kick3()
         }
     }
     else
+      //상대 로봇이랑 가까이 있는 경우 - 정확도 낮추고 빠르게 걷어내기
     {
         if(master->local.Robot_X < 300)
         {
@@ -979,7 +892,6 @@ void Player::kick3()
         }
     }
 
-    //상대 로봇이랑 가까이 있는 경우 - 정확도 낮추고 빠르게 걷어내기
     const double obstacle_threshold = 70; //상대 로봇과의 거리 파라미터: 이 값보다 작으면 빠르게 보정한다.
 
     Point obstaclePoint = Point(master->local.Obstacle0_X, master->local.Obstacle0_Y);
@@ -990,8 +902,9 @@ void Player::kick3()
 
 
     static int state;
-    const int refDist = 30;//cm  30
-    const int distBias = 10;
+
+    const int refDist   = 30;//cm  30
+    const int distBias  = 10;
 
     Point pointWhereIGo = calcShootPoint(refDist, goalPoint, globalBall);
 
@@ -1006,9 +919,47 @@ void Player::kick3()
             walkStart(0,0,7); // 한 방향으로 돌아서 공 찾기
         }
     }
-
-
+    const int test = 100;
+    state = test;
     switch (state) {
+    case test:
+    {
+
+
+      // 입력 변수 정의: "position"은 왼쪽과 오른쪽의 정도를 나타냄
+         FuzzyVariable position("position");
+         // 왼쪽, 가운데, 오른쪽, 더 왼쪽, 더 오른쪽의 다섯 가지 세트 정의
+         position.add_set(FuzzySet("far_left", {{-800.0, 1.0}, {-400.0, 0.0}}));
+         position.add_set(FuzzySet("left", {{-500.0, 0.0}, {-400.0, 1.0}, {0.0, 0.0}}));
+         position.add_set(FuzzySet("center", {{-200.0, 0.0}, {0.0, 1.0}, {200.0, 0.0}}));
+         position.add_set(FuzzySet("right", {{0.0, 0.0}, {0.400, 1.0}, {500.0, 0.0}}));
+         position.add_set(FuzzySet("far_right", {{0.400, 0.0}, {800.0, 1.0}}));
+
+         // 퍼지 규칙 정의
+         vector<FuzzyRule> rules = {
+             // 왼쪽으로 갈수록 "left"의 값이 높아지고, 오른쪽으로 갈수록 "right"의 값이 높아지도록 규칙 정의
+             FuzzyRule({{"position", "far_left"}}, {{"left", 1.0}, {"right", 0.0}}),
+             FuzzyRule({{"position", "left"}}, {{"left", 0.75}, {"right", 0.25}}),
+             FuzzyRule({{"position", "center"}}, {{"left", 0.5}, {"right", 0.5}}),
+             FuzzyRule({{"position", "right"}}, {{"left", 0.25}, {"right", 0.75}}),
+             FuzzyRule({{"position", "far_right"}}, {{"left", 0.0}, {"right", 1.0}})
+         };
+
+         // 퍼지 시스템 생성 및 규칙 추가
+         FuzzySystem fuzzy_system;
+         fuzzy_system.add_variable(position);
+         for (auto& rule : rules) {
+             fuzzy_system.add_rule(rule);
+         }
+
+         // 입력 값에 따른 출력 계산
+         double position_input = -270; // 입력 값 (왼쪽과 오른쪽의 정도)
+         map<string, double> inputs = {{"position", position_input}};
+         auto outputs = fuzzy_system.evaluate(inputs);
+         //cout << "Position: " << position_input << " => Left: " << outputs["position"].second["left"] << ", Right: " << outputs["position"].second["right"] << endl;
+
+      break;
+    }
     case 0:
     {
         cout << endl << " MOVE TO TARGET " << endl << endl;
@@ -1037,8 +988,8 @@ void Player::kick3()
         cout << "delay_cnt: " <<  delay_previous_cnt << endl;
          walkStop();
 
-        const int twosecond = 2000;
-        if(delay_previous_cnt > twosecond)
+        const int onesecond = 1000;
+        if(delay_previous_cnt > onesecond)
         {
             delay_previous_cnt = 0;
             state = 2;
@@ -1136,10 +1087,13 @@ bool Player::moveRobotAroundBall(double cail_threshold, int refDist, Point local
     Point localRobot(static_cast<int>(master->local.Robot_X), static_cast<int>(master->local.Robot_Y));
 
     double robotYaw = static_cast<double>(master->imu.yaw);
+
+
     double ballAngle = calcTargetAngle(localBall, localRobot, robotYaw);
 
     double radTheta = (robotYaw + ballAngle) * (PI/180);
 
+      //회전
     double EndPointX = cos(radTheta)*localTarget.x()-sin(radTheta)*localTarget.y();
     double StartPointX = cos(radTheta)*localRobot.x()-sin(radTheta)*localRobot.y();
 
@@ -1321,7 +1275,7 @@ bool Player::caliToBall(Point goalPoint) //local base
     target_angle = target_angle > max ? max : target_angle;
     if(target_angle > max) target_angle = max;
     else if(target_angle < -max) target_angle = -max;
-    PIDControll yawControl(Kp, Ki, Kd, R_YAW_MAX, 0);
+    PIDControll yawControl(master->kp, master->ki, master->kd, R_YAW_MAX, 0);
     double yaw_err = REG2(target_angle, 0, max);
     double yaw = yawControl.controller(yaw_err);
 

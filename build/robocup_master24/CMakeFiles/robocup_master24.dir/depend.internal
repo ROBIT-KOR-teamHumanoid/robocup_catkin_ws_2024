@@ -28,6 +28,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
  /home/robit/catkin_ws/src/robocup_master24/src/forward.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
  /opt/ros/melodic/include/ros/assert.h
@@ -110,6 +111,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
  /home/robit/catkin_ws/src/robocup_master24/src/goalkeeper.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
  /opt/ros/melodic/include/ros/assert.h
@@ -193,6 +195,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
  /home/robit/catkin_ws/src/robocup_master24/src/main.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
  /opt/ros/melodic/include/ros/assert.h
@@ -274,6 +277,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
  /home/robit/catkin_ws/src/robocup_master24/src/player.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
  /opt/ros/melodic/include/ros/assert.h
@@ -359,6 +363,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
  /home/robit/catkin_ws/src/robocup_master24/src/robocup_master24.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
  /opt/ros/melodic/include/ros/assert.h

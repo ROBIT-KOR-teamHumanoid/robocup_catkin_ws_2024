@@ -1,0 +1,55 @@
+Assemble_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  LLF_Roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LLF_Roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RLF_Roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RLF_Roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RLR_Roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RLR_Roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LLR_Roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LLR_Roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RLR_Pitch1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RLR_Pitch1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LLF_Pitch1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LLF_Pitch1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LLR_Pitch1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LLR_Pitch1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RLF_Pitch1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RLF_Pitch1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RLF_Pitch2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RLF_Pitch2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RLR_Pitch2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RLR_Pitch2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LLF_Pitch2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LLF_Pitch2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  LLR_Pitch2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: LLR_Pitch2
+    pid: {p: 100.0, i: 0.01, d: 10.0}

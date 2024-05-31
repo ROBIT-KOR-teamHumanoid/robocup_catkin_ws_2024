@@ -227,6 +227,7 @@ robocup_vision23_yolov4/CMakeFiles/robocup_vision23_yolov4.dir/include/robocup_v
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robit_vision/robitvision.hpp
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/main_window.hpp
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/qnode.hpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/cv_bridge/cv_bridge.h
  /opt/ros/melodic/include/image_transport/camera_publisher.h
  /opt/ros/melodic/include/image_transport/camera_subscriber.h
@@ -900,6 +901,7 @@ robocup_vision23_yolov4/CMakeFiles/robocup_vision23_yolov4.dir/src/main.cpp.o
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/main_window.hpp
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/qnode.hpp
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/src/main.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/cv_bridge/cv_bridge.h
  /opt/ros/melodic/include/image_transport/camera_publisher.h
  /opt/ros/melodic/include/image_transport/camera_subscriber.h
@@ -1532,6 +1534,7 @@ robocup_vision23_yolov4/CMakeFiles/robocup_vision23_yolov4.dir/src/main_window.c
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/main_window.hpp
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/qnode.hpp
  /home/robit/catkin_ws/src/robocup_vision23_yolov4/src/main_window.cpp
+ /home/robit/catkin_ws/src/robot_config.h
  /opt/ros/melodic/include/cv_bridge/cv_bridge.h
  /opt/ros/melodic/include/image_transport/camera_publisher.h
  /opt/ros/melodic/include/image_transport/camera_subscriber.h

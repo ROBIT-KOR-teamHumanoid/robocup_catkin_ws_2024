@@ -1,8 +1,0 @@
-prefix=/home/robit/catkin_ws/install
-
-Name: srcirc_master23
-Description: Description of srcirc_master23
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lsrcirc_master23
-Requires: msg_generate roscpp

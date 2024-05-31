@@ -115,8 +115,8 @@ void Forward::stateReady()
 void Forward::stateSet()
 {
     cout << "FORWARD STATE: SET" << endl;
-    walkStop();
-//    move(master->local.Robot_X, master->local.Robot_Y, OPPONENT);
+    move(false);
+
 }
 
 void Forward::statePlay()
@@ -125,7 +125,14 @@ void Forward::statePlay()
     cout << "FORWARD STATE: PLAY" << endl;
 
 
-    switch (robot_state) {
+    const int test = 100;
+    robot_state == test;
+    switch (/*robot_state*/test) {
+    case  test:
+    {
+      kick3();
+      break;
+    }
     case ROBOT_STATE_CONTROLL:
     {
         if(master->gameControlData.readyTime > 0 &&

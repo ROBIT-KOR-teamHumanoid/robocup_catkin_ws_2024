@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+Assemble_description_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/Assemble_description
+
+//Value Computed by CMake
+Assemble_description_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/Assemble_description
+
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
 
@@ -65,7 +71,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -920,6 +926,12 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Value Computed by CMake
+best_supporting_spot_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/best_supporting_spot
+
+//Value Computed by CMake
+best_supporting_spot_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/best_supporting_spot
+
 //The directory containing a CMake configuration file for camera_calibration_parsers.
 camera_calibration_parsers_DIR:PATH=/opt/ros/melodic/share/camera_calibration_parsers/cmake
 
@@ -1042,19 +1054,13 @@ image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 imu_position_control_LIB_DEPENDS:STATIC=
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/librospack.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //Value Computed by CMake
 load_cell_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/load_cell
 
 //Value Computed by CMake
 load_cell_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/load_cell
-
-//Value Computed by CMake
-local_running23_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/irc_humanoid_sports23/local_running23
-
-//Value Computed by CMake
-local_running23_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/irc_humanoid_sports23/local_running23
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -1170,18 +1176,6 @@ serial_mcu_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/serial_mcu
 //Dependencies for target
 solve_kinematics_LIB_DEPENDS:STATIC=
 
-//Value Computed by CMake
-srcirc_gamecontroller23_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/irc_humanoid_sports23/srcirc_gamecontroller23
-
-//Value Computed by CMake
-srcirc_gamecontroller23_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/irc_humanoid_sports23/srcirc_gamecontroller23
-
-//Value Computed by CMake
-srcirc_master23_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/irc_humanoid_sports23/srcirc_master23
-
-//Value Computed by CMake
-srcirc_master23_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/irc_humanoid_sports23/srcirc_master23
-
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
@@ -1196,18 +1190,6 @@ udpcom_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/udpcom
 
 //Value Computed by CMake
 udpcom_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/udpcom
-
-//Value Computed by CMake
-vision_basketball_2023_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/irc_humanoid_sports23/vision_basketball_2023
-
-//Value Computed by CMake
-vision_basketball_2023_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/irc_humanoid_sports23/vision_basketball_2023
-
-//Value Computed by CMake
-vision_running_2023_BINARY_DIR:STATIC=/home/robit/catkin_ws/build/irc_humanoid_sports23/vision_running_2023
-
-//Value Computed by CMake
-vision_running_2023_SOURCE_DIR:STATIC=/home/robit/catkin_ws/src/irc_humanoid_sports23/vision_running_2023
 
 //Dependencies for target
 walk_pattern_LIB_DEPENDS:STATIC=
@@ -1340,7 +1322,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

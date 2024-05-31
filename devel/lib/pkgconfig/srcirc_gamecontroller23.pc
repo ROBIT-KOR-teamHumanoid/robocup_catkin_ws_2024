@@ -1,8 +1,0 @@
-prefix=/home/robit/catkin_ws/devel
-
-Name: srcirc_gamecontroller23
-Description: Description of srcirc_gamecontroller23
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

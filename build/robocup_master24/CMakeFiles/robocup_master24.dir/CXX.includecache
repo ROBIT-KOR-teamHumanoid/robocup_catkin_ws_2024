@@ -263,6 +263,14 @@ cmath
 -
 
 /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/player.hpp
+iostream
+-
+map
+-
+vector
+-
+algorithm
+-
 robocup_master24.hpp
 /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
 define.hpp
@@ -281,6 +289,12 @@ ros/ros.h
 -
 point.hpp
 /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
+ros/param.h
+-
+vector
+-
+string
+-
 msg_generate/imu_msg.h
 -
 msg_generate/robocup_vision23.h
@@ -349,10 +363,16 @@ robocup_master24/point.hpp
 /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/player.hpp
 ../include/robocup_master24/goalkeeper.hpp
 /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/goalkeeper.hpp
+ros/ros.h
+-
+yaml-cpp/yaml.h
+-
 
 /home/robit/catkin_ws/src/robocup_master24/src/supportspotcalculator.cpp
 robocup_master24/supportspotcalculator.hpp
 /home/robit/catkin_ws/src/robocup_master24/src/robocup_master24/supportspotcalculator.hpp
+
+/home/robit/catkin_ws/src/robot_config.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

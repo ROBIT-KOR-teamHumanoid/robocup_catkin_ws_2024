@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find Assemble_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="Assemble" args="LLF_Roll_position_controller RLF_Roll_position_controller RLR_Roll_position_controller LLR_Roll_position_controller RLR_Pitch1_position_controller LLF_Pitch1_position_controller LLR_Pitch1_position_controller RLF_Pitch1_position_controller RLF_Pitch2_position_controller RLR_Pitch2_position_controller LLF_Pitch2_position_controller LLR_Pitch2_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/Assemble/joint_states"/>
+</node>
+
+</launch>

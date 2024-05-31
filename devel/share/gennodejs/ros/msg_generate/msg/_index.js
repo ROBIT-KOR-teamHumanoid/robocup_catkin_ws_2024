@@ -8,10 +8,8 @@ let robocup_vision23 = require('./robocup_vision23.js');
 let robocupvision = require('./robocupvision.js');
 let Serial2LC_msg = require('./Serial2LC_msg.js');
 let tune2walk = require('./tune2walk.js');
-let Running_2020_vision = require('./Running_2020_vision.js');
 let Local_msg = require('./Local_msg.js');
 let scv_vision = require('./scv_vision.js');
-let basketball_vision23 = require('./basketball_vision23.js');
 let serial_msg = require('./serial_msg.js');
 let angle2 = require('./angle2.js');
 let ikend_msg = require('./ikend_msg.js');
@@ -40,7 +38,6 @@ let ikcoordinate_msg = require('./ikcoordinate_msg.js');
 let game_control_return_data = require('./game_control_return_data.js');
 let robocup_vision23_feature = require('./robocup_vision23_feature.js');
 let motion_balance = require('./motion_balance.js');
-let running_vision23 = require('./running_vision23.js');
 let pan_tilt_msg = require('./pan_tilt_msg.js');
 let udp_msg_TC_Kicker = require('./udp_msg_TC_Kicker.js');
 let wheel_msg = require('./wheel_msg.js');
@@ -50,7 +47,6 @@ let Landing_Time_Control = require('./Landing_Time_Control.js');
 let udp_msg = require('./udp_msg.js');
 let master2hanoi_vision2019msg = require('./master2hanoi_vision2019msg.js');
 let pid_tuning = require('./pid_tuning.js');
-let srcirc23gcdata = require('./srcirc23gcdata.js');
 let robocup23_master2udp = require('./robocup23_master2udp.js');
 let master2path_msg = require('./master2path_msg.js');
 let game_control_data = require('./game_control_data.js');
@@ -70,10 +66,8 @@ module.exports = {
   robocupvision: robocupvision,
   Serial2LC_msg: Serial2LC_msg,
   tune2walk: tune2walk,
-  Running_2020_vision: Running_2020_vision,
   Local_msg: Local_msg,
   scv_vision: scv_vision,
-  basketball_vision23: basketball_vision23,
   serial_msg: serial_msg,
   angle2: angle2,
   ikend_msg: ikend_msg,
@@ -102,7 +96,6 @@ module.exports = {
   game_control_return_data: game_control_return_data,
   robocup_vision23_feature: robocup_vision23_feature,
   motion_balance: motion_balance,
-  running_vision23: running_vision23,
   pan_tilt_msg: pan_tilt_msg,
   udp_msg_TC_Kicker: udp_msg_TC_Kicker,
   wheel_msg: wheel_msg,
@@ -112,7 +105,6 @@ module.exports = {
   udp_msg: udp_msg,
   master2hanoi_vision2019msg: master2hanoi_vision2019msg,
   pid_tuning: pid_tuning,
-  srcirc23gcdata: srcirc23gcdata,
   robocup23_master2udp: robocup23_master2udp,
   master2path_msg: master2path_msg,
   game_control_data: game_control_data,

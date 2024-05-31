@@ -27,6 +27,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /home/robit/
 robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /home/robit/catkin_ws/src/robocup_master24/src/forward.cpp
+robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -109,6 +110,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /home/rob
 robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /home/robit/catkin_ws/src/robocup_master24/src/goalkeeper.cpp
+robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -192,6 +194,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /home/robit/cat
 robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /home/robit/catkin_ws/src/robocup_master24/src/main.cpp
+robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -273,6 +276,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /home/robit/c
 robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /home/robit/catkin_ws/src/robocup_master24/src/player.cpp
+robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -358,6 +362,7 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /ho
 robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/point.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/robocup_master24.hpp
 robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /home/robit/catkin_ws/src/robocup_master24/src/robocup_master24.cpp
+robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o: /opt/ros/melodic/include/ros/assert.h

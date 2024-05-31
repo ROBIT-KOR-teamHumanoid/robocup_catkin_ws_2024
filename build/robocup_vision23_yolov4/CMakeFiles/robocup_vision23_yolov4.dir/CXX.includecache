@@ -258,6 +258,8 @@ sstream
 ../include/robocup_vision23_yolov4/qnode.hpp
 /home/robit/catkin_ws/src/robocup_vision23_yolov4/include/robocup_vision23_yolov4/qnode.hpp
 
+/home/robit/catkin_ws/src/robot_config.h
+
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
 -

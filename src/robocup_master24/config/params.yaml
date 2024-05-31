@@ -1,0 +1,12 @@
+robot1:
+    Kp: 15.0
+    Ki: 0.0
+    Kd: 15.0
+robot2:
+    Kp: 3.0
+    Ki: 0.0001
+    Kd: 0.0
+robot3:
+    Kp: 3.0
+    Ki: 0.0001
+    Kd: 0.0

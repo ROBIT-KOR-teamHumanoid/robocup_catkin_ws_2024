@@ -1,0 +1,11 @@
+<launch>
+    <!-- robocup_master24 노드를 실행 -->
+    <rosparam file="$(find robocup_master24)/config/params.yaml" command="load"/>
+    <node name="robocup_master24" pkg="robocup_master24" type="robocup_master24" output="screen" respawn="false">
+        <!-- 여기에서 파라미터를 추가할 수 있습니다 -->
+        <!-- <param name="example_param" value="example_value"/> -->
+        <param name="example_param" value="example_value"/>
+
+    </node>
+</launch>
+

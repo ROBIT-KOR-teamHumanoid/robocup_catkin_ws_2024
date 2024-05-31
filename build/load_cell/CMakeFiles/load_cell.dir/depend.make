@@ -10,6 +10,7 @@ load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /hom
 load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/main_window.hpp
 load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/qcustomplot.hpp
 load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/qnode.hpp
+load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /home/robit/catkin_ws/src/robot_config.h
 load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /opt/ros/melodic/include/ros/advertise_options.h
 load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 load_cell/CMakeFiles/load_cell.dir/include/load_cell/moc_main_window.cxx.o: /opt/ros/melodic/include/ros/assert.h
@@ -624,6 +625,7 @@ load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /home/robit/catkin_ws/src/loa
 load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/qcustomplot.hpp
 load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/qnode.hpp
 load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /home/robit/catkin_ws/src/load_cell/src/main.cpp
+load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 load_cell/CMakeFiles/load_cell.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -1156,6 +1158,7 @@ load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /home/robit/catkin_ws/
 load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/qcustomplot.hpp
 load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/load_cell/include/load_cell/qnode.hpp
 load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/load_cell/src/main_window.cpp
+load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/robot_config.h
 load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 load_cell/CMakeFiles/load_cell.dir/src/main_window.cpp.o: /opt/ros/melodic/include/ros/assert.h
