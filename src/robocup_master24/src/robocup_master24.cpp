@@ -67,10 +67,31 @@ void MasterRcko::paramCallback(const ros::TimerEvent& )
   cout<<kp<<endl;
   cout<<ki<<endl;
 
+  //walk limit
 
+  string robot_FRONT_MAX      = "/robot" + to_string(ROBOTNUM)+"/FRONT_MAX";
+  string robot_REAR_MAX       = "/robot" + to_string(ROBOTNUM)+"/REAR_MAX";
+  string robot_RIGHT_MAX      = "/robot" + to_string(ROBOTNUM)+"/RIGHT_MAX";
+  string robot_LEFT_MAX       = "/robot" + to_string(ROBOTNUM)+"/LEFT_MAX";
+  string robot_R_YAW_MAX      = "/robot" + to_string(ROBOTNUM)+"/R_YAW_MAX";
+  string robot_L_YAW_MAX      = "/robot" + to_string(ROBOTNUM)+"/L_YAW_MAX";
 
+  string robot_X_MIN          = "/robot" + to_string(ROBOTNUM)+"/X_MIN";
+  string robot_Y_MIN          = "/robot" + to_string(ROBOTNUM)+"/Y_MIN";
+  string robot_ROUND_YAW_MIN  = "/robot" + to_string(ROBOTNUM)+"/ROUND_YAW_MIN";
+  string robot_ROUND_Y        = "/robot" + to_string(ROBOTNUM)+"/ROUND_Y";
 
+  nh.getParam(robot_FRONT_MAX,FRONT_MAX);
+  nh.getParam(robot_REAR_MAX,REAR_MAX);
+  nh.getParam(robot_RIGHT_MAX,RIGHT_MAX);
+  nh.getParam(robot_LEFT_MAX,LEFT_MAX);
+  nh.getParam(robot_R_YAW_MAX,R_YAW_MAX);
+  nh.getParam(robot_L_YAW_MAX,L_YAW_MAX);
 
+  nh.getParam(robot_X_MIN,X_MIN);
+  nh.getParam(robot_Y_MIN,Y_MIN);
+  nh.getParam(robot_ROUND_YAW_MIN,ROUND_YAW_MIN);
+  nh.getParam(robot_ROUND_Y,ROUND_Y);
 
 }
 

@@ -473,8 +473,8 @@ void Player::calibratePosition(Point robot_coor, Point ball_cam_coor, int& kick_
         break;
     }
 
-    int x = X_MIN;
-    int y = Y_MIN;
+    int x = master->X_MIN;
+    int y = master->Y_MIN;
 
     if(ball_cam_coor.x() > ref_point.x() + allowance.x()) {
         cout << "SETTING : X" << endl;
@@ -554,16 +554,16 @@ bool Player::moveFixYaw(Point current_coordinates, double current_yaw, Point tar
         {
             fixyawflag = 1;
             if(abs(current_coordinates.x() - target_coordinates.x()) <= 5){walk_switch = -1; return false;}
-            if(opponent_goal.x() < 550){if(current_coordinates.x() - target_coordinates.x() > 0){x_param = FRONT_MAX;} else{x_param = -10;}}
-            else{if(current_coordinates.x() - target_coordinates.x() > 0){x_param = -10;} else{x_param = FRONT_MAX;}}
+            if(opponent_goal.x() < 550){if(current_coordinates.x() - target_coordinates.x() > 0){x_param = master->FRONT_MAX;} else{x_param = -10;}}
+            else{if(current_coordinates.x() - target_coordinates.x() > 0){x_param = -10;} else{x_param = master->FRONT_MAX;}}
             target_angle = target_yaw - current_yaw;
         }
         else if(walk_switch == 1)
         {
             fixyawflag = 1;
             if(abs(current_coordinates.y() - target_coordinates.y()) <= 5){walk_switch = -1; return false;}
-            if(opponent_goal.x() < 550){if(current_coordinates.y() - target_coordinates.y() > 0){y_param = LEFT_MAX;} else{y_param = RIGHT_MAX;}}
-            else{if(current_coordinates.y() - target_coordinates.y() > 0){y_param = RIGHT_MAX;} else{y_param = LEFT_MAX;}}
+            if(opponent_goal.x() < 550){if(current_coordinates.y() - target_coordinates.y() > 0){y_param = master->LEFT_MAX;} else{y_param = master->RIGHT_MAX;}}
+            else{if(current_coordinates.y() - target_coordinates.y() > 0){y_param = master->RIGHT_MAX;} else{y_param = master->LEFT_MAX;}}
             target_angle = target_yaw - current_yaw;
         }
         else if(walk_switch == 2)
@@ -640,15 +640,15 @@ bool Player::moveToTarget(Point current_coordinates, double current_yaw, Point t
 
         double yaw;
 
-        int x = FRONT_MAX * calcDistance(current_coordinates,target_coordinates)/150.0;//73 // first: 50 -> 53 -> 55 -> 53 -> 51 -> 52 -> 53
-        if(x < X_MIN)           x = X_MIN;
-        else if( x > FRONT_MAX) x = FRONT_MAX;
+        int x = master->FRONT_MAX * calcDistance(current_coordinates,target_coordinates)/150.0;//73 // first: 50 -> 53 -> 55 -> 53 -> 51 -> 52 -> 53
+        if(x < master->X_MIN)           x = master->X_MIN;
+        else if( x > master->FRONT_MAX) x = master->FRONT_MAX;
         cout<<" FRONT X!! : "<<x<<endl;
 
 
 
         if(fabs(target_angle) > max) {
-            yaw = target_angle > 0 ? R_YAW_MAX : L_YAW_MAX;
+            yaw = target_angle > 0 ? master->R_YAW_MAX : master->L_YAW_MAX;
             x = 0;
         }
         else {
@@ -684,7 +684,7 @@ bool Player::moveToTarget(Point current_coordinates, double current_yaw, Point t
 
 //#endif
 
-            static PIDControll yawControl(master->kp, master->ki, master->kd, R_YAW_MAX, 1);
+            static PIDControll yawControl(master->kp, master->ki, master->kd, master->R_YAW_MAX, 1);
             //yawControl.setParams(master->pid.Kp, master->pid.Ki, master->pid.Kd, 1);
             yaw = yawControl.controller(reg_err);
             yawControl.print();
@@ -1115,7 +1115,7 @@ bool Player::moveRobotAroundBall(double cail_threshold, int refDist, Point local
     int dir = O_dir > 0 ? -1 : 1;
     cout << "DIR: " << dir << endl;
 
-    double y = ROUND_Y;
+    double y = master->ROUND_Y;
     if(fabs(O_dir) < 5) y = 0;
 
     cout << "DIR ORG    : " << O_dir << endl;
@@ -1136,8 +1136,8 @@ bool Player::moveRobotAroundBall(double cail_threshold, int refDist, Point local
 
 
     int z = 5*reg_ballAngle -dir*3;
-    if(z < -ROUND_YAW_MIN) z = -ROUND_YAW_MIN;
-    else if(z > ROUND_YAW_MIN) z = ROUND_YAW_MIN;
+    if(z < -master->ROUND_YAW_MIN) z = -master->ROUND_YAW_MIN;
+    else if(z > master->ROUND_YAW_MIN) z = master->ROUND_YAW_MIN;
 
     if(radius_err >= 0) radius_err = 0;
     else if(radius_err <= -20) radius_err = -20;
@@ -1152,7 +1152,7 @@ bool Player::moveRobotAroundBall(double cail_threshold, int refDist, Point local
 
 bool Player::caliToBall(Point goalPoint) //local base
 {
-    const int velX = X_MIN; //-16
+    const int velX = master->X_MIN; //-16
     const int velY = 11; //7
 
     Point localBall(master->vision.Ball_2d_X, master->vision.Ball_2d_Y);
@@ -1220,7 +1220,7 @@ bool Player::caliToBall(Point goalPoint) //local base
     {
         cout << "GO BACK" << endl;
         //x = velX;
-        x = REAR_MAX;
+        x = master->REAR_MAX;
     }
     else
     {
@@ -1275,7 +1275,7 @@ bool Player::caliToBall(Point goalPoint) //local base
     target_angle = target_angle > max ? max : target_angle;
     if(target_angle > max) target_angle = max;
     else if(target_angle < -max) target_angle = -max;
-    PIDControll yawControl(master->kp, master->ki, master->kd, R_YAW_MAX, 0);
+    PIDControll yawControl(master->kp, master->ki, master->kd, master->R_YAW_MAX, 0);
     double yaw_err = REG2(target_angle, 0, max);
     double yaw = yawControl.controller(yaw_err);
 
@@ -1314,27 +1314,27 @@ bool Player::walkStop()
 bool Player::walkPublish()
 {
     bool error = false;
-    if(master->ik.X_length > FRONT_MAX) {
-        master->ik.X_length = FRONT_MAX;
+    if(master->ik.X_length > master->FRONT_MAX) {
+        master->ik.X_length = master->FRONT_MAX;
         error = true;
-    } else if(master->ik.X_length < REAR_MAX) {
-        master->ik.X_length = REAR_MAX;
-        error = true;
-    }
-
-    if(master->ik.Y_length > RIGHT_MAX) {
-        master->ik.Y_length = RIGHT_MAX;
-        error = true;
-    } else if(master->ik.Y_length < LEFT_MAX) {
-        master->ik.Y_length = LEFT_MAX;
+    } else if(master->ik.X_length < master->REAR_MAX) {
+        master->ik.X_length = master->REAR_MAX;
         error = true;
     }
 
-    if(master->ik.Yaw > R_YAW_MAX) {
-        master->ik.Yaw = R_YAW_MAX;
+    if(master->ik.Y_length > master->RIGHT_MAX) {
+        master->ik.Y_length = master->RIGHT_MAX;
         error = true;
-    } else if(master->ik.Yaw < L_YAW_MAX) {
-        master->ik.Yaw = L_YAW_MAX;
+    } else if(master->ik.Y_length < master->LEFT_MAX) {
+        master->ik.Y_length = master->LEFT_MAX;
+        error = true;
+    }
+
+    if(master->ik.Yaw > master->R_YAW_MAX) {
+        master->ik.Yaw = master->R_YAW_MAX;
+        error = true;
+    } else if(master->ik.Yaw < master->L_YAW_MAX) {
+        master->ik.Yaw = master->L_YAW_MAX;
         error = true;
     }
 

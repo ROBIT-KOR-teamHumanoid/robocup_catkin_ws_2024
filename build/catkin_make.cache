@@ -1,2 +1,2 @@
 Assemble_description:best_supporting_spot:ebimu_test:ebimu_v5:gamecontroller:ik_walk:load_cell:motion:msg_generate:ocam:qt_ros_nT/qt_build:qt_ros_nT/qt_create:qt_ros_nT/qt_ros:robocup_localization23:robocup_master24:robocup_vision23_yolov4:serial_mcu:tune_walk:udpcom
--DCATKIN_DEVEL_PREFIX=/home/robit/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robit/catkin_ws/install -G Unix Makefiles
+-G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/robit/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robit/catkin_ws/install

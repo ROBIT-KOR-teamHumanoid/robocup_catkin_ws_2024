@@ -101,6 +101,19 @@ public:
     double ki;
 
 
+    //walk limit
+    int FRONT_MAX;
+    int X_MIN;
+    int REAR_MAX;
+    int RIGHT_MAX;
+    int Y_MIN;
+    int ROUND_Y;
+    int ROUND_YAW_MIN;
+    int LEFT_MAX;
+    int R_YAW_MAX;
+    int L_YAW_MAX;
+
+
 private:
     int init_argc;
     char** init_argv;

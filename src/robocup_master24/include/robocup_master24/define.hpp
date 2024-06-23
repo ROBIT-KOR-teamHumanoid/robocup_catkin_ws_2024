@@ -16,17 +16,7 @@
 #define MOTION_ARM_RIGHT    0X10
 #define MOTION_ARM_CENTER   0X11
 
-//walk limit
-#define FRONT_MAX       50
-#define X_MIN           25//18
-#define REAR_MAX        -19
-#define RIGHT_MAX       17//6 12
-#define Y_MIN           10
-#define ROUND_Y         14//7//12// cali ball number2: 12 -------12
-#define ROUND_YAW_MIN   15//7 10
-#define LEFT_MAX        -12 // first: -15 -> -19 -> -17 -> -15  -22  -8
-#define R_YAW_MAX       5 // 8
-#define L_YAW_MAX       -5
+
 
 //fall down
 #define NOT_FALLDOWN    0
