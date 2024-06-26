@@ -186,7 +186,18 @@ ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/imgp
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/ml.hpp
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect.hpp
+<<<<<<< Updated upstream
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+=======
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
+>>>>>>> Stashed changes
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/opencv.hpp
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/opencv_modules.hpp
 ocam/CMakeFiles/ocam.dir/src/oCam.cpp.o: /usr/local/include/opencv4/opencv2/photo.hpp

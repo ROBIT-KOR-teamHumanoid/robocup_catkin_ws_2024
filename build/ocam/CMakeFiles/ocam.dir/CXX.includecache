@@ -1277,6 +1277,11 @@ opencv2/imgproc.hpp
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+<<<<<<< Updated upstream
+=======
+opencv2/core/types.hpp
+/usr/local/include/opencv4/opencv2/opencv2/core/types.hpp
+>>>>>>> Stashed changes
 opencv2/features2d.hpp
 /usr/local/include/opencv4/opencv2/opencv2/features2d.hpp
 opencv2/core/affine.hpp
@@ -1399,6 +1404,11 @@ arm_neon.h
 -
 immintrin.h
 -
+<<<<<<< Updated upstream
+=======
+arm_neon.h
+-
+>>>>>>> Stashed changes
 immintrin.h
 -
 immintrin.h
@@ -1409,12 +1419,22 @@ arm_neon.h
 -
 arm_neon.h
 -
+<<<<<<< Updated upstream
+=======
+riscv-vector.h
+-
+>>>>>>> Stashed changes
 arm_neon.h
 -
 altivec.h
 -
 hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
+<<<<<<< Updated upstream
+=======
+lasxintrin.h
+-
+>>>>>>> Stashed changes
 wasm_simd128.h
 -
 riscv_vector.h
@@ -1587,6 +1607,11 @@ time.h
 /usr/local/include/opencv4/opencv2/core/saturate.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+<<<<<<< Updated upstream
+=======
+climits
+-
+>>>>>>> Stashed changes
 opencv2/core/fast_math.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/fast_math.hpp
 
@@ -1849,6 +1874,11 @@ algorithm
 -
 vector
 -
+<<<<<<< Updated upstream
+=======
+unordered_map
+-
+>>>>>>> Stashed changes
 
 /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
 algorithm
@@ -2147,8 +2177,47 @@ opencv2/ml/ml.inl.hpp
 /usr/local/include/opencv4/opencv2/objdetect.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+<<<<<<< Updated upstream
 opencv2/objdetect/detection_based_tracker.hpp
 /usr/local/include/opencv4/opencv2/opencv2/objdetect/detection_based_tracker.hpp
+=======
+opencv2/objdetect/aruco_detector.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/aruco_detector.hpp
+opencv2/objdetect/graphical_code_detector.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/graphical_code_detector.hpp
+opencv2/objdetect/detection_based_tracker.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/detection_based_tracker.hpp
+opencv2/objdetect/face.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/face.hpp
+opencv2/objdetect/charuco_detector.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/charuco_detector.hpp
+opencv2/objdetect/barcode.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/barcode.hpp
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+opencv2/core.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+opencv2/objdetect/aruco_dictionary.hpp
+-
+opencv2/objdetect/aruco_board.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+opencv2/core.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+opencv2/core.hpp
+-
+opencv2/objdetect/graphical_code_detector.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
+opencv2/objdetect/aruco_detector.hpp
+/usr/local/include/opencv4/opencv2/objdetect/opencv2/objdetect/aruco_detector.hpp
+>>>>>>> Stashed changes
 
 /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
 opencv2/core.hpp
@@ -2156,6 +2225,17 @@ opencv2/core.hpp
 vector
 -
 
+<<<<<<< Updated upstream
+=======
+/usr/local/include/opencv4/opencv2/objdetect/face.hpp
+opencv2/core.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
+opencv2/core.hpp
+-
+
+>>>>>>> Stashed changes
 /usr/local/include/opencv4/opencv2/opencv.hpp
 opencv2/opencv_modules.hpp
 /usr/local/include/opencv4/opencv2/opencv2/opencv_modules.hpp
