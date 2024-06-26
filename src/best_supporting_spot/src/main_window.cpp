@@ -13,7 +13,10 @@
 #include <QMessageBox>
 #include <iostream>
 #include "../include/best_supporting_spot/main_window.hpp"
-#include "bestsupportspotmaker.h"
+#include "best_supporting_spot/bestsupportspotmaker.h"
+
+#define PI 3.141592
+#define DEG2RAD (PI / 180)
 
 
 /*****************************************************************************
@@ -68,7 +71,9 @@ MainWindow::~MainWindow() {}
 
 void best_supporting_spot::MainWindow::main()
 {
+  datacopy();
   printMap();
+
 
 }
 
@@ -82,6 +87,26 @@ void best_supporting_spot::MainWindow::printMap()
   scene->addPixmap(buf);
 
 
+  QBrush blueBrush(Qt::blue);
+  QBrush redBrush(Qt::red);
+  QPen blackPen(Qt::black); blackPen.setWidth(1);
+  QPen blackPen2(Qt::black); blackPen.setWidth(2);
+  QPen blackPen3(Qt::black); blackPen.setWidth(3);
+
+  //PRINT ROBOT
+  QPolygonF robot0_poly = create_Print_robot(robot);
+  scene->addPolygon(robot0_poly,blackPen, blueBrush);
+  scene->addLine(cvt_Print_xy(robot.x), cvt_Print_xy(robot.y), cvt_Print_xy(robot.x) + sin((-1)*robot.z * DEG2RAD) * 10, cvt_Print_xy(robot.y) - cos(robot.z * DEG2RAD) * 10, blackPen3);
+
+
+
+  //PRINT BALL
+  if(ball.x != 0 || ball.x != 0)//수정 요함
+  {
+      scene->addEllipse(cvt_Print_xy(ball.x) - 5, cvt_Print_xy(ball.y) - 5, 11, 11, blackPen, redBrush);
+     // scene->addLine(cvt_Print_xy(ball.x), cvt_Print_xy(ball.y), cvt_Print_xy(ball.x + ball.speed_x * visionMSG.Ball_speed_level), cvt_Print_xy(ball.y + ball.speed_y * visionMSG.Ball_speed_level), blackPen);
+  }
+
 
 }
 void best_supporting_spot::MainWindow::mouseReleaseEvent(QMouseEvent * e)
@@ -93,8 +118,8 @@ void best_supporting_spot::MainWindow::mouseReleaseEvent(QMouseEvent * e)
     QPointF point = mapToParent(e->pos());
     QPoint position = mapToGlobal(QPoint(21, 60));
 
-        ball.x = (point.x() - position.x()) * 100 / 75;
-        ball.y = (point.y() - position.y()) * 100 / 75;
+    ball.x = (point.x() - position.x()) * 100 / 75;
+    ball.y = (point.y() - position.y()) * 100 / 75;
 
 
 
@@ -108,8 +133,8 @@ void best_supporting_spot::MainWindow::mouseMoveEvent(QMouseEvent * e)
   QPointF point = mapToParent(e->pos());
   QPoint position = mapToGlobal(QPoint(21, 60));
 
-      ball.x = (point.x() - position.x()) * 100 / 75;
-      ball.y = (point.y() - position.y()) * 100 / 75;
+  ball.x = (point.x() - position.x()) * 100 / 75;
+  ball.y = (point.y() - position.y()) * 100 / 75;
 
 
 }
@@ -152,10 +177,12 @@ void best_supporting_spot::MainWindow::datacopy()
 {
 
 
-//  qnode.local.Ball_X;
-//  qnode.local.Ball_Y;
-//  qnode.local.Robot_X;
-//  qnode.local.Robot_Y;
+  ball.x = qnode.local.Ball_X;
+  ball.y = qnode.local.Ball_Y;
+  robot.x = qnode.local.Robot_X;
+  robot.y = qnode.local.Robot_Y;
+  robot.z = qnode.imu.yaw;
+
 //  qnode.local.Ball_speed_X;
 //  qnode.local.Ball_speed_Y;
 

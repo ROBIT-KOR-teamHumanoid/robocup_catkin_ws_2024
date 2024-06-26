@@ -18,6 +18,8 @@
 
 #include <QGraphicsScene>
 #include <QPolygon>
+#include "best_supporting_spot/bestsupportspotmaker.h"
+
 /*****************************************************************************
 ** Namespace
 *****************************************************************************/
@@ -68,6 +70,7 @@ public Q_SLOTS:
 private:
 	Ui::MainWindowDesign ui;
 	QNode qnode;
+  ROBOT robot;
   ROBOT ball;
   QTimer* m_Timer;
 

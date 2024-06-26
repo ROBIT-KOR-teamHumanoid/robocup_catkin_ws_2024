@@ -1,4 +1,4 @@
-#include "bestsupportspotmaker.h"
+#include "best_supporting_spot/bestsupportspotmaker.h"
 
 BestSupportSpotMaker::BestSupportSpotMaker()
 {

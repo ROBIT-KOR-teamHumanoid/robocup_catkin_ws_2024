@@ -51,8 +51,8 @@ bool QNode::init() {
 
     //ROS TOPIC=====================================================================
     imuSub          = n.subscribe("imu", 100, &QNode::imuCallback, this);
-    localSub        = n.subscribe("robocup_localization23",100, &QNode::localCallback, this);
-    visionSub       = n.subscribe("robocup_vision23",100, &QNode::visionCallback, this);
+    localSub        = n.subscribe("robocup_localization24",100, &QNode::localCallback, this);
+    visionSub       = n.subscribe("robocup_vision24",100, &QNode::visionCallback, this);
     ikSub           = n.subscribe("ikend", 100, &QNode::ikCallback, this);
     udpR1Sub        = n.subscribe("udp_RB1", 100, &QNode::udpCallback, this);
     udpR2Sub        = n.subscribe("udp_RB2", 100, &QNode::udpCallback, this);
@@ -85,8 +85,11 @@ void QNode::imuCallback(const msg_generate::imu_msg::ConstPtr &msg)
     imu.yaw             = msg->yaw;
 }
 
-void QNode::localCallback(const msg_generate::robocup_localization23::ConstPtr &msg)
+void QNode::localCallback(const msg_generate::robocup_localization24::ConstPtr &msg)
 {
+
+    std:: cout<<"callback"<<std::endl;
+    std:: cout<<local.Ball_X<<local.Ball_Y<<std::endl;
     local.Ball_X        = msg->Ball_X;
     local.Ball_Y        = msg->Ball_Y;
     local.Robot_X       = msg->Robot_X;
@@ -105,7 +108,7 @@ void QNode::localCallback(const msg_generate::robocup_localization23::ConstPtr &
 
 }
 
-void QNode::visionCallback(const msg_generate::robocup_vision23::ConstPtr &msg)
+void QNode::visionCallback(const msg_generate::robocup_vision24::ConstPtr &msg)
 {
     int bias = 0;
 
