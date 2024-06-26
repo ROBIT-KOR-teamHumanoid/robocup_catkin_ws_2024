@@ -1,0 +1,8 @@
+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
+
+https://github.com/ROBIT-KOR-teamHumanoid/catkin_ws
+
+로빛 휴머노이드 팀
+username 	robit-humanoid
+password		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
+
