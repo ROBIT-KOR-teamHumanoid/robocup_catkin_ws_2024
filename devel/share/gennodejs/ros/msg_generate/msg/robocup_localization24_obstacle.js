@@ -24,6 +24,8 @@ class robocup_localization24_obstacle {
       this.Ball_speed_Y = null;
       this.Robot_X = null;
       this.Robot_Y = null;
+      this.Obstacle_X = null;
+      this.Obstacle_Y = null;
       this.Obstacle0_X = null;
       this.Obstacle0_Y = null;
       this.Obstacle1_X = null;
@@ -69,6 +71,18 @@ class robocup_localization24_obstacle {
       }
       else {
         this.Robot_Y = 0.0;
+      }
+      if (initObj.hasOwnProperty('Obstacle_X')) {
+        this.Obstacle_X = initObj.Obstacle_X
+      }
+      else {
+        this.Obstacle_X = 0.0;
+      }
+      if (initObj.hasOwnProperty('Obstacle_Y')) {
+        this.Obstacle_Y = initObj.Obstacle_Y
+      }
+      else {
+        this.Obstacle_Y = 0.0;
       }
       if (initObj.hasOwnProperty('Obstacle0_X')) {
         this.Obstacle0_X = initObj.Obstacle0_X
@@ -135,6 +149,10 @@ class robocup_localization24_obstacle {
     bufferOffset = _serializer.float64(obj.Robot_X, buffer, bufferOffset);
     // Serialize message field [Robot_Y]
     bufferOffset = _serializer.float64(obj.Robot_Y, buffer, bufferOffset);
+    // Serialize message field [Obstacle_X]
+    bufferOffset = _serializer.float64(obj.Obstacle_X, buffer, bufferOffset);
+    // Serialize message field [Obstacle_Y]
+    bufferOffset = _serializer.float64(obj.Obstacle_Y, buffer, bufferOffset);
     // Serialize message field [Obstacle0_X]
     bufferOffset = _serializer.float64(obj.Obstacle0_X, buffer, bufferOffset);
     // Serialize message field [Obstacle0_Y]
@@ -170,6 +188,10 @@ class robocup_localization24_obstacle {
     data.Robot_X = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [Robot_Y]
     data.Robot_Y = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [Obstacle_X]
+    data.Obstacle_X = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [Obstacle_Y]
+    data.Obstacle_Y = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [Obstacle0_X]
     data.Obstacle0_X = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [Obstacle0_Y]
@@ -190,7 +212,7 @@ class robocup_localization24_obstacle {
   }
 
   static getMessageSize(object) {
-    return 112;
+    return 128;
   }
 
   static datatype() {
@@ -200,7 +222,7 @@ class robocup_localization24_obstacle {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '2b8377baa9d999eda3c851f4b34ed1a5';
+    return '8ee6effd3d721320075c4ac44f4b0bfe';
   }
 
   static messageDefinition() {
@@ -212,6 +234,8 @@ class robocup_localization24_obstacle {
     float64 Ball_speed_Y
     float64 Robot_X
     float64 Robot_Y
+    float64 Obstacle_X
+    float64 Obstacle_Y
     float64 Obstacle0_X
     float64 Obstacle0_Y
     float64 Obstacle1_X
@@ -270,6 +294,20 @@ class robocup_localization24_obstacle {
     }
     else {
       resolved.Robot_Y = 0.0
+    }
+
+    if (msg.Obstacle_X !== undefined) {
+      resolved.Obstacle_X = msg.Obstacle_X;
+    }
+    else {
+      resolved.Obstacle_X = 0.0
+    }
+
+    if (msg.Obstacle_Y !== undefined) {
+      resolved.Obstacle_Y = msg.Obstacle_Y;
+    }
+    else {
+      resolved.Obstacle_Y = 0.0
     }
 
     if (msg.Obstacle0_X !== undefined) {

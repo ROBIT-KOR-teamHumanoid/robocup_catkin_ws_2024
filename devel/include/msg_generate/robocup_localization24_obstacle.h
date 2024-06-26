@@ -30,6 +30,8 @@ struct robocup_localization24_obstacle_
     , Ball_speed_Y(0.0)
     , Robot_X(0.0)
     , Robot_Y(0.0)
+    , Obstacle_X(0.0)
+    , Obstacle_Y(0.0)
     , Obstacle0_X(0.0)
     , Obstacle0_Y(0.0)
     , Obstacle1_X(0.0)
@@ -46,6 +48,8 @@ struct robocup_localization24_obstacle_
     , Ball_speed_Y(0.0)
     , Robot_X(0.0)
     , Robot_Y(0.0)
+    , Obstacle_X(0.0)
+    , Obstacle_Y(0.0)
     , Obstacle0_X(0.0)
     , Obstacle0_Y(0.0)
     , Obstacle1_X(0.0)
@@ -76,6 +80,12 @@ struct robocup_localization24_obstacle_
 
    typedef double _Robot_Y_type;
   _Robot_Y_type Robot_Y;
+
+   typedef double _Obstacle_X_type;
+  _Obstacle_X_type Obstacle_X;
+
+   typedef double _Obstacle_Y_type;
+  _Obstacle_Y_type Obstacle_Y;
 
    typedef double _Obstacle0_X_type;
   _Obstacle0_X_type Obstacle0_X;
@@ -136,6 +146,8 @@ bool operator==(const ::msg_generate::robocup_localization24_obstacle_<Container
     lhs.Ball_speed_Y == rhs.Ball_speed_Y &&
     lhs.Robot_X == rhs.Robot_X &&
     lhs.Robot_Y == rhs.Robot_Y &&
+    lhs.Obstacle_X == rhs.Obstacle_X &&
+    lhs.Obstacle_Y == rhs.Obstacle_Y &&
     lhs.Obstacle0_X == rhs.Obstacle0_X &&
     lhs.Obstacle0_Y == rhs.Obstacle0_Y &&
     lhs.Obstacle1_X == rhs.Obstacle1_X &&
@@ -200,12 +212,12 @@ struct MD5Sum< ::msg_generate::robocup_localization24_obstacle_<ContainerAllocat
 {
   static const char* value()
   {
-    return "2b8377baa9d999eda3c851f4b34ed1a5";
+    return "8ee6effd3d721320075c4ac44f4b0bfe";
   }
 
   static const char* value(const ::msg_generate::robocup_localization24_obstacle_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x2b8377baa9d999edULL;
-  static const uint64_t static_value2 = 0xa3c851f4b34ed1a5ULL;
+  static const uint64_t static_value1 = 0x8ee6effd3d721320ULL;
+  static const uint64_t static_value2 = 0x075c4ac44f4b0bfeULL;
 };
 
 template<class ContainerAllocator>
@@ -230,6 +242,8 @@ struct Definition< ::msg_generate::robocup_localization24_obstacle_<ContainerAll
 "float64 Ball_speed_Y\n"
 "float64 Robot_X\n"
 "float64 Robot_Y\n"
+"float64 Obstacle_X\n"
+"float64 Obstacle_Y\n"
 "float64 Obstacle0_X\n"
 "float64 Obstacle0_Y\n"
 "float64 Obstacle1_X\n"
@@ -262,6 +276,8 @@ namespace serialization
       stream.next(m.Ball_speed_Y);
       stream.next(m.Robot_X);
       stream.next(m.Robot_Y);
+      stream.next(m.Obstacle_X);
+      stream.next(m.Obstacle_Y);
       stream.next(m.Obstacle0_X);
       stream.next(m.Obstacle0_Y);
       stream.next(m.Obstacle1_X);
@@ -300,6 +316,10 @@ struct Printer< ::msg_generate::robocup_localization24_obstacle_<ContainerAlloca
     Printer<double>::stream(s, indent + "  ", v.Robot_X);
     s << indent << "Robot_Y: ";
     Printer<double>::stream(s, indent + "  ", v.Robot_Y);
+    s << indent << "Obstacle_X: ";
+    Printer<double>::stream(s, indent + "  ", v.Obstacle_X);
+    s << indent << "Obstacle_Y: ";
+    Printer<double>::stream(s, indent + "  ", v.Obstacle_Y);
     s << indent << "Obstacle0_X: ";
     Printer<double>::stream(s, indent + "  ", v.Obstacle0_X);
     s << indent << "Obstacle0_Y: ";

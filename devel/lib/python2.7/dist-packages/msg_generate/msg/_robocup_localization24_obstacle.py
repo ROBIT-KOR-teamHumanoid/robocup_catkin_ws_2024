@@ -8,7 +8,7 @@ import struct
 
 
 class robocup_localization24_obstacle(genpy.Message):
-  _md5sum = "2b8377baa9d999eda3c851f4b34ed1a5"
+  _md5sum = "8ee6effd3d721320075c4ac44f4b0bfe"
   _type = "msg_generate/robocup_localization24_obstacle"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float64 Ball_X
@@ -17,6 +17,8 @@ float64 Ball_speed_X
 float64 Ball_speed_Y
 float64 Robot_X
 float64 Robot_Y
+float64 Obstacle_X
+float64 Obstacle_Y
 float64 Obstacle0_X
 float64 Obstacle0_Y
 float64 Obstacle1_X
@@ -26,8 +28,8 @@ float64 Obstacle2_Y
 float64 Obstacle3_X
 float64 Obstacle3_Y
 """
-  __slots__ = ['Ball_X','Ball_Y','Ball_speed_X','Ball_speed_Y','Robot_X','Robot_Y','Obstacle0_X','Obstacle0_Y','Obstacle1_X','Obstacle1_Y','Obstacle2_X','Obstacle2_Y','Obstacle3_X','Obstacle3_Y']
-  _slot_types = ['float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64']
+  __slots__ = ['Ball_X','Ball_Y','Ball_speed_X','Ball_speed_Y','Robot_X','Robot_Y','Obstacle_X','Obstacle_Y','Obstacle0_X','Obstacle0_Y','Obstacle1_X','Obstacle1_Y','Obstacle2_X','Obstacle2_Y','Obstacle3_X','Obstacle3_Y']
+  _slot_types = ['float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64']
 
   def __init__(self, *args, **kwds):
     """
@@ -37,7 +39,7 @@ float64 Obstacle3_Y
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       Ball_X,Ball_Y,Ball_speed_X,Ball_speed_Y,Robot_X,Robot_Y,Obstacle0_X,Obstacle0_Y,Obstacle1_X,Obstacle1_Y,Obstacle2_X,Obstacle2_Y,Obstacle3_X,Obstacle3_Y
+       Ball_X,Ball_Y,Ball_speed_X,Ball_speed_Y,Robot_X,Robot_Y,Obstacle_X,Obstacle_Y,Obstacle0_X,Obstacle0_Y,Obstacle1_X,Obstacle1_Y,Obstacle2_X,Obstacle2_Y,Obstacle3_X,Obstacle3_Y
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -58,6 +60,10 @@ float64 Obstacle3_Y
         self.Robot_X = 0.
       if self.Robot_Y is None:
         self.Robot_Y = 0.
+      if self.Obstacle_X is None:
+        self.Obstacle_X = 0.
+      if self.Obstacle_Y is None:
+        self.Obstacle_Y = 0.
       if self.Obstacle0_X is None:
         self.Obstacle0_X = 0.
       if self.Obstacle0_Y is None:
@@ -81,6 +87,8 @@ float64 Obstacle3_Y
       self.Ball_speed_Y = 0.
       self.Robot_X = 0.
       self.Robot_Y = 0.
+      self.Obstacle_X = 0.
+      self.Obstacle_Y = 0.
       self.Obstacle0_X = 0.
       self.Obstacle0_Y = 0.
       self.Obstacle1_X = 0.
@@ -103,7 +111,7 @@ float64 Obstacle3_Y
     """
     try:
       _x = self
-      buff.write(_get_struct_14d().pack(_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y))
+      buff.write(_get_struct_16d().pack(_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle_X, _x.Obstacle_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -118,8 +126,8 @@ float64 Obstacle3_Y
       end = 0
       _x = self
       start = end
-      end += 112
-      (_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y,) = _get_struct_14d().unpack(str[start:end])
+      end += 128
+      (_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle_X, _x.Obstacle_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y,) = _get_struct_16d().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -133,7 +141,7 @@ float64 Obstacle3_Y
     """
     try:
       _x = self
-      buff.write(_get_struct_14d().pack(_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y))
+      buff.write(_get_struct_16d().pack(_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle_X, _x.Obstacle_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -149,8 +157,8 @@ float64 Obstacle3_Y
       end = 0
       _x = self
       start = end
-      end += 112
-      (_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y,) = _get_struct_14d().unpack(str[start:end])
+      end += 128
+      (_x.Ball_X, _x.Ball_Y, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_X, _x.Robot_Y, _x.Obstacle_X, _x.Obstacle_Y, _x.Obstacle0_X, _x.Obstacle0_Y, _x.Obstacle1_X, _x.Obstacle1_Y, _x.Obstacle2_X, _x.Obstacle2_Y, _x.Obstacle3_X, _x.Obstacle3_Y,) = _get_struct_16d().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -159,9 +167,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_14d = None
-def _get_struct_14d():
-    global _struct_14d
-    if _struct_14d is None:
-        _struct_14d = struct.Struct("<14d")
-    return _struct_14d
+_struct_16d = None
+def _get_struct_16d():
+    global _struct_16d
+    if _struct_16d is None:
+        _struct_16d = struct.Struct("<16d")
+    return _struct_16d

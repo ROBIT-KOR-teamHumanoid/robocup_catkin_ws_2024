@@ -11,6 +11,10 @@
           ROBOT_X
           ROBOT_Y-VAL
           ROBOT_Y
+          OBSTACLE_X-VAL
+          OBSTACLE_X
+          OBSTACLE_Y-VAL
+          OBSTACLE_Y
           OBSTACLE0_X-VAL
           OBSTACLE0_X
           OBSTACLE0_Y-VAL
