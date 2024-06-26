@@ -1,2 +1,6 @@
 *workspace
 *.workspace.user
+*.user
+build/
+devle/
+logs/

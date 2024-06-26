@@ -18,22 +18,6 @@
 QtCore/qglobal.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /home/robit/catkin_ws/src/ebimu_v5/include/ebimu_v5/main_window.hpp
 QtGui/QMainWindow
 -

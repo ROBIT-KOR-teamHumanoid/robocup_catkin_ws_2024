@@ -3,14 +3,6 @@
 
 c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/include/c_robocup_localization23/moc_main_window.cxx.o
  /home/robit/catkin_ws/build/c_robocup_localization23/include/c_robocup_localization23/moc_main_window.cxx
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/main_window.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/qnode.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/include/objects/ball.hpp
@@ -35,7 +27,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/include/c_roboc
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -315,7 +306,14 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/include/c_roboc
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -338,14 +336,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/include/c_roboc
  c_robocup_localization23/ui_main_window.h
 c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/include/c_robocup_localization23/moc_qnode.cxx.o
  /home/robit/catkin_ws/build/c_robocup_localization23/include/c_robocup_localization23/moc_qnode.cxx
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/qnode.hpp
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -365,7 +355,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/include/c_roboc
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -533,14 +522,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/qrc_images.cxx.
  /usr/include/qt4/QtCore/qfeatures.h
  /usr/include/qt4/QtCore/qglobal.h
 c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/main_window.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/qnode.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/include/objects/ball.hpp
@@ -566,7 +547,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main.cpp.o
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -1122,7 +1102,14 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main.cpp.o
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -1144,14 +1131,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main.cpp.o
  /usr/local/include/opencv4/opencv2/videoio.hpp
  c_robocup_localization23/ui_main_window.h
 c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main_window.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/main_window.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/qnode.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/include/objects/ball.hpp
@@ -1178,7 +1157,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main_window
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -1735,7 +1713,14 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main_window
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -1757,14 +1742,6 @@ c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/main_window
  /usr/local/include/opencv4/opencv2/videoio.hpp
  c_robocup_localization23/ui_main_window.h
 c_robocup_localization23/CMakeFiles/c_robocup_localization23.dir/src/qnode.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_localization23/include/c_robocup_localization23/qnode.hpp
  /home/robit/catkin_ws/src/c_robocup_localization23/src/qnode.cpp
  /opt/ros/melodic/include/ros/advertise_options.h

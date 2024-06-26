@@ -3,15 +3,6 @@
 
 best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting_spot/moc_main_window.cxx.o
  /home/robit/catkin_ws/build/best_supporting_spot/include/best_supporting_spot/moc_main_window.cxx
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
@@ -33,7 +24,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -230,15 +220,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  best_supporting_spot/ui_main_window.h
 best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting_spot/moc_qnode.cxx.o
  /home/robit/catkin_ws/build/best_supporting_spot/include/best_supporting_spot/moc_qnode.cxx
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -258,7 +239,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -435,15 +415,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/bestsupportspotmake
  /usr/include/qt4/QtCore/qnamespace.h
  /usr/include/qt4/QtCore/qpoint.h
 best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
@@ -466,7 +437,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main.cpp.o
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -941,15 +911,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  best_supporting_spot/ui_main_window.h
 best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main_window.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
@@ -972,7 +933,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main_window.cpp.o
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
- /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -1448,15 +1408,6 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main_window.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  best_supporting_spot/ui_main_window.h
 best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/qnode.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
- /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/src/qnode.cpp
  /opt/ros/melodic/include/ros/advertise_options.h

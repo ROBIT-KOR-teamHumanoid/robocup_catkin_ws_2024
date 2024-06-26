@@ -3,9 +3,6 @@
 
 c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/c_robocup_vision23_yolov4/moc_main_window.cxx.o
  /home/robit/catkin_ws/build/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/moc_main_window.cxx
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/YoloV4/YoloV4.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/main_window.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/qnode.hpp
@@ -339,7 +336,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/c_rob
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -362,9 +366,6 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/c_rob
  c_robocup_vision23_yolov4/ui_main_window.h
 c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/c_robocup_vision23_yolov4/moc_qnode.cxx.o
  /home/robit/catkin_ws/build/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/moc_qnode.cxx
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/qnode.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/pan_tilt/Motor_msg.h
  /opt/ros/melodic/include/cv_bridge/cv_bridge.h
@@ -650,7 +651,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/c_rob
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -758,7 +766,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/robit
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -863,7 +878,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/include/robit
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -889,9 +911,6 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/qrc_images.cx
  /usr/include/qt4/QtCore/qfeatures.h
  /usr/include/qt4/QtCore/qglobal.h
 c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/main.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/YoloV4/YoloV4.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/main_window.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/qnode.hpp
@@ -1500,7 +1519,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/main.cpp.
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -1522,9 +1548,6 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/main.cpp.
  /usr/local/include/opencv4/opencv2/videoio.hpp
  c_robocup_vision23_yolov4/ui_main_window.h
 c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/main_window.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/YoloV4/YoloV4.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/main_window.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/qnode.hpp
@@ -2134,7 +2157,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/main_wind
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
@@ -2156,9 +2186,6 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/main_wind
  /usr/local/include/opencv4/opencv2/videoio.hpp
  c_robocup_vision23_yolov4/ui_main_window.h
 c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/qnode.cpp.o
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/c_robocup_vision23_yolov4/qnode.hpp
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/include/pan_tilt/Motor_msg.h
  /home/robit/catkin_ws/src/c_robocup_vision23_yolov4/src/qnode.cpp
@@ -2447,7 +2474,14 @@ c_robocup_vision23_yolov4/CMakeFiles/c_robocup_vision23_yolov4.dir/src/qnode.cpp
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp

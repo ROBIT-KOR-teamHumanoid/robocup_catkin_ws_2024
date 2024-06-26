@@ -4835,6 +4835,8 @@ opencv2/imgproc.hpp
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+opencv2/core/types.hpp
+/usr/local/include/opencv4/opencv2/opencv2/core/types.hpp
 opencv2/features2d.hpp
 /usr/local/include/opencv4/opencv2/opencv2/features2d.hpp
 opencv2/core/affine.hpp
@@ -4943,6 +4945,8 @@ arm_neon.h
 -
 immintrin.h
 -
+arm_neon.h
+-
 immintrin.h
 -
 immintrin.h
@@ -4953,12 +4957,16 @@ arm_neon.h
 -
 arm_neon.h
 -
+riscv-vector.h
+-
 arm_neon.h
 -
 altivec.h
 -
 hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
+lasxintrin.h
+-
 wasm_simd128.h
 -
 riscv_vector.h
@@ -5109,6 +5117,10 @@ opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/core/ocl.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
+typeinfo
+-
+typeindex
+-
 
 /usr/local/include/opencv4/opencv2/core/operations.hpp
 cstdio
@@ -5135,6 +5147,8 @@ time.h
 /usr/local/include/opencv4/opencv2/core/saturate.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+climits
+-
 opencv2/core/fast_math.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/fast_math.hpp
 
@@ -5378,6 +5392,8 @@ matrix.h
 algorithm
 -
 vector
+-
+unordered_map
 -
 
 /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
@@ -5669,13 +5685,55 @@ opencv2/ml/ml.inl.hpp
 /usr/local/include/opencv4/opencv2/objdetect.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+opencv2/objdetect/aruco_detector.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/aruco_detector.hpp
+opencv2/objdetect/graphical_code_detector.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/graphical_code_detector.hpp
 opencv2/objdetect/detection_based_tracker.hpp
 /usr/local/include/opencv4/opencv2/opencv2/objdetect/detection_based_tracker.hpp
+opencv2/objdetect/face.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/face.hpp
+opencv2/objdetect/charuco_detector.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/charuco_detector.hpp
+opencv2/objdetect/barcode.hpp
+/usr/local/include/opencv4/opencv2/opencv2/objdetect/barcode.hpp
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
+opencv2/core.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+opencv2/objdetect/aruco_dictionary.hpp
+-
+opencv2/objdetect/aruco_board.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+opencv2/core.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
+opencv2/core.hpp
+-
+opencv2/objdetect/graphical_code_detector.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
+opencv2/objdetect/aruco_detector.hpp
+/usr/local/include/opencv4/opencv2/objdetect/opencv2/objdetect/aruco_detector.hpp
 
 /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
 opencv2/core.hpp
 -
 vector
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/face.hpp
+opencv2/core.hpp
+-
+
+/usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
+opencv2/core.hpp
 -
 
 /usr/local/include/opencv4/opencv2/opencv.hpp

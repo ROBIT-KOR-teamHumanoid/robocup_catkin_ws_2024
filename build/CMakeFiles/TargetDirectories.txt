@@ -319,6 +319,14 @@
 /home/robit/catkin_ws/build/robocup_master24/CMakeFiles/install.dir
 /home/robit/catkin_ws/build/robocup_master24/CMakeFiles/edit_cache.dir
 /home/robit/catkin_ws/build/robocup_master24/CMakeFiles/rebuild_cache.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/install/strip.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/install/local.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/test.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/list_install_components.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/robocup_vision24_obstacle.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/rebuild_cache.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/edit_cache.dir
+/home/robit/catkin_ws/build/robocup_vision24_obstacle/CMakeFiles/install.dir
 /home/robit/catkin_ws/build/robocup_vision24_yolov4/CMakeFiles/install/strip.dir
 /home/robit/catkin_ws/build/robocup_vision24_yolov4/CMakeFiles/install/local.dir
 /home/robit/catkin_ws/build/robocup_vision24_yolov4/CMakeFiles/test.dir

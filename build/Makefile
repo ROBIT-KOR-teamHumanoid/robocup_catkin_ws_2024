@@ -103,8 +103,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -2248,6 +2248,19 @@ robocup_master24/fast:
 .PHONY : robocup_master24/fast
 
 #=============================================================================
+# Target rules for targets named robocup_vision24_obstacle
+
+# Build rule for target.
+robocup_vision24_obstacle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robocup_vision24_obstacle
+.PHONY : robocup_vision24_obstacle
+
+# fast build rule for target.
+robocup_vision24_obstacle/fast:
+	$(MAKE) -f robocup_vision24_obstacle/CMakeFiles/robocup_vision24_obstacle.dir/build.make robocup_vision24_obstacle/CMakeFiles/robocup_vision24_obstacle.dir/build
+.PHONY : robocup_vision24_obstacle/fast
+
+#=============================================================================
 # Target rules for targets named robocup_vision24_yolov4
 
 # Build rule for target.
@@ -2797,6 +2810,7 @@ help:
 	@echo "... robocup_localization24_obstacle"
 	@echo "... robocup_master23"
 	@echo "... robocup_master24"
+	@echo "... robocup_vision24_obstacle"
 	@echo "... robocup_vision24_yolov4"
 	@echo "... serial_mcu_generate_messages_eus"
 	@echo "... serial_mcu"
