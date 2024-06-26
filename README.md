@@ -2,7 +2,6 @@
 
 ## 목차
   - [commit](#commit)
-        -ㅇㅇㄴㅇㄹ
   - [pull & push](#pull & push)
   - [당신이 명심해야 할 일](#당신이 명심해야 할 일)
 
