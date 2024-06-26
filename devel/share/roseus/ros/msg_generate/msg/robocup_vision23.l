@@ -14,7 +14,7 @@
 
 (defclass msg_generate::robocup_vision23
   :super ros::object
-  :slots (_Ball_cam_X _Ball_cam_Y _Ball_2d_X _Ball_2d_Y _Ball_D _PAN _TILT _Ball_speed_X _Ball_speed_Y _ROBOT_VEC_X _ROBOT_VEC_Y _Ball_speed_level _Scan_mode ))
+  :slots (_Ball_cam_X _Ball_cam_Y _Ball_2d_X _Ball_2d_Y _Ball_D _PAN _TILT _Ball_speed_X _Ball_speed_Y _Robot_2d_X _Robot_2d_Y _ROBOT_VEC_X _ROBOT_VEC_Y _Ball_speed_level _Scan_mode ))
 
 (defmethod msg_generate::robocup_vision23
   (:init
@@ -28,6 +28,8 @@
     ((:TILT __TILT) 0.0)
     ((:Ball_speed_X __Ball_speed_X) 0.0)
     ((:Ball_speed_Y __Ball_speed_Y) 0.0)
+    ((:Robot_2d_X __Robot_2d_X) 0.0)
+    ((:Robot_2d_Y __Robot_2d_Y) 0.0)
     ((:ROBOT_VEC_X __ROBOT_VEC_X) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:ROBOT_VEC_Y __ROBOT_VEC_Y) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:Ball_speed_level __Ball_speed_level) 0)
@@ -43,6 +45,8 @@
    (setq _TILT (float __TILT))
    (setq _Ball_speed_X (float __Ball_speed_X))
    (setq _Ball_speed_Y (float __Ball_speed_Y))
+   (setq _Robot_2d_X (float __Robot_2d_X))
+   (setq _Robot_2d_Y (float __Robot_2d_Y))
    (setq _ROBOT_VEC_X __ROBOT_VEC_X)
    (setq _ROBOT_VEC_Y __ROBOT_VEC_Y)
    (setq _Ball_speed_level (round __Ball_speed_level))
@@ -75,6 +79,12 @@
   (:Ball_speed_Y
    (&optional __Ball_speed_Y)
    (if __Ball_speed_Y (setq _Ball_speed_Y __Ball_speed_Y)) _Ball_speed_Y)
+  (:Robot_2d_X
+   (&optional __Robot_2d_X)
+   (if __Robot_2d_X (setq _Robot_2d_X __Robot_2d_X)) _Robot_2d_X)
+  (:Robot_2d_Y
+   (&optional __Robot_2d_Y)
+   (if __Robot_2d_Y (setq _Robot_2d_Y __Robot_2d_Y)) _Robot_2d_Y)
   (:ROBOT_VEC_X
    (&optional __ROBOT_VEC_X)
    (if __ROBOT_VEC_X (setq _ROBOT_VEC_X __ROBOT_VEC_X)) _ROBOT_VEC_X)
@@ -107,6 +117,10 @@
     ;; float64 _Ball_speed_X
     8
     ;; float64 _Ball_speed_Y
+    8
+    ;; float64 _Robot_2d_X
+    8
+    ;; float64 _Robot_2d_Y
     8
     ;; float64[] _ROBOT_VEC_X
     (* 8    (length _ROBOT_VEC_X)) 4
@@ -159,6 +173,10 @@
        (sys::poke _Ball_speed_X (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
      ;; float64 _Ball_speed_Y
        (sys::poke _Ball_speed_Y (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+     ;; float64 _Robot_2d_X
+       (sys::poke _Robot_2d_X (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+     ;; float64 _Robot_2d_Y
+       (sys::poke _Robot_2d_Y (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
      ;; float64[] _ROBOT_VEC_X
      (write-long (length _ROBOT_VEC_X) s)
      (dotimes (i (length _ROBOT_VEC_X))
@@ -235,6 +253,10 @@
      (setq _Ball_speed_X (sys::peek buf ptr- :double)) (incf ptr- 8)
    ;; float64 _Ball_speed_Y
      (setq _Ball_speed_Y (sys::peek buf ptr- :double)) (incf ptr- 8)
+   ;; float64 _Robot_2d_X
+     (setq _Robot_2d_X (sys::peek buf ptr- :double)) (incf ptr- 8)
+   ;; float64 _Robot_2d_Y
+     (setq _Robot_2d_Y (sys::peek buf ptr- :double)) (incf ptr- 8)
    ;; float64[] _ROBOT_VEC_X
    (let (n)
      (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
@@ -277,7 +299,7 @@
    self)
   )
 
-(setf (get msg_generate::robocup_vision23 :md5sum-) "e7c23af0ec42fde2be9393d1f1e88db0")
+(setf (get msg_generate::robocup_vision23 :md5sum-) "bbd6c2605c09df8b25874d0d14f93108")
 (setf (get msg_generate::robocup_vision23 :datatype-) "msg_generate/robocup_vision23")
 (setf (get msg_generate::robocup_vision23 :definition-)
       "int64 Ball_cam_X
@@ -289,15 +311,18 @@ float64 PAN
 float64 TILT
 float64 Ball_speed_X
 float64 Ball_speed_Y
+float64 Robot_2d_X
+float64 Robot_2d_Y
 float64[] ROBOT_VEC_X
 float64[] ROBOT_VEC_Y
 int64 Ball_speed_level
 int64 Scan_mode
 
+
 ")
 
 
 
-(provide :msg_generate/robocup_vision23 "e7c23af0ec42fde2be9393d1f1e88db0")
+(provide :msg_generate/robocup_vision23 "bbd6c2605c09df8b25874d0d14f93108")
 
 

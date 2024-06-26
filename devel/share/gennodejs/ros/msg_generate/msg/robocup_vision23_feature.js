@@ -22,6 +22,7 @@ class robocup_vision23_feature {
       this.DISTANCE = null;
       this.POINT_VEC_X = null;
       this.POINT_VEC_Y = null;
+      this.TYPE = null;
     }
     else {
       if (initObj.hasOwnProperty('CONFIDENCE')) {
@@ -48,6 +49,12 @@ class robocup_vision23_feature {
       else {
         this.POINT_VEC_Y = [];
       }
+      if (initObj.hasOwnProperty('TYPE')) {
+        this.TYPE = initObj.TYPE
+      }
+      else {
+        this.TYPE = [];
+      }
     }
   }
 
@@ -61,6 +68,8 @@ class robocup_vision23_feature {
     bufferOffset = _arraySerializer.float64(obj.POINT_VEC_X, buffer, bufferOffset, null);
     // Serialize message field [POINT_VEC_Y]
     bufferOffset = _arraySerializer.float64(obj.POINT_VEC_Y, buffer, bufferOffset, null);
+    // Serialize message field [TYPE]
+    bufferOffset = _arraySerializer.float64(obj.TYPE, buffer, bufferOffset, null);
     return bufferOffset;
   }
 
@@ -76,6 +85,8 @@ class robocup_vision23_feature {
     data.POINT_VEC_X = _arrayDeserializer.float64(buffer, bufferOffset, null)
     // Deserialize message field [POINT_VEC_Y]
     data.POINT_VEC_Y = _arrayDeserializer.float64(buffer, bufferOffset, null)
+    // Deserialize message field [TYPE]
+    data.TYPE = _arrayDeserializer.float64(buffer, bufferOffset, null)
     return data;
   }
 
@@ -85,7 +96,8 @@ class robocup_vision23_feature {
     length += 8 * object.DISTANCE.length;
     length += 8 * object.POINT_VEC_X.length;
     length += 8 * object.POINT_VEC_Y.length;
-    return length + 16;
+    length += 8 * object.TYPE.length;
+    return length + 20;
   }
 
   static datatype() {
@@ -95,7 +107,7 @@ class robocup_vision23_feature {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '7e0f9b658b1ed4dec4d2b127040ac40e';
+    return '90f95fdb2af41305af35e1195995ece4';
   }
 
   static messageDefinition() {
@@ -105,6 +117,7 @@ class robocup_vision23_feature {
     float64[] DISTANCE
     float64[] POINT_VEC_X
     float64[] POINT_VEC_Y
+    float64[] TYPE
     
     `;
   }
@@ -141,6 +154,13 @@ class robocup_vision23_feature {
     }
     else {
       resolved.POINT_VEC_Y = []
+    }
+
+    if (msg.TYPE !== undefined) {
+      resolved.TYPE = msg.TYPE;
+    }
+    else {
+      resolved.TYPE = []
     }
 
     return resolved;

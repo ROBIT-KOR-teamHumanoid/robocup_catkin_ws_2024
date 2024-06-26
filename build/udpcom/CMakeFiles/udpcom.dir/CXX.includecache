@@ -34,7 +34,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 string
 -
 vector
@@ -75,7 +75,7 @@ QThread
 -
 QStringListModel
 -
-msg_generate/robocup23_master2udp.h
+msg_generate/robocup24_master2udp.h
 -
 msg_generate/localv2_msg.h
 -

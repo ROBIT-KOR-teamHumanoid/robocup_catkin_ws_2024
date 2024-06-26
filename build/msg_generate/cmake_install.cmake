@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,14 +39,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/msg_generate/msg" TYPE FILE FILES
-    "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23.msg"
-    "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg"
-    "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/motionNum_msg.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/ik_msg.msg"
-    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
-    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
-    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg"
@@ -88,6 +88,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/robit/catkin_ws/src/msg_generate/msg/game_control_return_data.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/motion_operator_data.msg"
     "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg"
+    "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg"
     )
 endif()
 

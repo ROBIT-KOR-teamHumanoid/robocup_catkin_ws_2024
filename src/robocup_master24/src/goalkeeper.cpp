@@ -24,7 +24,7 @@ void Goalkeeper::selectRobotState()
     if(master->gameControlData.mySide == RIGHT)
     {
         targetyaw = 90;
-        if(ballPoint.x() > 1000 - 100)
+        if(ballPoint.x() > 1000 - 200) //origin = 10
         {
             keeperZoneX = true;
         }
@@ -32,21 +32,36 @@ void Goalkeeper::selectRobotState()
     else
     {
         targetyaw = -90;
-        if(ballPoint.x() < 100 + 100)
+        if(ballPoint.x() < 100 + 200)
         {
             keeperZoneX = true;
         }
     }
 
+    if(master->gameControlData.mySide == RIGHT)
+    {
+      Robot2Box = 800 - master->local.Robot_X;
+    }
+    else
+    {
+      Robot2Box = master->local.Robot_X - 300;
+    }
+    Ball2Robot = abs(sqrt(pow(master->local.Robot_X - master->local.Ball_X, 2) + pow(master->local.Robot_Y - master->local.Ball_Y, 2)));
+
+    if (ballPoint.x() != 0 && ballPoint.y() != 0)
+    {
+      previous_ball_x = ballPoint.x();
+      previous_ball_y = ballPoint.y();
+    }
 
     if(master->gameControlData.secondState == STATE2_PENALTYKICK)
     {
         robot_state = MODE_Penalty;
     }
-    else if(master->local.Robot_Y < 400 - goalOffset || master->local.Robot_Y > 400 + goalOffset)
-    {
-         robot_state = KEEPER_STATE_QUICK_BACK;
-    }
+//    else if(master->local.Robot_Y < 400 - goalOffset || master->local.Robot_Y > 400 + goalOffset)
+//    {
+//         robot_state = KEEPER_STATE_QUICK_BACK;
+//    }
     else if(ballPoint.x() == 0.0 && ballPoint.y() == 0.0)
     {
         robot_state = ROBOT_STATE_NOBALL;
@@ -63,8 +78,25 @@ void Goalkeeper::selectRobotState()
     //normal mode
     else
     {
-        robot_state = NORMAL;
+        robot_state = KEEPER_STATE_SIDEBALL;
     }
+
+    if(Ball2Robot < 20 || (master->vision.Ball_D < 300 && master->vision.Ball_D > 0))
+    {
+      robot_state = KEEPER_STATE_JUST_KICK;
+    }
+
+    if(crouch_flag)
+    {
+      robot_state = KEEPER_STATE_CROUCH;
+    }
+
+    if(master->local.Robot_X >= 310 && master->local.Robot_X <= 790)
+    {
+      robot_state = KEEPER_STATE_OUT_OF_BOX;
+    }
+
+    //robot_state = MODE_TEST;
 }
 
 void Goalkeeper::stateInitial()
@@ -123,30 +155,195 @@ void Goalkeeper::statePlay()
     Point ballPoint(static_cast<int>(master->local.Ball_X), static_cast<int>(master->local.Ball_Y));
     Point myPoint(static_cast<int>(master->local.Robot_X), static_cast<int>(master->local.Robot_Y));
 
+    //for 2024.05.07
+    if(master->gameControlData.mySide == RIGHT)
+    {
+        homePoint = Point(1100 - frontOffset, 400);
+    }
+    else
+    {
+        homePoint = Point(0 + frontOffset, 400);
+    }
+
     //playSaveMotion();
     //gksave();
-    switch (robot_state) {
-
+    switch (robot_state)
+    {
     case MODE_TEST:
     {
         //kick3();
         //gksave();
-        break;
+      cout << "---------- MODE_TEST ----------" << endl;
+      cout << "test_cnt : " << test_cnt << endl;
+      test_cnt++;
+      if(test_cnt == 3000 && up_flag == false)
+      {
+        cout << "!!!!!!!! DOWN !!!!!!!!" << endl;
+        playMotion(MOTION_CROUCH_1);
+        up_flag = true;
+      }
+
+      if(up_flag == true)
+      {
+        cout << "!!!!!!!! UP !!!!!!!!" << endl;
+        playMotion(MOTION_CROUCH_2);
+        test_cnt = 0;
+        up_flag = false;
+      }
+      cout << "!!!!!!!!!! UP_FLAG : " << up_flag << endl;
+      break;
+    }
+    case KEEPER_STATE_OUT_OF_BOX:
+    {
+      cout<< "---------- KEEPER_STATE_OUT_OF_BOX ----------" << endl;
+      stop_cnt++;
+      if(stop_cnt <= 1000)
+      {
+        walkStop();
+        cout << "THINKING,,,,,,,,,,,, STOP_CNT : " << stop_cnt << endl;
+      }
+      else
+      {
+        cout << "Ball2Robot : " << Ball2Robot << ", Robot2Box : " << Robot2Box << endl;
+
+        if (Ball2Robot < Robot2Box)
+        {
+          kick3();
+          cout << "!!!!!!!! JUST KICK !!!!!!!!" << endl;
+        }
+        else
+        {
+          //walkStart(-30, 0, 2);
+
+          cout << "!!!!!!!! BACK !!!!!!!!" << endl;
+        }
+
+      }
+
+//      if(robot_state != KEEPER_STATE_OUT_OF_BOX)
+//      {
+//        stop_cnt = 0;
+//      }
+
+      break;
     }
     case ROBOT_STATE_NOBALL:
     {
-        cout << "  ROBOT_STATE_NOBALL" << endl;
+        cout << "---------- ROBOT_STATE_NOBALL ----------" << endl;
+        cout << "HOMEPOINT.X = " << homePoint.x() << ", HOMEPOINT.Y = " << homePoint.y() << endl;
+
+        noball_cnt++;
+        cout << "THINKING,,,,,,,,,,,, NOBALL_CNT : " << noball_cnt << endl;
+        if(noball_cnt == 1)
+        {
+          previous_yaw = master->imu.yaw;
+        }
 
         //공이 없는 경우 예외처리
-        if(moveSideOnly(homePoint))
+//        if(moveSideOnly(homePoint))
+//        {
+//            walkStop();
+//            cout << "!!!!!!!! YEAH ROBOT IS ON HOMEPOINT !!!!!!!!" << endl;
+//        }
+
+        //CODE USING UDP
+        /*
+        if(master->master2udp.ball_coor_x != 0 && master->master2udp.ball_coor_x > 465 && master->master2udp.ball_coor_x < 635)
         {
-            walkStop();
+          cout << "!!!!!!!! NOT MY BUSINESS !!!!!!!!" << endl;
+          walkStop();
         }
+        else
+        {
+          if(master->local.Robot_X >930 || master->local.Robot_X <170)
+          {
+            if(moveSideOnly(homePoint))
+            {
+                walkStop();
+                cout << "!!!!!!!! YEAH ROBOT IS ON HOMEPOINT !!!!!!!!" << endl;
+            }
+          }
+          else
+          {
+            if(noball_cnt >= 1000)
+            {
+              if(previous_ball_y >= master->local.Robot_Y)
+              {
+                walkStart(0, 0, 8);
+                cout << "!!!!!!!! TURN LEFT TO FIND BALL !!!!!!!!" << endl;
+              }
+              else
+              {
+                walkStart(0, 0, -8);
+                cout << "!!!!!!!! TURN RIGHT TO FIND BALL !!!!!!!!" << endl;
+              }
+//              walkStart(0, 0, 8);
+//              cout << "!!!!!!!! TURN LEFT TO FIND BALL !!!!!!!!" << endl;
+
+
+              if(master->local.Ball_X != 0.0 && master->local.Ball_Y != 0.0)
+              {
+                noball_cnt = 0;
+                kick3();
+                cout << "!!!!!!!! ROBOT FIND BALL !!!!!!!!" << endl;
+              }
+            }
+          }
+        }
+        */
+
+
+        // CODE NOT USING UDP
+        if(master->local.Robot_X >930 || master->local.Robot_X <170)
+        {
+          if(moveSideOnly(homePoint))
+          {
+              walkStop();
+
+              cout << "!!!!!!!! YEAH ROBOT IS ON HOMEPOINT !!!!!!!!" << endl;
+          }
+        }
+        else
+        {
+          if(noball_cnt >= 1000)
+          {
+            if(previous_ball_y >= master->local.Robot_Y)
+            {
+              walkStart(0, 0, 8);
+              if(previous_yaw + 0 >= master->imu.yaw && previous_yaw - 5 <= master->imu.yaw)
+              {
+                cout << "!!!!!!!! CAN'T FIND !!!!!!!!" << endl;
+                walkStop();
+              }
+              cout << "!!!!!!!! TURN LEFT TO FIND BALL !!!!!!!!" << endl;
+            }
+            else
+            {
+              walkStart(0, 0, -8);
+              if(previous_yaw + 5 >= master->imu.yaw && previous_yaw - 0 <= master->imu.yaw)
+              {
+                cout << "!!!!!!!! CAN'T FIND !!!!!!!!" << endl;
+                walkStop();
+              }
+              cout << "!!!!!!!! TURN RIGHT TO FIND BALL !!!!!!!!" << endl;
+            }
+//            walkStart(0, 0, 8);
+//            cout << "!!!!!!!! TURN AROUND TO FIND BALL !!!!!!!!" << endl;
+
+            if(master->local.Ball_X != 0.0 && master->local.Ball_Y != 0.0)
+            {
+              noball_cnt = 0;
+              kick3();
+              cout << "!!!!!!!! ROBOT FIND BALL !!!!!!!!" << endl;
+            }
+          }
+        }
+
         break;
     }
     case KEEPER_STATE_KEEPERZONE:
     {
-        cout << "  KEEPER_STATE_KEEPERZONE" << endl;
+        cout << "---------- KEEPER_STATE_KEEPERZONE ----------" << endl;
         //당장 공을 걷어내기
         kick3();
 
@@ -154,30 +351,41 @@ void Goalkeeper::statePlay()
     }
     case KEEPER_STATE_CENTER:
     {
-        cout << "  KEEPER_STATE_CENTER  " << endl;
+        cout << "---------- KEEPER_STATE_CENTER ----------" << endl;
 
         //공과 직선이 되도록 위치 선정
         int target_x = homePoint.x();
         int target_y = ballPoint.y();
 
         Point targetPoint(target_x, target_y);
-        if(moveSideOnly(targetPoint))
+        if ((ballPoint.x() > 310 && master->gameControlData.mySide == LEFT) || (ballPoint.x() <790 && master->gameControlData.mySide == RIGHT)) //if ball is out of KEEPER_BOX
         {
+          if(moveSideOnly(targetPoint))
+          {
             walkStop();
+            cout <<"!!!!!!!! YEAH ROBOT IS STOP AND CENTER TO BALL !!!!!!!!" << endl;
+          }
+        }
+        else
+        {
+          kick3();
+          cout <<"!!!!!!!! KICK BALL !!!!!!!!" << endl;cout << "master->vision.Ball_cam_X : " << master->vision.Ball_cam_X <<endl;
         }
         break;
     }
-    case KEEPER_STATE_QUICK_BACK :
+//    case KEEPER_STATE_QUICK_BACK :
+//    {
+//        cout << "---------- KEEPER_STATE_QUICK_BACK ----------" << endl;
+//        Player::stateReady(homePoint);
+//        break;
+//    }
+    case KEEPER_STATE_SIDEBALL:
     {
-        cout << "  KEEPER_STATE_QUICK_BACK  " << endl;
-        Player::stateReady(homePoint);
-        break;
-    }
-    case NORMAL:
-    {
-        cout << "  KEEPER_STATE_SIDEBALL  " << endl;
+        cout << "---------- KEEPER_STATE_SIDEBALL ----------" << endl;
 
-        //offset point에서 공 바라보기
+        //이전 코드
+
+        //offset point에기서 공 바라보기
         int target_x = homePoint.x();
         int target_y = ballPoint.y();
 
@@ -205,22 +413,103 @@ void Goalkeeper::statePlay()
                 walkStop();
             }
         }
-        double res = sqrt(pow(120 - master -> local.Robot_X, 2) + pow(400 - master -> local.Robot_Y, 2));
+//        double res = sqrt(pow(120 - master -> local.Robot_X, 2) + pow(400 - master -> local.Robot_Y, 2));
 
-        if(res >= 166.0)
+//        if(res >= 166.0)
+//        {
+//            qb = true;
+//            robot_state = KEEPER_STATE_QUICK_BACK;
+//            if(res <= 25.0)
+//                qb = false;
+//        }
+
+        //최신 코드 (TargetYaw함수에서 오류 발생)
+        /*
+        //offset point에서 공 바라보기
+        int target_x = homePoint.x();
+        int target_y = ballPoint.y();
+
+        int xLimitH = 400 + goalOffset;
+        int xLimitL = 400 - goalOffset;
+
+        if(ballPoint.y() > xLimitH)
         {
-            qb = true;
-            robot_state = KEEPER_STATE_QUICK_BACK;
-            if(res <= 25.0)
-                qb = false;
+          target_y = xLimitH;
         }
+        else if(ballPoint.y() < xLimitL)
+        {
+          target_y = xLimitL;
+        }
+
+        Point targetPoint(target_x, target_y);
+        if(moveSideOnly(targetPoint))
+        {
+          double robot_yaw = static_cast<int>(master->imu.yaw);
+          //double targetAngle = calcTargetAngle(ballPoint, myPoint, robot_yaw);
+
+          if(TargetYaw(master->imu.yaw, static_cast<float>(targetyaw),6))
+          {
+            walkStop();
+          }
+         }up_flag = true;
+
+         break;
+         */
         break;
     }
-    case MODE_Penalty:
+    case KEEPER_STATE_JUST_KICK:
     {
-        PenaltySave();
-        break;
+      cout << "---------- KEEPER_STATE_JUST_KICK ----------" << endl;
+      if(Ball2Opponent() > 0 && Ball2Opponent() < 30)
+      {
+        crouch_flag = true;
+        walkStop();
+      }
+      else
+      {
+        kick3();
+        cout << "!!!!!!!! JUST KICK !!!!!!!!" << endl;
+      }
+      break;
     }
+    case KEEPER_STATE_CROUCH:
+    {
+      cout << "---------- KEEPER_STATE_CROUCH ----------" << endl;
+      cout << "Ball2Opponent             : " << Ball2Opponent() <<endl;
+      cout << "UP_FLAG                   : " << motion_cnt <<endl;
+      cout << "master->vision.Ball_cam_X : " << master->vision.Ball_cam_X <<endl;
+      cout << "master->vision.Ball_cam_Y : " << master->vision.Ball_cam_Y <<endl<<endl;
+      //playCrouchMotion(MOTION_CROUCH_1, MOTION_CROUCH_2);
+
+      if(up_flag == false)
+      {
+        cout << "!!!!!!!! DOWN !!!!!!!!" << endl;
+        playCrouchMotion(MOTION_CROUCH_1);
+        //motion_cnt++;-
+        if(motion_end == true)
+        {
+          up_flag = true;
+        }
+      }
+      else if(up_flag == true)
+      {
+        if((master->local.Ball_X == 0.0 && master->local.Ball_Y == 0.0) || (master->master2udp.ball_coor_x == 0 && master->master2udp.ball_coor_x == 0) || (master->vision.Ball_cam_X == 0 && master->vision.Ball_cam_Y == 0))
+        {
+          cout << "!!!!!!!! UP !!!!!!!!" << endl;
+          playCrouchMotion(MOTION_CROUCH_2);
+          //motion_cnt = 0;
+          crouch_flag = false;
+          up_flag = false;
+        }
+      }
+      break;
+    }
+      //나중에 페널티킥 할 때 활성화시키기
+//    case MODE_Penalty:
+//    {
+//        PenaltySave();
+//        break;
+//    }
     }
 }
 
@@ -339,7 +628,7 @@ bool Goalkeeper::moveSideOnly(Point targetPoint)
         const double Kp_x = -10;
         const double Kp_y = 30;
         //        const double Kp_z = R_YAW_MAX;
-        const double Kp_z = 10;
+        const double Kp_z = 12;  //origin 10
         //출력값 결정
         x = Kp_x * reg_err_x;
         y = Kp_y * reg_err_y;
@@ -429,4 +718,53 @@ void Goalkeeper::gksave()
     }
 }
 
-} //robocup_master24
+double Goalkeeper::Ball2Opponent()
+{
+  Point ballPoint(static_cast<int>(master->local.Ball_X), static_cast<int>(master->local.Ball_Y));
+  Point obstacle_0(static_cast<int>(master->local.Obstacle0_X), static_cast<int>(master->local.Obstacle0_Y));
+  Point obstacle_1(static_cast<int>(master->local.Obstacle1_X), static_cast<int>(master->local.Obstacle1_Y));
+  Point obstacle_2(static_cast<int>(master->local.Obstacle2_X), static_cast<int>(master->local.Obstacle2_Y));
+  Point obstacle_3(static_cast<int>(master->local.Obstacle3_X), static_cast<int>(master->local.Obstacle3_Y));
+
+  double Ball2Obs[4] = {calcDistance(ballPoint, obstacle_0), calcDistance(ballPoint, obstacle_1), calcDistance(ballPoint, obstacle_2), calcDistance(ballPoint, obstacle_3)};
+  Ball2Opponent_Dist = Ball2Obs[0];
+
+  for(int i = 0; i < 4; i++)
+  {
+    if (Ball2Opponent_Dist > Ball2Obs[i])
+    {
+      Ball2Opponent_Dist = Ball2Obs[i];
+    }
+  }
+
+  return Ball2Opponent_Dist;
+}
+
+bool Goalkeeper::playCrouchMotion(int motion_num_1)
+{
+  cout << "!!!!!!!! CROUCH MOTION !!!!!!!!"<< endl;
+  cout << master->motionEnd.motion_end << endl;
+  master->motion.Motion_Mode = 1;
+  master->motion.Motion_Num = motion_num_1;
+  cout << "MOTION_CNT : " << motion_cnt << endl;
+  cout << "MOTION_END : " << motion_end << endl;
+
+  master->motionPub.publish(master->motion);
+
+  if(master->motionEnd.motion_end)
+  {
+    if(motion_end == false)
+    {
+      motion_end = true;
+    }
+    else
+    {
+      motion_end = false;
+    }
+
+  }
+
+  return motion_end;
+}
+
+} //robocup_master23

@@ -53,36 +53,44 @@ CMAKE_BINARY_DIR = /home/robit/catkin_ws/build
 # Include the progress variables for this target.
 include msg_generate/CMakeFiles/msg_generate_generate_messages_cpp.dir/progress.make
 
-msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2localization23_technical_obstacle.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24_feature.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
-msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/kuro_cotton_candy.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/pan_tilt_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Step_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/localization_msg.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Mt2Serial_msg.h
-msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/support_onestep_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/com_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Landing_Time_Control.h
-msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Kicker.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_balance.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_msg.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/HSV.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/wheel_msg.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Helper.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/angle2.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/L_LC_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Serial2LC_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocupvision.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_operator_data.h
-msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/obsnavi.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_order.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_helper_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/tune2walk.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocupcontroller.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_kicker_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/walk_pattern.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_stop.h
@@ -91,42 +99,47 @@ msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_w
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/eom_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/scv_vision.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motion_msg.h
-msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24_obstacle.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/zmp_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/R_LC_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/position_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2vision_msg.h
 msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
+msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 
 
-/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h: /home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg
-/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from msg_generate/master_2_robocup_vision23.msg"
-	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization23_technical_obstacle.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization23_technical_obstacle.h: /home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization23_technical_obstacle.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from msg_generate/master2localization23_technical_obstacle.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24_feature.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24_feature.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24_feature.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from msg_generate/robocup_vision24_feature.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from msg_generate/ikcoordinate_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from msg_generate/ikcoordinate_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from msg_generate/imu_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from msg_generate/imu_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
-
-/home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg
-/home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from msg_generate/robocup23_master2udp.msg"
-	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/kuro_cotton_candy.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/kuro_cotton_candy.h: /home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg
@@ -158,278 +171,364 @@ msg_generate/CMakeFiles/msg_generate_generate_messages_cpp: /home/robit/catkin_w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from msg_generate/localization_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from msg_generate/robocup_vision24.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
 /home/robit/catkin_ws/devel/include/msg_generate/Mt2Serial_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/Mt2Serial_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/Mt2Serial_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from msg_generate/Mt2Serial_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from msg_generate/Mt2Serial_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
-/home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg
-/home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from msg_generate/serial_msg.msg"
-	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h: /home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from msg_generate/master_2_robocup_vision24.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/support_onestep_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/support_onestep_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/support_onestep_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from msg_generate/support_onestep_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from msg_generate/support_onestep_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/com_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/com_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/com_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/com_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from msg_generate/com_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from msg_generate/com_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/com_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/Landing_Time_Control.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/Landing_Time_Control.h: /home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg
 /home/robit/catkin_ws/devel/include/msg_generate/Landing_Time_Control.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from msg_generate/Landing_Time_Control.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from msg_generate/Landing_Time_Control.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
-/home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h: /home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg
-/home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from msg_generate/ik_angle_sim.msg"
-	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from msg_generate/robocup_localization24.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Kicker.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Kicker.h: /home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg
+/home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Kicker.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from msg_generate/udp_msg_TC_Kicker.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/motion_balance.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/motion_balance.h: /home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg
 /home/robit/catkin_ws/devel/include/msg_generate/motion_balance.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from msg_generate/motion_balance.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from msg_generate/motion_balance.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/udp_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/udp_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/udp_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from msg_generate/udp_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from msg_generate/udp_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/HSV.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/HSV.h: /home/robit/catkin_ws/src/msg_generate/msg/HSV.msg
+/home/robit/catkin_ws/devel/include/msg_generate/HSV.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from msg_generate/HSV.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/HSV.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/wheel_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/wheel_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/wheel_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from msg_generate/wheel_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from msg_generate/wheel_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Helper.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Helper.h: /home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg
+/home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Helper.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating C++ code from msg_generate/udp_msg_TC_Helper.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/angle2.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/angle2.h: /home/robit/catkin_ws/src/msg_generate/msg/angle2.msg
 /home/robit/catkin_ws/devel/include/msg_generate/angle2.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from msg_generate/angle2.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating C++ code from msg_generate/angle2.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/angle2.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/L_LC_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/L_LC_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/L_LC_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/L_LC_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from msg_generate/L_LC_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating C++ code from msg_generate/L_LC_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/L_LC_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/motionNum_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from msg_generate/motionNum_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating C++ code from msg_generate/motionNum_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/motionNum_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/Serial2LC_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/Serial2LC_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/Serial2LC_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/Serial2LC_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating C++ code from msg_generate/Serial2LC_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating C++ code from msg_generate/Serial2LC_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Serial2LC_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/robocupvision.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/robocupvision.h: /home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg
 /home/robit/catkin_ws/devel/include/msg_generate/robocupvision.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating C++ code from msg_generate/robocupvision.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating C++ code from msg_generate/robocupvision.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/motion_operator_data.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/motion_operator_data.h: /home/robit/catkin_ws/src/msg_generate/msg/motion_operator_data.msg
 /home/robit/catkin_ws/devel/include/msg_generate/motion_operator_data.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating C++ code from msg_generate/motion_operator_data.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating C++ code from msg_generate/motion_operator_data.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/motion_operator_data.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
-/home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h: /home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg
-/home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating C++ code from msg_generate/Motor_msg_pt.msg"
-	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/robit/catkin_ws/devel/include/msg_generate/obsnavi.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/obsnavi.h: /home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg
+/home/robit/catkin_ws/devel/include/msg_generate/obsnavi.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating C++ code from msg_generate/obsnavi.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg
+/home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating C++ code from msg_generate/serial_msg.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h: /home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg
 /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating C++ code from msg_generate/pid_tuning.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating C++ code from msg_generate/pid_tuning.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating C++ code from msg_generate/robocup_vision23_feature.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/udp_order.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/udp_order.h: /home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg
 /home/robit/catkin_ws/devel/include/msg_generate/udp_order.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating C++ code from msg_generate/udp_order.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating C++ code from msg_generate/udp_order.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/udp_helper_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/udp_helper_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg
+/home/robit/catkin_ws/devel/include/msg_generate/udp_helper_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating C++ code from msg_generate/udp_helper_msg.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/tune2walk.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/tune2walk.h: /home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg
 /home/robit/catkin_ws/devel/include/msg_generate/tune2walk.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating C++ code from msg_generate/tune2walk.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating C++ code from msg_generate/tune2walk.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating C++ code from msg_generate/Motor_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating C++ code from msg_generate/Motor_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/robocupcontroller.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/robocupcontroller.h: /home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg
 /home/robit/catkin_ws/devel/include/msg_generate/robocupcontroller.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating C++ code from msg_generate/robocupcontroller.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating C++ code from msg_generate/robocupcontroller.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/udp_kicker_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/udp_kicker_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg
+/home/robit/catkin_ws/devel/include/msg_generate/udp_kicker_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating C++ code from msg_generate/udp_kicker_msg.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/walk_pattern.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/walk_pattern.h: /home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg
 /home/robit/catkin_ws/devel/include/msg_generate/walk_pattern.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating C++ code from msg_generate/walk_pattern.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating C++ code from msg_generate/walk_pattern.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h: /home/robit/catkin_ws/src/msg_generate/msg/master2localization23.msg
 /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating C++ code from msg_generate/master2localization23.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating C++ code from msg_generate/master2localization23.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master2localization23.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/motion_stop.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/motion_stop.h: /home/robit/catkin_ws/src/msg_generate/msg/motion_stop.msg
 /home/robit/catkin_ws/devel/include/msg_generate/motion_stop.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating C++ code from msg_generate/motion_stop.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating C++ code from msg_generate/motion_stop.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/motion_stop.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/game_control_return_data.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/game_control_return_data.h: /home/robit/catkin_ws/src/msg_generate/msg/game_control_return_data.msg
 /home/robit/catkin_ws/devel/include/msg_generate/game_control_return_data.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating C++ code from msg_generate/game_control_return_data.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating C++ code from msg_generate/game_control_return_data.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/game_control_return_data.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/yaw_set.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/yaw_set.h: /home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg
 /home/robit/catkin_ws/devel/include/msg_generate/yaw_set.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating C++ code from msg_generate/yaw_set.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating C++ code from msg_generate/yaw_set.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/ik_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating C++ code from msg_generate/ik_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating C++ code from msg_generate/ik_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/ik_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/eom_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/eom_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/eom_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating C++ code from msg_generate/eom_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating C++ code from msg_generate/eom_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/scv_vision.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/scv_vision.h: /home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg
 /home/robit/catkin_ws/devel/include/msg_generate/scv_vision.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating C++ code from msg_generate/scv_vision.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Generating C++ code from msg_generate/scv_vision.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h: /home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg
+/home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Generating C++ code from msg_generate/Motor_msg_pt.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/Motion_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/Motion_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/Motion_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/Motion_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating C++ code from msg_generate/Motion_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Generating C++ code from msg_generate/Motion_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating C++ code from msg_generate/robocup_vision23_feature.msg"
-	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24_obstacle.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24_obstacle.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24_obstacle.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Generating C++ code from msg_generate/robocup_localization24_obstacle.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/zmp_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/zmp_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/zmp_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating C++ code from msg_generate/zmp_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Generating C++ code from msg_generate/zmp_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/R_LC_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/R_LC_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/R_LC_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating C++ code from msg_generate/R_LC_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Generating C++ code from msg_generate/R_LC_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/position_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/position_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/position_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating C++ code from msg_generate/position_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Generating C++ code from msg_generate/position_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h: /home/robit/catkin_ws/src/msg_generate/msg/motion_end.msg
 /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating C++ code from msg_generate/motion_end.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Generating C++ code from msg_generate/motion_end.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/motion_end.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h: /home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Generating C++ code from msg_generate/master2localization24.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h: /home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Generating C++ code from msg_generate/master_2_robocup_vision23.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg
 /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating C++ code from msg_generate/robocup_vision23.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Generating C++ code from msg_generate/robocup_vision23.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Generating C++ code from msg_generate/ikend_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Generating C++ code from msg_generate/ikend_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
+/home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h: /home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg
+/home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Generating C++ code from msg_generate/ik_angle_sim.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Generating C++ code from msg_generate/localv2_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Generating C++ code from msg_generate/localv2_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/master2vision_msg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/master2vision_msg.h: /home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg
 /home/robit/catkin_ws/devel/include/msg_generate/master2vision_msg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Generating C++ code from msg_generate/master2vision_msg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Generating C++ code from msg_generate/master2vision_msg.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg
 /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Generating C++ code from msg_generate/robocup_localization23.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Generating C++ code from msg_generate/robocup_localization23.msg"
 	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h: /home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg
+/home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robit/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Generating C++ code from msg_generate/robocup24_master2udp.msg"
+	cd /home/robit/catkin_ws/src/msg_generate && /home/robit/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg -Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p msg_generate -o /home/robit/catkin_ws/devel/include/msg_generate -e /opt/ros/melodic/share/gencpp/cmake/..
+
 msg_generate_generate_messages_cpp: msg_generate/CMakeFiles/msg_generate_generate_messages_cpp
-msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2localization23_technical_obstacle.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24_feature.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ikcoordinate_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
-msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/kuro_cotton_candy.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/pan_tilt_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Step_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/game_control_data.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/localization_msg.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Mt2Serial_msg.h
-msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/support_onestep_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/com_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Landing_Time_Control.h
-msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Kicker.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_balance.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_msg.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/HSV.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/wheel_msg.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_msg_TC_Helper.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/angle2.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/L_LC_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Serial2LC_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocupvision.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_operator_data.h
-msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/obsnavi.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/serial_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_order.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_helper_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/tune2walk.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocupcontroller.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/udp_kicker_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/walk_pattern.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_stop.h
@@ -438,17 +537,22 @@ msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_gene
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ik_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/eom_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/scv_vision.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motor_msg_pt.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/Motion_msg.h
-msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23_feature.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24_obstacle.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/zmp_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/R_LC_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/position_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/ik_angle_sim.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/master2vision_msg.h
 msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
+msg_generate_generate_messages_cpp: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 msg_generate_generate_messages_cpp: msg_generate/CMakeFiles/msg_generate_generate_messages_cpp.dir/build.make
 
 .PHONY : msg_generate_generate_messages_cpp

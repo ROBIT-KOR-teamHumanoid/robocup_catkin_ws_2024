@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "msg_generate: 49 messages, 0 services")
+message(STATUS "msg_generate: 62 messages, 0 services")
 
 set(MSG_I_FLAGS "-Imsg_generate:/home/robit/catkin_ws/src/msg_generate/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg" ""
 )
 
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" ""
+)
+
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" ""
@@ -32,14 +37,9 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" ""
-)
-
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
-add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pan_tilt_msg.msg" NAME_WE)
@@ -57,6 +57,11 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg" ""
 )
 
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" ""
+)
+
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" ""
@@ -67,9 +72,9 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg" NAME_WE)
@@ -87,9 +92,14 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg" NAME_WE)
@@ -100,6 +110,11 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg" NAME_WE)
@@ -137,9 +152,19 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" NAME_WE)
@@ -147,9 +172,19 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" ""
 )
 
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" "msg_generate/Step_msg"
+)
+
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" NAME_WE)
@@ -157,14 +192,24 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg" NAME_WE)
@@ -192,9 +237,9 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg" NAME_WE)
@@ -207,9 +252,14 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" "msg_generate/Step_msg"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg" NAME_WE)
@@ -227,14 +277,19 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg" NAME_WE)
@@ -247,19 +302,29 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg" ""
 )
 
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" ""
+)
+
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" ""
 )
 
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" ""
 )
 
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" NAME_WE)
 add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" ""
+)
+
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" NAME_WE)
+add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msg_generate" "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" ""
 )
 
 #
@@ -269,7 +334,13 @@ add_custom_target(_msg_generate_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -282,12 +353,6 @@ _generate_msg_cpp(msg_generate
 )
 _generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
-)
-_generate_msg_cpp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -323,13 +388,19 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -353,7 +424,13 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -371,7 +448,19 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -413,7 +502,13 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -425,7 +520,19 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -444,6 +551,12 @@ _generate_msg_cpp(msg_generate
 )
 _generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -497,13 +610,19 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg"
   "${MSG_I_FLAGS}"
   "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -533,6 +652,18 @@ _generate_msg_cpp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -540,6 +671,12 @@ _generate_msg_cpp(msg_generate
 )
 _generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -558,6 +695,12 @@ _generate_msg_cpp(msg_generate
 )
 _generate_msg_cpp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_cpp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msg_generate
@@ -579,13 +722,13 @@ add_dependencies(msg_generate_generate_messages msg_generate_generate_messages_c
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" NAME_WE)
-add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pan_tilt_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
@@ -593,11 +736,13 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
@@ -605,11 +750,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/com
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
@@ -625,17 +774,29 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Ser
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
@@ -647,13 +808,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/gam
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
@@ -661,19 +824,25 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_cpp _msg_generate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -686,7 +855,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msg_generate_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -699,12 +874,6 @@ _generate_msg_eus(msg_generate
 )
 _generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
-)
-_generate_msg_eus(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -740,13 +909,19 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -770,7 +945,13 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -788,7 +969,19 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -830,7 +1023,13 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -842,7 +1041,19 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -861,6 +1072,12 @@ _generate_msg_eus(msg_generate
 )
 _generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -914,13 +1131,19 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg"
   "${MSG_I_FLAGS}"
   "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -950,6 +1173,18 @@ _generate_msg_eus(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
 )
 _generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -957,6 +1192,12 @@ _generate_msg_eus(msg_generate
 )
 _generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -975,6 +1216,12 @@ _generate_msg_eus(msg_generate
 )
 _generate_msg_eus(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
+)
+_generate_msg_eus(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msg_generate
@@ -996,13 +1243,13 @@ add_dependencies(msg_generate_generate_messages msg_generate_generate_messages_e
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" NAME_WE)
-add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pan_tilt_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
@@ -1010,11 +1257,13 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
@@ -1022,11 +1271,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/com
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
@@ -1042,17 +1295,29 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Ser
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
@@ -1064,13 +1329,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/gam
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
@@ -1078,19 +1345,25 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_eus _msg_generate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1103,7 +1376,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msg_generate_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1116,12 +1395,6 @@ _generate_msg_lisp(msg_generate
 )
 _generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
-)
-_generate_msg_lisp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1157,13 +1430,19 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1187,7 +1466,13 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1205,7 +1490,19 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1247,7 +1544,13 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1259,7 +1562,19 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1278,6 +1593,12 @@ _generate_msg_lisp(msg_generate
 )
 _generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1331,13 +1652,19 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg"
   "${MSG_I_FLAGS}"
   "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1367,6 +1694,18 @@ _generate_msg_lisp(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
 )
 _generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -1374,6 +1713,12 @@ _generate_msg_lisp(msg_generate
 )
 _generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1392,6 +1737,12 @@ _generate_msg_lisp(msg_generate
 )
 _generate_msg_lisp(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
+)
+_generate_msg_lisp(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msg_generate
@@ -1413,13 +1764,13 @@ add_dependencies(msg_generate_generate_messages msg_generate_generate_messages_l
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" NAME_WE)
-add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pan_tilt_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
@@ -1427,11 +1778,13 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
@@ -1439,11 +1792,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/com
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
@@ -1459,17 +1816,29 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Ser
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
@@ -1481,13 +1850,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/gam
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
@@ -1495,19 +1866,25 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_lisp _msg_generate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1520,7 +1897,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msg_generate_generate_messages_lisp
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1533,12 +1916,6 @@ _generate_msg_nodejs(msg_generate
 )
 _generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
-)
-_generate_msg_nodejs(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1574,13 +1951,19 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1604,7 +1987,13 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1622,7 +2011,19 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1664,7 +2065,13 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1676,7 +2083,19 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1695,6 +2114,12 @@ _generate_msg_nodejs(msg_generate
 )
 _generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1748,13 +2173,19 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg"
   "${MSG_I_FLAGS}"
   "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1784,6 +2215,18 @@ _generate_msg_nodejs(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
 )
 _generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -1791,6 +2234,12 @@ _generate_msg_nodejs(msg_generate
 )
 _generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1809,6 +2258,12 @@ _generate_msg_nodejs(msg_generate
 )
 _generate_msg_nodejs(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
+)
+_generate_msg_nodejs(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msg_generate
@@ -1830,13 +2285,13 @@ add_dependencies(msg_generate_generate_messages msg_generate_generate_messages_n
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" NAME_WE)
-add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pan_tilt_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
@@ -1844,11 +2299,13 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
@@ -1856,11 +2313,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/com
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
@@ -1876,17 +2337,29 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Ser
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
@@ -1898,13 +2371,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/gam
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
@@ -1912,19 +2387,25 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_nodejs _msg_generate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1937,7 +2418,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msg_generate_generate_messages_node
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -1950,12 +2437,6 @@ _generate_msg_py(msg_generate
 )
 _generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
-)
-_generate_msg_py(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -1991,13 +2472,19 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2021,7 +2508,13 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2039,7 +2532,19 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2081,7 +2586,13 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2093,7 +2604,19 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2112,6 +2635,12 @@ _generate_msg_py(msg_generate
 )
 _generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2165,13 +2694,19 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg"
   "${MSG_I_FLAGS}"
   "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
-  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg"
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2201,6 +2736,18 @@ _generate_msg_py(msg_generate
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
 _generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -2208,6 +2755,12 @@ _generate_msg_py(msg_generate
 )
 _generate_msg_py(msg_generate
   "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
@@ -2230,6 +2783,12 @@ _generate_msg_py(msg_generate
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
 )
+_generate_msg_py(msg_generate
+  "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msg_generate
+)
 
 ### Generating Services
 
@@ -2247,13 +2806,13 @@ add_dependencies(msg_generate_generate_messages msg_generate_generate_messages_p
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24_feature.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikcoordinate_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/imu_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup23_master2udp.msg" NAME_WE)
-add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization23_technical_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pan_tilt_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
@@ -2261,11 +2820,13 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localization_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision24.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Mt2Serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/R_LC_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master_2_robocup_vision24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/support_onestep_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
@@ -2273,11 +2834,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/com
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Landing_Time_Control.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Kicker.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/motion_balance.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/wheel_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
@@ -2293,17 +2858,29 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Ser
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupvision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/kuro_cotton_candy.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/obsnavi.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/serial_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/pid_tuning.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_order.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_helper_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/tune2walk.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/HSV.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocupcontroller.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/walk_pattern.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
@@ -2315,13 +2892,15 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/gam
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/yaw_set.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Step_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/eom_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/scv_vision.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motion_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/Motor_msg_pt.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_msg_TC_Helper.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23_feature.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
@@ -2329,19 +2908,25 @@ get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/mot
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/zmp_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/position_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization24_obstacle.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/game_control_data.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2localization24.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_vision23.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ikend_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/ik_angle_sim.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/localv2_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/master2vision_msg.msg" NAME_WE)
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/udp_kicker_msg.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup_localization23.msg" NAME_WE)
+add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/robit/catkin_ws/src/msg_generate/msg/robocup24_master2udp.msg" NAME_WE)
 add_dependencies(msg_generate_generate_messages_py _msg_generate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

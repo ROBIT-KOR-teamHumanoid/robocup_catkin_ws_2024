@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: robocup_localization24
+Description: Description of robocup_localization24
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

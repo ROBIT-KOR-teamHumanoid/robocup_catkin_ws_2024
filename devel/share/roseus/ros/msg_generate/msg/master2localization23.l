@@ -14,7 +14,7 @@
 
 (defclass msg_generate::master2localization23
   :super ros::object
-  :slots (_goal_x _goal_y _target_x _target_y _robot_allowance_error _robot_cali_radius ))
+  :slots (_goal_x _goal_y _target_x _target_y _robot_allowance_error _robot_cali_radius _mf_robot_x _mf_robot_y _mf_ball_x _mf_ball_y ))
 
 (defmethod msg_generate::master2localization23
   (:init
@@ -25,6 +25,10 @@
     ((:target_y __target_y) 0)
     ((:robot_allowance_error __robot_allowance_error) 0)
     ((:robot_cali_radius __robot_cali_radius) 0)
+    ((:mf_robot_x __mf_robot_x) 0)
+    ((:mf_robot_y __mf_robot_y) 0)
+    ((:mf_ball_x __mf_ball_x) 0)
+    ((:mf_ball_y __mf_ball_y) 0)
     )
    (send-super :init)
    (setq _goal_x (round __goal_x))
@@ -33,6 +37,10 @@
    (setq _target_y (round __target_y))
    (setq _robot_allowance_error (round __robot_allowance_error))
    (setq _robot_cali_radius (round __robot_cali_radius))
+   (setq _mf_robot_x (round __mf_robot_x))
+   (setq _mf_robot_y (round __mf_robot_y))
+   (setq _mf_ball_x (round __mf_ball_x))
+   (setq _mf_ball_y (round __mf_ball_y))
    self)
   (:goal_x
    (&optional __goal_x)
@@ -52,6 +60,18 @@
   (:robot_cali_radius
    (&optional __robot_cali_radius)
    (if __robot_cali_radius (setq _robot_cali_radius __robot_cali_radius)) _robot_cali_radius)
+  (:mf_robot_x
+   (&optional __mf_robot_x)
+   (if __mf_robot_x (setq _mf_robot_x __mf_robot_x)) _mf_robot_x)
+  (:mf_robot_y
+   (&optional __mf_robot_y)
+   (if __mf_robot_y (setq _mf_robot_y __mf_robot_y)) _mf_robot_y)
+  (:mf_ball_x
+   (&optional __mf_ball_x)
+   (if __mf_ball_x (setq _mf_ball_x __mf_ball_x)) _mf_ball_x)
+  (:mf_ball_y
+   (&optional __mf_ball_y)
+   (if __mf_ball_y (setq _mf_ball_y __mf_ball_y)) _mf_ball_y)
   (:serialization-length
    ()
    (+
@@ -66,6 +86,14 @@
     ;; int64 _robot_allowance_error
     8
     ;; int64 _robot_cali_radius
+    8
+    ;; int64 _mf_robot_x
+    8
+    ;; int64 _mf_robot_y
+    8
+    ;; int64 _mf_ball_x
+    8
+    ;; int64 _mf_ball_y
     8
     ))
   (:serialize
@@ -144,6 +172,54 @@
               (write-long (if (>= _robot_cali_radius 0) 0 #xffffffff) s))
              (t                                         ;; integer
               (write-long _robot_cali_radius s)(write-long (if (>= _robot_cali_radius 0) 0 #xffffffff) s)))
+     ;; int64 _mf_robot_x
+#+(or :alpha :irix6 :x86_64)
+       (progn (sys::poke _mf_robot_x (send s :buffer) (send s :count) :long) (incf (stream-count s) 8))
+#-(or :alpha :irix6 :x86_64)
+       (cond ((and (class _mf_robot_x) (= (length (_mf_robot_x . bv)) 2)) ;; bignum
+              (write-long (ash (elt (_mf_robot_x . bv) 0) 0) s)
+              (write-long (ash (elt (_mf_robot_x . bv) 1) -1) s))
+             ((and (class _mf_robot_x) (= (length (_mf_robot_x . bv)) 1)) ;; big1
+              (write-long (elt (_mf_robot_x . bv) 0) s)
+              (write-long (if (>= _mf_robot_x 0) 0 #xffffffff) s))
+             (t                                         ;; integer
+              (write-long _mf_robot_x s)(write-long (if (>= _mf_robot_x 0) 0 #xffffffff) s)))
+     ;; int64 _mf_robot_y
+#+(or :alpha :irix6 :x86_64)
+       (progn (sys::poke _mf_robot_y (send s :buffer) (send s :count) :long) (incf (stream-count s) 8))
+#-(or :alpha :irix6 :x86_64)
+       (cond ((and (class _mf_robot_y) (= (length (_mf_robot_y . bv)) 2)) ;; bignum
+              (write-long (ash (elt (_mf_robot_y . bv) 0) 0) s)
+              (write-long (ash (elt (_mf_robot_y . bv) 1) -1) s))
+             ((and (class _mf_robot_y) (= (length (_mf_robot_y . bv)) 1)) ;; big1
+              (write-long (elt (_mf_robot_y . bv) 0) s)
+              (write-long (if (>= _mf_robot_y 0) 0 #xffffffff) s))
+             (t                                         ;; integer
+              (write-long _mf_robot_y s)(write-long (if (>= _mf_robot_y 0) 0 #xffffffff) s)))
+     ;; int64 _mf_ball_x
+#+(or :alpha :irix6 :x86_64)
+       (progn (sys::poke _mf_ball_x (send s :buffer) (send s :count) :long) (incf (stream-count s) 8))
+#-(or :alpha :irix6 :x86_64)
+       (cond ((and (class _mf_ball_x) (= (length (_mf_ball_x . bv)) 2)) ;; bignum
+              (write-long (ash (elt (_mf_ball_x . bv) 0) 0) s)
+              (write-long (ash (elt (_mf_ball_x . bv) 1) -1) s))
+             ((and (class _mf_ball_x) (= (length (_mf_ball_x . bv)) 1)) ;; big1
+              (write-long (elt (_mf_ball_x . bv) 0) s)
+              (write-long (if (>= _mf_ball_x 0) 0 #xffffffff) s))
+             (t                                         ;; integer
+              (write-long _mf_ball_x s)(write-long (if (>= _mf_ball_x 0) 0 #xffffffff) s)))
+     ;; int64 _mf_ball_y
+#+(or :alpha :irix6 :x86_64)
+       (progn (sys::poke _mf_ball_y (send s :buffer) (send s :count) :long) (incf (stream-count s) 8))
+#-(or :alpha :irix6 :x86_64)
+       (cond ((and (class _mf_ball_y) (= (length (_mf_ball_y . bv)) 2)) ;; bignum
+              (write-long (ash (elt (_mf_ball_y . bv) 0) 0) s)
+              (write-long (ash (elt (_mf_ball_y . bv) 1) -1) s))
+             ((and (class _mf_ball_y) (= (length (_mf_ball_y . bv)) 1)) ;; big1
+              (write-long (elt (_mf_ball_y . bv) 0) s)
+              (write-long (if (>= _mf_ball_y 0) 0 #xffffffff) s))
+             (t                                         ;; integer
+              (write-long _mf_ball_y s)(write-long (if (>= _mf_ball_y 0) 0 #xffffffff) s)))
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -220,11 +296,59 @@
                       b0)
                     ((= b1  0) (make-instance bignum :size 1 :bv (integer-vector b0)))
                     (t (make-instance bignum :size 2 :bv (integer-vector b0 (ash b1 1)))))))
+   ;; int64 _mf_robot_x
+#+(or :alpha :irix6 :x86_64)
+      (setf _mf_robot_x (prog1 (sys::peek buf ptr- :long) (incf ptr- 8)))
+#-(or :alpha :irix6 :x86_64)
+      (setf _mf_robot_x (let ((b0 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4)))
+                  (b1 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4))))
+              (cond ((= b1 -1) b0)
+                     ((and (= b1  0)
+                           (<= lisp::most-negative-fixnum b0 lisp::most-positive-fixnum))
+                      b0)
+                    ((= b1  0) (make-instance bignum :size 1 :bv (integer-vector b0)))
+                    (t (make-instance bignum :size 2 :bv (integer-vector b0 (ash b1 1)))))))
+   ;; int64 _mf_robot_y
+#+(or :alpha :irix6 :x86_64)
+      (setf _mf_robot_y (prog1 (sys::peek buf ptr- :long) (incf ptr- 8)))
+#-(or :alpha :irix6 :x86_64)
+      (setf _mf_robot_y (let ((b0 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4)))
+                  (b1 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4))))
+              (cond ((= b1 -1) b0)
+                     ((and (= b1  0)
+                           (<= lisp::most-negative-fixnum b0 lisp::most-positive-fixnum))
+                      b0)
+                    ((= b1  0) (make-instance bignum :size 1 :bv (integer-vector b0)))
+                    (t (make-instance bignum :size 2 :bv (integer-vector b0 (ash b1 1)))))))
+   ;; int64 _mf_ball_x
+#+(or :alpha :irix6 :x86_64)
+      (setf _mf_ball_x (prog1 (sys::peek buf ptr- :long) (incf ptr- 8)))
+#-(or :alpha :irix6 :x86_64)
+      (setf _mf_ball_x (let ((b0 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4)))
+                  (b1 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4))))
+              (cond ((= b1 -1) b0)
+                     ((and (= b1  0)
+                           (<= lisp::most-negative-fixnum b0 lisp::most-positive-fixnum))
+                      b0)
+                    ((= b1  0) (make-instance bignum :size 1 :bv (integer-vector b0)))
+                    (t (make-instance bignum :size 2 :bv (integer-vector b0 (ash b1 1)))))))
+   ;; int64 _mf_ball_y
+#+(or :alpha :irix6 :x86_64)
+      (setf _mf_ball_y (prog1 (sys::peek buf ptr- :long) (incf ptr- 8)))
+#-(or :alpha :irix6 :x86_64)
+      (setf _mf_ball_y (let ((b0 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4)))
+                  (b1 (prog1 (sys::peek buf ptr- :integer) (incf ptr- 4))))
+              (cond ((= b1 -1) b0)
+                     ((and (= b1  0)
+                           (<= lisp::most-negative-fixnum b0 lisp::most-positive-fixnum))
+                      b0)
+                    ((= b1  0) (make-instance bignum :size 1 :bv (integer-vector b0)))
+                    (t (make-instance bignum :size 2 :bv (integer-vector b0 (ash b1 1)))))))
    ;;
    self)
   )
 
-(setf (get msg_generate::master2localization23 :md5sum-) "327d5f269dd6e3ee84371d4f5cf9b95e")
+(setf (get msg_generate::master2localization23 :md5sum-) "be324128966108ecba95dfb7b6938f0f")
 (setf (get msg_generate::master2localization23 :datatype-) "msg_generate/master2localization23")
 (setf (get msg_generate::master2localization23 :definition-)
       "int64 goal_x
@@ -233,11 +357,15 @@ int64 target_x
 int64 target_y
 int64 robot_allowance_error
 int64 robot_cali_radius
+int64 mf_robot_x
+int64 mf_robot_y
+int64 mf_ball_x
+int64 mf_ball_y
 
 ")
 
 
 
-(provide :msg_generate/master2localization23 "327d5f269dd6e3ee84371d4f5cf9b95e")
+(provide :msg_generate/master2localization23 "be324128966108ecba95dfb7b6938f0f")
 
 

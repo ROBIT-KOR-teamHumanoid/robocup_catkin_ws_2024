@@ -33,6 +33,8 @@ struct robocup_vision23_
     , TILT(0.0)
     , Ball_speed_X(0.0)
     , Ball_speed_Y(0.0)
+    , Robot_2d_X(0.0)
+    , Robot_2d_Y(0.0)
     , ROBOT_VEC_X()
     , ROBOT_VEC_Y()
     , Ball_speed_level(0)
@@ -48,6 +50,8 @@ struct robocup_vision23_
     , TILT(0.0)
     , Ball_speed_X(0.0)
     , Ball_speed_Y(0.0)
+    , Robot_2d_X(0.0)
+    , Robot_2d_Y(0.0)
     , ROBOT_VEC_X(_alloc)
     , ROBOT_VEC_Y(_alloc)
     , Ball_speed_level(0)
@@ -83,6 +87,12 @@ struct robocup_vision23_
 
    typedef double _Ball_speed_Y_type;
   _Ball_speed_Y_type Ball_speed_Y;
+
+   typedef double _Robot_2d_X_type;
+  _Robot_2d_X_type Robot_2d_X;
+
+   typedef double _Robot_2d_Y_type;
+  _Robot_2d_Y_type Robot_2d_Y;
 
    typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _ROBOT_VEC_X_type;
   _ROBOT_VEC_X_type ROBOT_VEC_X;
@@ -134,6 +144,8 @@ bool operator==(const ::msg_generate::robocup_vision23_<ContainerAllocator1> & l
     lhs.TILT == rhs.TILT &&
     lhs.Ball_speed_X == rhs.Ball_speed_X &&
     lhs.Ball_speed_Y == rhs.Ball_speed_Y &&
+    lhs.Robot_2d_X == rhs.Robot_2d_X &&
+    lhs.Robot_2d_Y == rhs.Robot_2d_Y &&
     lhs.ROBOT_VEC_X == rhs.ROBOT_VEC_X &&
     lhs.ROBOT_VEC_Y == rhs.ROBOT_VEC_Y &&
     lhs.Ball_speed_level == rhs.Ball_speed_level &&
@@ -194,12 +206,12 @@ struct MD5Sum< ::msg_generate::robocup_vision23_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "e7c23af0ec42fde2be9393d1f1e88db0";
+    return "bbd6c2605c09df8b25874d0d14f93108";
   }
 
   static const char* value(const ::msg_generate::robocup_vision23_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xe7c23af0ec42fde2ULL;
-  static const uint64_t static_value2 = 0xbe9393d1f1e88db0ULL;
+  static const uint64_t static_value1 = 0xbbd6c2605c09df8bULL;
+  static const uint64_t static_value2 = 0x25874d0d14f93108ULL;
 };
 
 template<class ContainerAllocator>
@@ -227,10 +239,13 @@ struct Definition< ::msg_generate::robocup_vision23_<ContainerAllocator> >
 "float64 TILT\n"
 "float64 Ball_speed_X\n"
 "float64 Ball_speed_Y\n"
+"float64 Robot_2d_X\n"
+"float64 Robot_2d_Y\n"
 "float64[] ROBOT_VEC_X\n"
 "float64[] ROBOT_VEC_Y\n"
 "int64 Ball_speed_level\n"
 "int64 Scan_mode\n"
+"\n"
 ;
   }
 
@@ -258,6 +273,8 @@ namespace serialization
       stream.next(m.TILT);
       stream.next(m.Ball_speed_X);
       stream.next(m.Ball_speed_Y);
+      stream.next(m.Robot_2d_X);
+      stream.next(m.Robot_2d_Y);
       stream.next(m.ROBOT_VEC_X);
       stream.next(m.ROBOT_VEC_Y);
       stream.next(m.Ball_speed_level);
@@ -298,6 +315,10 @@ struct Printer< ::msg_generate::robocup_vision23_<ContainerAllocator> >
     Printer<double>::stream(s, indent + "  ", v.Ball_speed_X);
     s << indent << "Ball_speed_Y: ";
     Printer<double>::stream(s, indent + "  ", v.Ball_speed_Y);
+    s << indent << "Robot_2d_X: ";
+    Printer<double>::stream(s, indent + "  ", v.Robot_2d_X);
+    s << indent << "Robot_2d_Y: ";
+    Printer<double>::stream(s, indent + "  ", v.Robot_2d_Y);
     s << indent << "ROBOT_VEC_X[]" << std::endl;
     for (size_t i = 0; i < v.ROBOT_VEC_X.size(); ++i)
     {

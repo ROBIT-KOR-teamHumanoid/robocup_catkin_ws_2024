@@ -37,6 +37,16 @@
     :initarg :Robot_Y
     :type cl:float
     :initform 0.0)
+   (Obstacle_X
+    :reader Obstacle_X
+    :initarg :Obstacle_X
+    :type cl:float
+    :initform 0.0)
+   (Obstacle_Y
+    :reader Obstacle_Y
+    :initarg :Obstacle_Y
+    :type cl:float
+    :initform 0.0)
    (Obstacle0_X
     :reader Obstacle0_X
     :initarg :Obstacle0_X
@@ -116,6 +126,16 @@
 (cl:defmethod Robot_Y-val ((m <robocup_localization23>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader msg_generate-msg:Robot_Y-val is deprecated.  Use msg_generate-msg:Robot_Y instead.")
   (Robot_Y m))
+
+(cl:ensure-generic-function 'Obstacle_X-val :lambda-list '(m))
+(cl:defmethod Obstacle_X-val ((m <robocup_localization23>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader msg_generate-msg:Obstacle_X-val is deprecated.  Use msg_generate-msg:Obstacle_X instead.")
+  (Obstacle_X m))
+
+(cl:ensure-generic-function 'Obstacle_Y-val :lambda-list '(m))
+(cl:defmethod Obstacle_Y-val ((m <robocup_localization23>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader msg_generate-msg:Obstacle_Y-val is deprecated.  Use msg_generate-msg:Obstacle_Y instead.")
+  (Obstacle_Y m))
 
 (cl:ensure-generic-function 'Obstacle0_X-val :lambda-list '(m))
 (cl:defmethod Obstacle0_X-val ((m <robocup_localization23>))
@@ -204,6 +224,24 @@
     (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
   (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'Robot_Y))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+  (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'Obstacle_X))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+  (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'Obstacle_Y))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
@@ -356,6 +394,26 @@
       (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'Obstacle_X) (roslisp-utils:decode-double-float-bits bits)))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'Obstacle_Y) (roslisp-utils:decode-double-float-bits bits)))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
     (cl:setf (cl:slot-value msg 'Obstacle0_X) (roslisp-utils:decode-double-float-bits bits)))
     (cl:let ((bits 0))
       (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
@@ -437,18 +495,20 @@
   "msg_generate/robocup_localization23")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<robocup_localization23>)))
   "Returns md5sum for a message object of type '<robocup_localization23>"
-  "2b8377baa9d999eda3c851f4b34ed1a5")
+  "8ee6effd3d721320075c4ac44f4b0bfe")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'robocup_localization23)))
   "Returns md5sum for a message object of type 'robocup_localization23"
-  "2b8377baa9d999eda3c851f4b34ed1a5")
+  "8ee6effd3d721320075c4ac44f4b0bfe")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<robocup_localization23>)))
   "Returns full string definition for message of type '<robocup_localization23>"
-  (cl:format cl:nil "float64 Ball_X~%float64 Ball_Y~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64 Robot_X~%float64 Robot_Y~%float64 Obstacle0_X~%float64 Obstacle0_Y~%float64 Obstacle1_X~%float64 Obstacle1_Y~%float64 Obstacle2_X~%float64 Obstacle2_Y~%float64 Obstacle3_X~%float64 Obstacle3_Y~%~%~%"))
+  (cl:format cl:nil "float64 Ball_X~%float64 Ball_Y~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64 Robot_X~%float64 Robot_Y~%float64 Obstacle_X~%float64 Obstacle_Y~%~%~%~%float64 Obstacle0_X~%float64 Obstacle0_Y~%float64 Obstacle1_X~%float64 Obstacle1_Y~%float64 Obstacle2_X~%float64 Obstacle2_Y~%float64 Obstacle3_X~%float64 Obstacle3_Y~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'robocup_localization23)))
   "Returns full string definition for message of type 'robocup_localization23"
-  (cl:format cl:nil "float64 Ball_X~%float64 Ball_Y~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64 Robot_X~%float64 Robot_Y~%float64 Obstacle0_X~%float64 Obstacle0_Y~%float64 Obstacle1_X~%float64 Obstacle1_Y~%float64 Obstacle2_X~%float64 Obstacle2_Y~%float64 Obstacle3_X~%float64 Obstacle3_Y~%~%~%"))
+  (cl:format cl:nil "float64 Ball_X~%float64 Ball_Y~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64 Robot_X~%float64 Robot_Y~%float64 Obstacle_X~%float64 Obstacle_Y~%~%~%~%float64 Obstacle0_X~%float64 Obstacle0_Y~%float64 Obstacle1_X~%float64 Obstacle1_Y~%float64 Obstacle2_X~%float64 Obstacle2_Y~%float64 Obstacle3_X~%float64 Obstacle3_Y~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <robocup_localization23>))
   (cl:+ 0
+     8
+     8
      8
      8
      8
@@ -473,6 +533,8 @@
     (cl:cons ':Ball_speed_Y (Ball_speed_Y msg))
     (cl:cons ':Robot_X (Robot_X msg))
     (cl:cons ':Robot_Y (Robot_Y msg))
+    (cl:cons ':Obstacle_X (Obstacle_X msg))
+    (cl:cons ':Obstacle_Y (Obstacle_Y msg))
     (cl:cons ':Obstacle0_X (Obstacle0_X msg))
     (cl:cons ':Obstacle0_Y (Obstacle0_Y msg))
     (cl:cons ':Obstacle1_X (Obstacle1_X msg))

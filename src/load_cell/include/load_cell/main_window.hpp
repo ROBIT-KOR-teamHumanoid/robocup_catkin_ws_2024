@@ -12,7 +12,7 @@
 ** Includes
 *****************************************************************************/
 
-#include "/home/robit/catkin_ws/src/robot_config.h"
+//#include "/home/robit/catkin_ws/src/robot_config.h"
 
 #include <QtGui/QMainWindow>
 #include "ui_main_window.h"

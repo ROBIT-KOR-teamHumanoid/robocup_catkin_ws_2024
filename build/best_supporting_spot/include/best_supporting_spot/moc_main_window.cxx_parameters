@@ -1,3 +1,4 @@
+-I/home/robit/catkin_ws/src/best_supporting_spot/include
 -I/home/robit/catkin_ws/devel/include
 -I/opt/ros/melodic/include
 -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp

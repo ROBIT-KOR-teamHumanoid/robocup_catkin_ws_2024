@@ -725,8 +725,8 @@ void Player::calcTargetAngle(Point target_coor, Point robot_coor, double robot_y
     double delta_x = target_coor.x() - robot_coor.x();
     double delta_y = -target_coor.y() + robot_coor.y();
 
-    //abs_target_angle = -atan2(delta_x, delta_y);
-    abs_target_angle = -atan2(delta_y,delta_x);
+    abs_target_angle = -atan2(delta_x, delta_y);
+    //abs_target_angle = -atan2(delta_y,delta_x);
     abs_target_angle = abs_target_angle * 180 / PI;
 
     target_angle += abs_target_angle - robot_yaw;
@@ -920,7 +920,7 @@ void Player::kick3()
         }
     }
     const int test = 100;
-    state = test;
+    //state = test;
     switch (state) {
     case test:
     {
@@ -988,14 +988,14 @@ void Player::kick3()
         cout << "delay_cnt: " <<  delay_previous_cnt << endl;
          walkStop();
 
-        const int onesecond = 1000;
+        const int onesecond = 500;
         if(delay_previous_cnt > onesecond)
         {
             delay_previous_cnt = 0;
             state = 2;
       }
-    }
         break;
+    }
     case 2:
         cout << endl << " CALI TO BALL " << endl << endl;
 
@@ -1005,6 +1005,38 @@ void Player::kick3()
         }
 
         break;
+    case 11:
+      {
+      static int delay_previous_cnt2;
+
+      delay_previous_cnt2++;
+      static int check;
+
+      walkStop();
+
+//      if(abs(localBall.x()) > in &&
+//         abs(localBall.x()) < out &&
+//         localBall.y() > back &&
+//         localBall.y() < front)
+//      {
+//        check++;
+
+
+
+//      }
+
+      if(delay_previous_cnt2>500)
+      {
+        delay_previous_cnt2 = 0;
+        state = 2;
+
+      }
+
+
+      break;
+
+    }
+
     case 3:
     {
         cout << endl << " DELAY BEFORE MOTION" << endl << endl;
@@ -1019,7 +1051,7 @@ void Player::kick3()
 
         cout << "cnt_delayBeforeMotion: " << cnt_delayBeforeMotion << endl;
 
-        if(cnt_delayBeforeMotion > 500) { //1s
+        if(cnt_delayBeforeMotion > 500) { //0.5s
             cnt_delayBeforeMotion = 0;
             state = 4;
         }
@@ -1159,7 +1191,7 @@ bool Player::caliToBall(Point goalPoint) //local base
 
     //30~100, 40~120
     const int in = 45; // number2: 15 -> 13 --17
-    const int out = 125;//100; // first: 110 -> 100 -> 110
+    const int out = 110;//100; // first: 110 -> 100 -> 110
     const int back = 60;//40//80  --100
     const int front = 200; // number2: 120 -> 150 //least  116  190
 
@@ -1176,6 +1208,7 @@ bool Player::caliToBall(Point goalPoint) //local base
 //        return true;
 //    }
 
+    //d오른발 정렬
     if(abs(localBall.x()) > in &&
        abs(localBall.x()) < out &&
        localBall.y() > back &&
@@ -1189,7 +1222,12 @@ bool Player::caliToBall(Point goalPoint) //local base
     int x = 0;
 
     //전후좌우 보정
-    if(localBall.x() > out)
+    if(abs(localBall.x()) > in &&
+       abs(localBall.x()) < out )
+    {
+          y = 0;
+    }
+    else if(localBall.x() > out)
     {// LEFT
         cout << "OUT: GO LEFT" << endl;
         y = velY;
@@ -1210,6 +1248,8 @@ bool Player::caliToBall(Point goalPoint) //local base
         cout << "IN: GO RIGHT" << endl;
         y = -(velY);
     }
+
+
 
     if(localBall.y() > front)
     {

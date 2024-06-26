@@ -1,8 +1,0 @@
-prefix=/home/robit/catkin_ws/devel
-
-Name: robocup_localization23
-Description: Description of robocup_localization23
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

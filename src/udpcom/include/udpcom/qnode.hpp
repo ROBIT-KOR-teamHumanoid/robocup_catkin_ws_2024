@@ -25,7 +25,7 @@
 #include <QThread>
 #include <QStringListModel>
 
-#include <msg_generate/robocup23_master2udp.h>
+#include <msg_generate/robocup24_master2udp.h>
 #include <msg_generate/localv2_msg.h>
 
 
@@ -75,7 +75,7 @@ private:
     int init_argc;
     char** init_argv;
 
-    void udpDataCallback(const msg_generate::robocup23_master2udp::ConstPtr& msg);
+    void udpDataCallback(const msg_generate::robocup24_master2udp::ConstPtr& msg);
 };
 
 }  // namespace udpcom

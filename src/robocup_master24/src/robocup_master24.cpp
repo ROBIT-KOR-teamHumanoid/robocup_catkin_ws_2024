@@ -28,10 +28,10 @@ bool MasterRcko::init()
 
   //ROS TOPIC=====================================================================
   imuSub          = n.subscribe("imu", 100, &MasterRcko::imuCallback, this);
-  localSub        = n.subscribe("robocup_localization23",100, &MasterRcko::localCallback, this);
-  localPub        = n.advertise<msg_generate::master2localization23>("master2localization23", 100);
-  visionSub       = n.subscribe("robocup_vision23",100, &MasterRcko::visionCallback, this);
-  visionPub       = n.advertise<msg_generate::master_2_robocup_vision23>("master_2_robocup_vision23", 100);
+  localSub        = n.subscribe("robocup_localization24",100, &MasterRcko::localCallback, this);
+  localPub        = n.advertise<msg_generate::master2localization24>("master2localization24", 100);
+  visionSub       = n.subscribe("robocup_vision24",100, &MasterRcko::visionCallback, this);
+  visionPub       = n.advertise<msg_generate::master_2_robocup_vision24>("master_2_robocup_vision24", 100);
   ikSub           = n.subscribe("ikend", 100, &MasterRcko::ikCallback, this);
   ikPub           = n.advertise<msg_generate::ik_msg>("master2ik", 100);
   motionSub       = n.subscribe("motion_end", 100, &MasterRcko::motionCallback, this);
@@ -39,7 +39,7 @@ bool MasterRcko::init()
   udpR1Sub        = n.subscribe("udp_RB1", 100, &MasterRcko::udpCallback, this);
   udpR2Sub        = n.subscribe("udp_RB2", 100, &MasterRcko::udpCallback, this);
   udpR3Sub        = n.subscribe("udp_RB3", 100, &MasterRcko::udpCallback, this);
-  udpPub          = n.advertise<msg_generate::robocup23_master2udp>("robocup23_master2udp", 100);
+  udpPub          = n.advertise<msg_generate::robocup24_master2udp>("robocup24_master2udp", 100);
   gamecontrolSub  = n.subscribe("gamecontroller", 100, &MasterRcko::gameCallback, this);
   pidSub          = n.subscribe("pid", 100, &MasterRcko::pidCallback, this);
 
@@ -103,7 +103,7 @@ void MasterRcko::imuCallback(const msg_generate::imu_msg::ConstPtr &msg)
   imu.yaw             = msg->yaw;
 }
 
-void MasterRcko::localCallback(const msg_generate::robocup_localization23::ConstPtr &msg)
+void MasterRcko::localCallback(const msg_generate::robocup_localization24::ConstPtr &msg)
 {
   local.Ball_X        = msg->Ball_X;
   local.Ball_Y        = msg->Ball_Y;
@@ -123,7 +123,7 @@ void MasterRcko::localCallback(const msg_generate::robocup_localization23::Const
 
 }
 
-void MasterRcko::visionCallback(const msg_generate::robocup_vision23::ConstPtr &msg)
+void MasterRcko::visionCallback(const msg_generate::robocup_vision24::ConstPtr &msg)
 {
   int bias = 0;
 

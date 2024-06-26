@@ -29,7 +29,11 @@ struct master2localization23_
     , target_x(0)
     , target_y(0)
     , robot_allowance_error(0)
-    , robot_cali_radius(0)  {
+    , robot_cali_radius(0)
+    , mf_robot_x(0)
+    , mf_robot_y(0)
+    , mf_ball_x(0)
+    , mf_ball_y(0)  {
     }
   master2localization23_(const ContainerAllocator& _alloc)
     : goal_x(0)
@@ -37,7 +41,11 @@ struct master2localization23_
     , target_x(0)
     , target_y(0)
     , robot_allowance_error(0)
-    , robot_cali_radius(0)  {
+    , robot_cali_radius(0)
+    , mf_robot_x(0)
+    , mf_robot_y(0)
+    , mf_ball_x(0)
+    , mf_ball_y(0)  {
   (void)_alloc;
     }
 
@@ -60,6 +68,18 @@ struct master2localization23_
 
    typedef int64_t _robot_cali_radius_type;
   _robot_cali_radius_type robot_cali_radius;
+
+   typedef int64_t _mf_robot_x_type;
+  _mf_robot_x_type mf_robot_x;
+
+   typedef int64_t _mf_robot_y_type;
+  _mf_robot_y_type mf_robot_y;
+
+   typedef int64_t _mf_ball_x_type;
+  _mf_ball_x_type mf_ball_x;
+
+   typedef int64_t _mf_ball_y_type;
+  _mf_ball_y_type mf_ball_y;
 
 
 
@@ -95,7 +115,11 @@ bool operator==(const ::msg_generate::master2localization23_<ContainerAllocator1
     lhs.target_x == rhs.target_x &&
     lhs.target_y == rhs.target_y &&
     lhs.robot_allowance_error == rhs.robot_allowance_error &&
-    lhs.robot_cali_radius == rhs.robot_cali_radius;
+    lhs.robot_cali_radius == rhs.robot_cali_radius &&
+    lhs.mf_robot_x == rhs.mf_robot_x &&
+    lhs.mf_robot_y == rhs.mf_robot_y &&
+    lhs.mf_ball_x == rhs.mf_ball_x &&
+    lhs.mf_ball_y == rhs.mf_ball_y;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -152,12 +176,12 @@ struct MD5Sum< ::msg_generate::master2localization23_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "327d5f269dd6e3ee84371d4f5cf9b95e";
+    return "be324128966108ecba95dfb7b6938f0f";
   }
 
   static const char* value(const ::msg_generate::master2localization23_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x327d5f269dd6e3eeULL;
-  static const uint64_t static_value2 = 0x84371d4f5cf9b95eULL;
+  static const uint64_t static_value1 = 0xbe324128966108ecULL;
+  static const uint64_t static_value2 = 0xba95dfb7b6938f0fULL;
 };
 
 template<class ContainerAllocator>
@@ -182,6 +206,10 @@ struct Definition< ::msg_generate::master2localization23_<ContainerAllocator> >
 "int64 target_y\n"
 "int64 robot_allowance_error\n"
 "int64 robot_cali_radius\n"
+"int64 mf_robot_x\n"
+"int64 mf_robot_y\n"
+"int64 mf_ball_x\n"
+"int64 mf_ball_y\n"
 ;
   }
 
@@ -206,6 +234,10 @@ namespace serialization
       stream.next(m.target_y);
       stream.next(m.robot_allowance_error);
       stream.next(m.robot_cali_radius);
+      stream.next(m.mf_robot_x);
+      stream.next(m.mf_robot_y);
+      stream.next(m.mf_ball_x);
+      stream.next(m.mf_ball_y);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -236,6 +268,14 @@ struct Printer< ::msg_generate::master2localization23_<ContainerAllocator> >
     Printer<int64_t>::stream(s, indent + "  ", v.robot_allowance_error);
     s << indent << "robot_cali_radius: ";
     Printer<int64_t>::stream(s, indent + "  ", v.robot_cali_radius);
+    s << indent << "mf_robot_x: ";
+    Printer<int64_t>::stream(s, indent + "  ", v.mf_robot_x);
+    s << indent << "mf_robot_y: ";
+    Printer<int64_t>::stream(s, indent + "  ", v.mf_robot_y);
+    s << indent << "mf_ball_x: ";
+    Printer<int64_t>::stream(s, indent + "  ", v.mf_ball_x);
+    s << indent << "mf_ball_y: ";
+    Printer<int64_t>::stream(s, indent + "  ", v.mf_ball_y);
   }
 };
 

@@ -27,13 +27,15 @@ struct robocup_vision23_feature_
     : CONFIDENCE()
     , DISTANCE()
     , POINT_VEC_X()
-    , POINT_VEC_Y()  {
+    , POINT_VEC_Y()
+    , TYPE()  {
     }
   robocup_vision23_feature_(const ContainerAllocator& _alloc)
     : CONFIDENCE(_alloc)
     , DISTANCE(_alloc)
     , POINT_VEC_X(_alloc)
-    , POINT_VEC_Y(_alloc)  {
+    , POINT_VEC_Y(_alloc)
+    , TYPE(_alloc)  {
   (void)_alloc;
     }
 
@@ -50,6 +52,9 @@ struct robocup_vision23_feature_
 
    typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _POINT_VEC_Y_type;
   _POINT_VEC_Y_type POINT_VEC_Y;
+
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _TYPE_type;
+  _TYPE_type TYPE;
 
 
 
@@ -83,7 +88,8 @@ bool operator==(const ::msg_generate::robocup_vision23_feature_<ContainerAllocat
   return lhs.CONFIDENCE == rhs.CONFIDENCE &&
     lhs.DISTANCE == rhs.DISTANCE &&
     lhs.POINT_VEC_X == rhs.POINT_VEC_X &&
-    lhs.POINT_VEC_Y == rhs.POINT_VEC_Y;
+    lhs.POINT_VEC_Y == rhs.POINT_VEC_Y &&
+    lhs.TYPE == rhs.TYPE;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -140,12 +146,12 @@ struct MD5Sum< ::msg_generate::robocup_vision23_feature_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "7e0f9b658b1ed4dec4d2b127040ac40e";
+    return "90f95fdb2af41305af35e1195995ece4";
   }
 
   static const char* value(const ::msg_generate::robocup_vision23_feature_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x7e0f9b658b1ed4deULL;
-  static const uint64_t static_value2 = 0xc4d2b127040ac40eULL;
+  static const uint64_t static_value1 = 0x90f95fdb2af41305ULL;
+  static const uint64_t static_value2 = 0xaf35e1195995ece4ULL;
 };
 
 template<class ContainerAllocator>
@@ -168,6 +174,7 @@ struct Definition< ::msg_generate::robocup_vision23_feature_<ContainerAllocator>
 "float64[] DISTANCE\n"
 "float64[] POINT_VEC_X\n"
 "float64[] POINT_VEC_Y\n"
+"float64[] TYPE\n"
 ;
   }
 
@@ -190,6 +197,7 @@ namespace serialization
       stream.next(m.DISTANCE);
       stream.next(m.POINT_VEC_X);
       stream.next(m.POINT_VEC_Y);
+      stream.next(m.TYPE);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -231,6 +239,12 @@ struct Printer< ::msg_generate::robocup_vision23_feature_<ContainerAllocator> >
     {
       s << indent << "  POINT_VEC_Y[" << i << "]: ";
       Printer<double>::stream(s, indent + "  ", v.POINT_VEC_Y[i]);
+    }
+    s << indent << "TYPE[]" << std::endl;
+    for (size_t i = 0; i < v.TYPE.size(); ++i)
+    {
+      s << indent << "  TYPE[" << i << "]: ";
+      Printer<double>::stream(s, indent + "  ", v.TYPE[i]);
     }
   }
 };

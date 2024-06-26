@@ -98,7 +98,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
 string
 -
 vector
@@ -114,7 +114,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 string
 -
 vector
@@ -130,7 +130,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
 string
 -
 vector
@@ -146,7 +146,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
 string
 -
 vector
@@ -160,6 +160,14 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
+-
+
+/home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
+utility
+-
+iostream
+-
+QPointF
 -
 
 /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
@@ -173,6 +181,8 @@ QGraphicsScene
 -
 QPolygon
 -
+best_supporting_spot/bestsupportspotmaker.h
+/home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/best_supporting_spot/bestsupportspotmaker.h
 
 /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
 ros/ros.h
@@ -185,17 +195,17 @@ QStringListModel
 -
 msg_generate/imu_msg.h
 -
-msg_generate/robocup_vision23.h
+msg_generate/robocup_vision24.h
 -
-msg_generate/robocup_localization23.h
+msg_generate/robocup_localization24.h
 -
-msg_generate/master2localization23.h
+msg_generate/master2localization24.h
 -
 msg_generate/ik_msg.h
 -
 msg_generate/ikend_msg.h
 -
-msg_generate/robocup23_master2udp.h
+msg_generate/robocup24_master2udp.h
 -
 msg_generate/localv2_msg.h
 -
@@ -203,16 +213,8 @@ msg_generate/game_control_data.h
 -
 
 /home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.cpp
-bestsupportspotmaker.h
-/home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.h
-
-/home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.h
-utility
--
-iostream
--
-QPointF
--
+best_supporting_spot/bestsupportspotmaker.h
+/home/robit/catkin_ws/src/best_supporting_spot/src/best_supporting_spot/bestsupportspotmaker.h
 
 /home/robit/catkin_ws/src/best_supporting_spot/src/main.cpp
 QtGui
@@ -231,8 +233,8 @@ iostream
 -
 ../include/best_supporting_spot/main_window.hpp
 /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
-bestsupportspotmaker.h
-/home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.h
+best_supporting_spot/bestsupportspotmaker.h
+/home/robit/catkin_ws/src/best_supporting_spot/src/best_supporting_spot/bestsupportspotmaker.h
 
 /home/robit/catkin_ws/src/best_supporting_spot/src/qnode.cpp
 ros/ros.h
@@ -2463,6 +2465,10 @@ qgraphicsview.h
 /usr/include/qt4/QtGui/QHeaderView
 qheaderview.h
 /usr/include/qt4/QtGui/qheaderview.h
+
+/usr/include/qt4/QtGui/QLabel
+qlabel.h
+/usr/include/qt4/QtGui/qlabel.h
 
 /usr/include/qt4/QtGui/QLayout
 qlayout.h
@@ -4774,6 +4780,8 @@ QtGui/QButtonGroup
 QtGui/QGraphicsView
 -
 QtGui/QHeaderView
+-
+QtGui/QLabel
 -
 QtGui/QMainWindow
 -

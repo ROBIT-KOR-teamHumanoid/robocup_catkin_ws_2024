@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/devel
+
+Name: c_robocup_localization23
+Description: Description of c_robocup_localization23
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

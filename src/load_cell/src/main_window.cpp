@@ -126,16 +126,15 @@ void MainWindow::LoadCell_Callback()
     }
 
 
-    if((LC_Unit_Value[0] || LC_Unit_Value[2]) && !(LC_Unit_Value[5] || LC_Unit_Value[7]))
-        {
+    if((LC_Unit_Value[0] || LC_Unit_Value[1] || LC_Unit_Value[2] || LC_Unit_Value[3]) && !(LC_Unit_Value[4] || LC_Unit_Value[5] || LC_Unit_Value[6] || LC_Unit_Value[7]))//((LC_Unit_Value[0] || LC_Unit_Value[2]) && !(LC_Unit_Value[5] || LC_Unit_Value[7]))
+    {
       Right_Foot = false;
       Left_Foot = true;
       Both_Feet = false;
       LTC_Value = -1;
       cout<<"Left_Foot<"<<endl;
-
-        }
-    else if((LC_Unit_Value[5] || LC_Unit_Value[7]) && !(LC_Unit_Value[0] || LC_Unit_Value[2]))
+    }
+    else if((LC_Unit_Value[4] || LC_Unit_Value[5] || LC_Unit_Value[6] || LC_Unit_Value[7]) && !(LC_Unit_Value[0] || LC_Unit_Value[1] || LC_Unit_Value[2] || LC_Unit_Value[3]))//((LC_Unit_Value[5] || LC_Unit_Value[7]) && !(LC_Unit_Value[0] || LC_Unit_Value[2]))
     {
       Left_Foot = false;
       Right_Foot = true;

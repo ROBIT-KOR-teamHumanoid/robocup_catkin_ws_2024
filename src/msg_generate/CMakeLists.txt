@@ -51,15 +51,15 @@ find_package(catkin REQUIRED COMPONENTS
 
 
 #master
-	master2localization23.msg
-	robocup23_master2udp.msg
-	master_2_robocup_vision23.msg
+        master2localization24.msg
+        robocup24_master2udp.msg
+        master_2_robocup_vision24.msg
 	motionNum_msg.msg
    	ik_msg.msg
 
 #vision
-	robocup_vision23_feature.msg
-	robocup_vision23.msg
+        robocup_vision24_feature.msg
+        robocup_vision24.msg
    	#Motor_msg.msg
 
 #local
@@ -67,7 +67,7 @@ find_package(catkin REQUIRED COMPONENTS
 #	Local_Info.msg
 
 
-	robocup_localization23.msg
+        robocup_localization24.msg
 
 
 #ik walk
@@ -109,9 +109,11 @@ find_package(catkin REQUIRED COMPONENTS
    yaw_set.msg
    support_onestep_msg.msg
    Mt2Serial_msg.msg
+
    localization_msg.msg
    robocupcontroller.msg
    robocupvision.msg
+
    udp_msg.msg
    udp_order.msg
    eom_msg.msg
@@ -121,13 +123,33 @@ find_package(catkin REQUIRED COMPONENTS
    Step_msg.msg
    motion_stop.msg
    scv_vision.msg
-kuro_cotton_candy.msg
-motion_balance.msg
-Motor_msg_pt.msg
-game_control_data.msg
-game_control_return_data.msg
-motion_operator_data.msg
-master2vision_msg.msg
+	kuro_cotton_candy.msg
+	motion_balance.msg
+	Motor_msg_pt.msg
+	game_control_data.msg
+	game_control_return_data.msg
+	motion_operator_data.msg
+	master2vision_msg.msg
+
+#sty
+	HSV.msg
+	master2localization23_technical_obstacle.msg
+	obsnavi.msg
+	robocup_localization24_obstacle.msg
+        robocup_vision23_feature.msg
+        robocup_vision23.msg
+ 	master_2_robocup_vision23.msg
+	robocup_localization23.msg
+	master2localization23.msg
+
+
+#udp technical
+	udp_helper_msg.msg
+	udp_kicker_msg.msg
+	udp_msg_TC_Helper.msg
+	udp_msg_TC_Kicker.msg
+
+
  )
 
 ## Generate services in the 'srv' folder

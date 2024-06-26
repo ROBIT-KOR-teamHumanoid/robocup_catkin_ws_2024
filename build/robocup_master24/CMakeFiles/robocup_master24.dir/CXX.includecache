@@ -102,7 +102,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
+/home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
 string
 -
 vector
@@ -118,7 +118,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+/home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
 string
 -
 vector
@@ -182,7 +182,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 string
 -
 vector
@@ -198,7 +198,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
 string
 -
 vector
@@ -214,7 +214,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+/home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
 string
 -
 vector
@@ -297,13 +297,13 @@ string
 -
 msg_generate/imu_msg.h
 -
-msg_generate/robocup_vision23.h
+msg_generate/robocup_vision24.h
 -
-msg_generate/master_2_robocup_vision23.h
+msg_generate/master_2_robocup_vision24.h
 -
-msg_generate/robocup_localization23.h
+msg_generate/robocup_localization24.h
 -
-msg_generate/master2localization23.h
+msg_generate/master2localization24.h
 -
 msg_generate/ik_msg.h
 -
@@ -313,7 +313,7 @@ msg_generate/motionNum_msg.h
 -
 msg_generate/motion_end.h
 -
-msg_generate/robocup23_master2udp.h
+msg_generate/robocup24_master2udp.h
 -
 msg_generate/localv2_msg.h
 -

@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/install
+
+Name: udpcom_Helper
+Description: Description of udpcom_Helper
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

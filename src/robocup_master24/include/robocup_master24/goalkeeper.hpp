@@ -17,6 +17,13 @@
 #define RED                 true
 #define BLUE                false
 
+#define MOTION_CROUCH_1      0x07
+#define MOTION_CROUCH_2      0x08
+#define KEEPER_STATE_SIDEBALL   4
+#define KEEPER_STATE_OUT_OF_BOX 6
+#define KEEPER_STATE_JUST_KICK  8
+#define KEEPER_STATE_CROUCH     9
+
 namespace robocup_master24 {
 
 class Goalkeeper : public Player
@@ -49,10 +56,24 @@ private:
     void directionprt(int errorx);
     void gksave();
     bool TargetYaw(float robot_yaw, float target_yaw,int z);
-
+    int stop_cnt = 0;
+    int noball_cnt = 0;
+    double Ball2Robot;
+    double Robot2Box;
+    double previous_ball_x = 0;
+    double previous_ball_y = 0;
+    double Ball2Opponent();
+    double Ball2Opponent_Dist = 0;
+    bool playCrouchMotion(int motion_num_1);
+    bool crouch_flag = false;
+    int motion_cnt = 0;
+    float previous_yaw = 0;
+    int test_cnt = 0;
+    bool up_flag = false;
+    bool motion_end = false;
 };
 
-} // namespace robocup_master24
+} // namespace robocup_master23
 
 
 #endif //GOALKEEPER_HPP

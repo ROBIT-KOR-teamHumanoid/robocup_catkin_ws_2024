@@ -24,6 +24,10 @@ class master2localization23 {
       this.target_y = null;
       this.robot_allowance_error = null;
       this.robot_cali_radius = null;
+      this.mf_robot_x = null;
+      this.mf_robot_y = null;
+      this.mf_ball_x = null;
+      this.mf_ball_y = null;
     }
     else {
       if (initObj.hasOwnProperty('goal_x')) {
@@ -62,6 +66,30 @@ class master2localization23 {
       else {
         this.robot_cali_radius = 0;
       }
+      if (initObj.hasOwnProperty('mf_robot_x')) {
+        this.mf_robot_x = initObj.mf_robot_x
+      }
+      else {
+        this.mf_robot_x = 0;
+      }
+      if (initObj.hasOwnProperty('mf_robot_y')) {
+        this.mf_robot_y = initObj.mf_robot_y
+      }
+      else {
+        this.mf_robot_y = 0;
+      }
+      if (initObj.hasOwnProperty('mf_ball_x')) {
+        this.mf_ball_x = initObj.mf_ball_x
+      }
+      else {
+        this.mf_ball_x = 0;
+      }
+      if (initObj.hasOwnProperty('mf_ball_y')) {
+        this.mf_ball_y = initObj.mf_ball_y
+      }
+      else {
+        this.mf_ball_y = 0;
+      }
     }
   }
 
@@ -79,6 +107,14 @@ class master2localization23 {
     bufferOffset = _serializer.int64(obj.robot_allowance_error, buffer, bufferOffset);
     // Serialize message field [robot_cali_radius]
     bufferOffset = _serializer.int64(obj.robot_cali_radius, buffer, bufferOffset);
+    // Serialize message field [mf_robot_x]
+    bufferOffset = _serializer.int64(obj.mf_robot_x, buffer, bufferOffset);
+    // Serialize message field [mf_robot_y]
+    bufferOffset = _serializer.int64(obj.mf_robot_y, buffer, bufferOffset);
+    // Serialize message field [mf_ball_x]
+    bufferOffset = _serializer.int64(obj.mf_ball_x, buffer, bufferOffset);
+    // Serialize message field [mf_ball_y]
+    bufferOffset = _serializer.int64(obj.mf_ball_y, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -98,11 +134,19 @@ class master2localization23 {
     data.robot_allowance_error = _deserializer.int64(buffer, bufferOffset);
     // Deserialize message field [robot_cali_radius]
     data.robot_cali_radius = _deserializer.int64(buffer, bufferOffset);
+    // Deserialize message field [mf_robot_x]
+    data.mf_robot_x = _deserializer.int64(buffer, bufferOffset);
+    // Deserialize message field [mf_robot_y]
+    data.mf_robot_y = _deserializer.int64(buffer, bufferOffset);
+    // Deserialize message field [mf_ball_x]
+    data.mf_ball_x = _deserializer.int64(buffer, bufferOffset);
+    // Deserialize message field [mf_ball_y]
+    data.mf_ball_y = _deserializer.int64(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 48;
+    return 80;
   }
 
   static datatype() {
@@ -112,7 +156,7 @@ class master2localization23 {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '327d5f269dd6e3ee84371d4f5cf9b95e';
+    return 'be324128966108ecba95dfb7b6938f0f';
   }
 
   static messageDefinition() {
@@ -124,6 +168,10 @@ class master2localization23 {
     int64 target_y
     int64 robot_allowance_error
     int64 robot_cali_radius
+    int64 mf_robot_x
+    int64 mf_robot_y
+    int64 mf_ball_x
+    int64 mf_ball_y
     
     `;
   }
@@ -174,6 +222,34 @@ class master2localization23 {
     }
     else {
       resolved.robot_cali_radius = 0
+    }
+
+    if (msg.mf_robot_x !== undefined) {
+      resolved.mf_robot_x = msg.mf_robot_x;
+    }
+    else {
+      resolved.mf_robot_x = 0
+    }
+
+    if (msg.mf_robot_y !== undefined) {
+      resolved.mf_robot_y = msg.mf_robot_y;
+    }
+    else {
+      resolved.mf_robot_y = 0
+    }
+
+    if (msg.mf_ball_x !== undefined) {
+      resolved.mf_ball_x = msg.mf_ball_x;
+    }
+    else {
+      resolved.mf_ball_x = 0
+    }
+
+    if (msg.mf_ball_y !== undefined) {
+      resolved.mf_ball_y = msg.mf_ball_y;
+    }
+    else {
+      resolved.mf_ball_y = 0
     }
 
     return resolved;

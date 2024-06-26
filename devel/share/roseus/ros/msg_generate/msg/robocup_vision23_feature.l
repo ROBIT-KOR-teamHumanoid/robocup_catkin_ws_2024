@@ -14,7 +14,7 @@
 
 (defclass msg_generate::robocup_vision23_feature
   :super ros::object
-  :slots (_CONFIDENCE _DISTANCE _POINT_VEC_X _POINT_VEC_Y ))
+  :slots (_CONFIDENCE _DISTANCE _POINT_VEC_X _POINT_VEC_Y _TYPE ))
 
 (defmethod msg_generate::robocup_vision23_feature
   (:init
@@ -23,12 +23,14 @@
     ((:DISTANCE __DISTANCE) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:POINT_VEC_X __POINT_VEC_X) (make-array 0 :initial-element 0.0 :element-type :float))
     ((:POINT_VEC_Y __POINT_VEC_Y) (make-array 0 :initial-element 0.0 :element-type :float))
+    ((:TYPE __TYPE) (make-array 0 :initial-element 0.0 :element-type :float))
     )
    (send-super :init)
    (setq _CONFIDENCE __CONFIDENCE)
    (setq _DISTANCE __DISTANCE)
    (setq _POINT_VEC_X __POINT_VEC_X)
    (setq _POINT_VEC_Y __POINT_VEC_Y)
+   (setq _TYPE __TYPE)
    self)
   (:CONFIDENCE
    (&optional __CONFIDENCE)
@@ -42,6 +44,9 @@
   (:POINT_VEC_Y
    (&optional __POINT_VEC_Y)
    (if __POINT_VEC_Y (setq _POINT_VEC_Y __POINT_VEC_Y)) _POINT_VEC_Y)
+  (:TYPE
+   (&optional __TYPE)
+   (if __TYPE (setq _TYPE __TYPE)) _TYPE)
   (:serialization-length
    ()
    (+
@@ -53,6 +58,8 @@
     (* 8    (length _POINT_VEC_X)) 4
     ;; float64[] _POINT_VEC_Y
     (* 8    (length _POINT_VEC_Y)) 4
+    ;; float64[] _TYPE
+    (* 8    (length _TYPE)) 4
     ))
   (:serialize
    (&optional strm)
@@ -77,6 +84,11 @@
      (write-long (length _POINT_VEC_Y) s)
      (dotimes (i (length _POINT_VEC_Y))
        (sys::poke (elt _POINT_VEC_Y i) (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
+       )
+     ;; float64[] _TYPE
+     (write-long (length _TYPE) s)
+     (dotimes (i (length _TYPE))
+       (sys::poke (elt _TYPE i) (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
        )
      ;;
      (if (null strm) (get-output-stream-string s))))
@@ -110,22 +122,30 @@
      (dotimes (i n)
      (setf (elt _POINT_VEC_Y i) (sys::peek buf ptr- :double)) (incf ptr- 8)
      ))
+   ;; float64[] _TYPE
+   (let (n)
+     (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
+     (setq _TYPE (instantiate float-vector n))
+     (dotimes (i n)
+     (setf (elt _TYPE i) (sys::peek buf ptr- :double)) (incf ptr- 8)
+     ))
    ;;
    self)
   )
 
-(setf (get msg_generate::robocup_vision23_feature :md5sum-) "7e0f9b658b1ed4dec4d2b127040ac40e")
+(setf (get msg_generate::robocup_vision23_feature :md5sum-) "90f95fdb2af41305af35e1195995ece4")
 (setf (get msg_generate::robocup_vision23_feature :datatype-) "msg_generate/robocup_vision23_feature")
 (setf (get msg_generate::robocup_vision23_feature :definition-)
       "float64[] CONFIDENCE
 float64[] DISTANCE
 float64[] POINT_VEC_X
 float64[] POINT_VEC_Y
+float64[] TYPE
 
 ")
 
 
 
-(provide :msg_generate/robocup_vision23_feature "7e0f9b658b1ed4dec4d2b127040ac40e")
+(provide :msg_generate/robocup_vision23_feature "90f95fdb2af41305af35e1195995ece4")
 
 

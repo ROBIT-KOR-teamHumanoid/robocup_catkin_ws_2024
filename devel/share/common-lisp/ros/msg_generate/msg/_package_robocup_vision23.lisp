@@ -17,6 +17,10 @@
           BALL_SPEED_X
           BALL_SPEED_Y-VAL
           BALL_SPEED_Y
+          ROBOT_2D_X-VAL
+          ROBOT_2D_X
+          ROBOT_2D_Y-VAL
+          ROBOT_2D_Y
           ROBOT_VEC_X-VAL
           ROBOT_VEC_X
           ROBOT_VEC_Y-VAL

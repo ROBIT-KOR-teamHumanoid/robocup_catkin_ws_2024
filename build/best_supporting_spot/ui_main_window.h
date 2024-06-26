@@ -16,6 +16,7 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QGraphicsView>
 #include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
 #include <QtGui/QMainWindow>
 #include <QtGui/QWidget>
 
@@ -30,12 +31,14 @@ public:
     QAction *actionAbout_Qt;
     QWidget *centralwidget;
     QGraphicsView *screen;
+    QLabel *label;
+    QLabel *label_2;
 
     void setupUi(QMainWindow *MainWindowDesign)
     {
         if (MainWindowDesign->objectName().isEmpty())
             MainWindowDesign->setObjectName(QString::fromUtf8("MainWindowDesign"));
-        MainWindowDesign->resize(944, 704);
+        MainWindowDesign->resize(944, 832);
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/images/icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindowDesign->setWindowIcon(icon);
@@ -53,7 +56,19 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         screen = new QGraphicsView(centralwidget);
         screen->setObjectName(QString::fromUtf8("screen"));
-        screen->setGeometry(QRect(90, 30, 830, 630));
+        screen->setGeometry(QRect(60, 30, 830, 630));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(60, 670, 331, 41));
+        label->setFrameShape(QFrame::Box);
+        label->setFrameShadow(QFrame::Plain);
+        label->setLineWidth(3);
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(60, 720, 331, 111));
+        label_2->setFrameShape(QFrame::Box);
+        label_2->setFrameShadow(QFrame::Plain);
+        label_2->setLineWidth(3);
         MainWindowDesign->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindowDesign);
@@ -70,6 +85,8 @@ public:
         action_Preferences->setText(QApplication::translate("MainWindowDesign", "&Preferences", 0, QApplication::UnicodeUTF8));
         actionAbout->setText(QApplication::translate("MainWindowDesign", "&About", 0, QApplication::UnicodeUTF8));
         actionAbout_Qt->setText(QApplication::translate("MainWindowDesign", "About &Qt", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("MainWindowDesign", "SET ANEMMY", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

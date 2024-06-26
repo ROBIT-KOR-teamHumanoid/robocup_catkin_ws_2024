@@ -8,7 +8,7 @@ import struct
 
 
 class master2localization23(genpy.Message):
-  _md5sum = "327d5f269dd6e3ee84371d4f5cf9b95e"
+  _md5sum = "be324128966108ecba95dfb7b6938f0f"
   _type = "msg_generate/master2localization23"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int64 goal_x
@@ -17,9 +17,13 @@ int64 target_x
 int64 target_y
 int64 robot_allowance_error
 int64 robot_cali_radius
+int64 mf_robot_x
+int64 mf_robot_y
+int64 mf_ball_x
+int64 mf_ball_y
 """
-  __slots__ = ['goal_x','goal_y','target_x','target_y','robot_allowance_error','robot_cali_radius']
-  _slot_types = ['int64','int64','int64','int64','int64','int64']
+  __slots__ = ['goal_x','goal_y','target_x','target_y','robot_allowance_error','robot_cali_radius','mf_robot_x','mf_robot_y','mf_ball_x','mf_ball_y']
+  _slot_types = ['int64','int64','int64','int64','int64','int64','int64','int64','int64','int64']
 
   def __init__(self, *args, **kwds):
     """
@@ -29,7 +33,7 @@ int64 robot_cali_radius
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       goal_x,goal_y,target_x,target_y,robot_allowance_error,robot_cali_radius
+       goal_x,goal_y,target_x,target_y,robot_allowance_error,robot_cali_radius,mf_robot_x,mf_robot_y,mf_ball_x,mf_ball_y
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -50,6 +54,14 @@ int64 robot_cali_radius
         self.robot_allowance_error = 0
       if self.robot_cali_radius is None:
         self.robot_cali_radius = 0
+      if self.mf_robot_x is None:
+        self.mf_robot_x = 0
+      if self.mf_robot_y is None:
+        self.mf_robot_y = 0
+      if self.mf_ball_x is None:
+        self.mf_ball_x = 0
+      if self.mf_ball_y is None:
+        self.mf_ball_y = 0
     else:
       self.goal_x = 0
       self.goal_y = 0
@@ -57,6 +69,10 @@ int64 robot_cali_radius
       self.target_y = 0
       self.robot_allowance_error = 0
       self.robot_cali_radius = 0
+      self.mf_robot_x = 0
+      self.mf_robot_y = 0
+      self.mf_ball_x = 0
+      self.mf_ball_y = 0
 
   def _get_types(self):
     """
@@ -71,7 +87,7 @@ int64 robot_cali_radius
     """
     try:
       _x = self
-      buff.write(_get_struct_6q().pack(_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius))
+      buff.write(_get_struct_10q().pack(_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius, _x.mf_robot_x, _x.mf_robot_y, _x.mf_ball_x, _x.mf_ball_y))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -86,8 +102,8 @@ int64 robot_cali_radius
       end = 0
       _x = self
       start = end
-      end += 48
-      (_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius,) = _get_struct_6q().unpack(str[start:end])
+      end += 80
+      (_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius, _x.mf_robot_x, _x.mf_robot_y, _x.mf_ball_x, _x.mf_ball_y,) = _get_struct_10q().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -101,7 +117,7 @@ int64 robot_cali_radius
     """
     try:
       _x = self
-      buff.write(_get_struct_6q().pack(_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius))
+      buff.write(_get_struct_10q().pack(_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius, _x.mf_robot_x, _x.mf_robot_y, _x.mf_ball_x, _x.mf_ball_y))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -117,8 +133,8 @@ int64 robot_cali_radius
       end = 0
       _x = self
       start = end
-      end += 48
-      (_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius,) = _get_struct_6q().unpack(str[start:end])
+      end += 80
+      (_x.goal_x, _x.goal_y, _x.target_x, _x.target_y, _x.robot_allowance_error, _x.robot_cali_radius, _x.mf_robot_x, _x.mf_robot_y, _x.mf_ball_x, _x.mf_ball_y,) = _get_struct_10q().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -127,9 +143,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_6q = None
-def _get_struct_6q():
-    global _struct_6q
-    if _struct_6q is None:
-        _struct_6q = struct.Struct("<6q")
-    return _struct_6q
+_struct_10q = None
+def _get_struct_10q():
+    global _struct_10q
+    if _struct_10q is None:
+        _struct_10q = struct.Struct("<10q")
+    return _struct_10q

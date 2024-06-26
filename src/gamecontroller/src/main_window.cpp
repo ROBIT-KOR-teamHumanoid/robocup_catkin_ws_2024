@@ -254,6 +254,7 @@ void MainWindow::ChangeTechnicalMode()
     ui.comboBox_state->addItem("DYNAMIC KICK");
     ui.comboBox_state->addItem("HIGH KICK");
     ui.comboBox_state->addItem("PARKOUR");
+    ui.comboBox_state->addItem("OBSTACLE");
 
     playerNum = ui.comboBox_number->currentIndex();
     position = ui.comboBox_position->currentIndex();
@@ -525,7 +526,7 @@ void MainWindow::udpSend_callback()   //send udp data
     Data.push_back(static_cast<char>(robocupreturnData.message));
 
     QHostAddress cntrAddr;
-    cntrAddr.setAddress("192.168.0.1");
+    cntrAddr.setAddress("192.168.1.2");
     m_pSendSocket->writeDatagram(Data.data(),Data.size(), cntrAddr, 3939);
 }
 

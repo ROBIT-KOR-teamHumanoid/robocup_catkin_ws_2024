@@ -8,16 +8,17 @@ import struct
 
 
 class robocup_vision23_feature(genpy.Message):
-  _md5sum = "7e0f9b658b1ed4dec4d2b127040ac40e"
+  _md5sum = "90f95fdb2af41305af35e1195995ece4"
   _type = "msg_generate/robocup_vision23_feature"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float64[] CONFIDENCE
 float64[] DISTANCE
 float64[] POINT_VEC_X
 float64[] POINT_VEC_Y
+float64[] TYPE
 """
-  __slots__ = ['CONFIDENCE','DISTANCE','POINT_VEC_X','POINT_VEC_Y']
-  _slot_types = ['float64[]','float64[]','float64[]','float64[]']
+  __slots__ = ['CONFIDENCE','DISTANCE','POINT_VEC_X','POINT_VEC_Y','TYPE']
+  _slot_types = ['float64[]','float64[]','float64[]','float64[]','float64[]']
 
   def __init__(self, *args, **kwds):
     """
@@ -27,7 +28,7 @@ float64[] POINT_VEC_Y
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       CONFIDENCE,DISTANCE,POINT_VEC_X,POINT_VEC_Y
+       CONFIDENCE,DISTANCE,POINT_VEC_X,POINT_VEC_Y,TYPE
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -44,11 +45,14 @@ float64[] POINT_VEC_Y
         self.POINT_VEC_X = []
       if self.POINT_VEC_Y is None:
         self.POINT_VEC_Y = []
+      if self.TYPE is None:
+        self.TYPE = []
     else:
       self.CONFIDENCE = []
       self.DISTANCE = []
       self.POINT_VEC_X = []
       self.POINT_VEC_Y = []
+      self.TYPE = []
 
   def _get_types(self):
     """
@@ -78,6 +82,10 @@ float64[] POINT_VEC_Y
       buff.write(_struct_I.pack(length))
       pattern = '<%sd'%length
       buff.write(struct.Struct(pattern).pack(*self.POINT_VEC_Y))
+      length = len(self.TYPE)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sd'%length
+      buff.write(struct.Struct(pattern).pack(*self.TYPE))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -122,6 +130,14 @@ float64[] POINT_VEC_Y
       s = struct.Struct(pattern)
       end += s.size
       self.POINT_VEC_Y = s.unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sd'%length
+      start = end
+      s = struct.Struct(pattern)
+      end += s.size
+      self.TYPE = s.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -150,6 +166,10 @@ float64[] POINT_VEC_Y
       buff.write(_struct_I.pack(length))
       pattern = '<%sd'%length
       buff.write(self.POINT_VEC_Y.tostring())
+      length = len(self.TYPE)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sd'%length
+      buff.write(self.TYPE.tostring())
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -195,6 +215,14 @@ float64[] POINT_VEC_Y
       s = struct.Struct(pattern)
       end += s.size
       self.POINT_VEC_Y = numpy.frombuffer(str[start:end], dtype=numpy.float64, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sd'%length
+      start = end
+      s = struct.Struct(pattern)
+      end += s.size
+      self.TYPE = numpy.frombuffer(str[start:end], dtype=numpy.float64, count=length)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill

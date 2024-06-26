@@ -8,10 +8,11 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
+ /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
  /opt/ros/melodic/include/ros/advertise_options.h
@@ -160,6 +161,7 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  /usr/include/qt4/QtGui/QGraphicsScene
  /usr/include/qt4/QtGui/QGraphicsView
  /usr/include/qt4/QtGui/QHeaderView
+ /usr/include/qt4/QtGui/QLabel
  /usr/include/qt4/QtGui/QMainWindow
  /usr/include/qt4/QtGui/QPlatformWindow
  /usr/include/qt4/QtGui/QPolygon
@@ -192,6 +194,7 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  /usr/include/qt4/QtGui/qimage.h
  /usr/include/qt4/QtGui/qitemselectionmodel.h
  /usr/include/qt4/QtGui/qkeysequence.h
+ /usr/include/qt4/QtGui/qlabel.h
  /usr/include/qt4/QtGui/qmacdefines_mac.h
  /usr/include/qt4/QtGui/qmainwindow.h
  /usr/include/qt4/QtGui/qmatrix.h
@@ -232,10 +235,10 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/include/best_supporting
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -423,8 +426,8 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/qrc_images.cxx.o
  /usr/include/qt4/QtCore/qfeatures.h
  /usr/include/qt4/QtCore/qglobal.h
 best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/bestsupportspotmaker.cpp.o
+ /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.cpp
- /home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.h
  /usr/include/qt4/QtCore/QPointF
  /usr/include/qt4/QtCore/qconfig.h
  /usr/include/qt4/QtCore/qfeatures.h
@@ -437,10 +440,11 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
+ /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/src/main.cpp
@@ -689,6 +693,7 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main.cpp.o
  /usr/include/qt4/QtGui/QGraphicsScene
  /usr/include/qt4/QtGui/QGraphicsView
  /usr/include/qt4/QtGui/QHeaderView
+ /usr/include/qt4/QtGui/QLabel
  /usr/include/qt4/QtGui/QLayout
  /usr/include/qt4/QtGui/QMainWindow
  /usr/include/qt4/QtGui/QMatrix4x4
@@ -941,13 +946,13 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main_window.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
+ /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/main_window.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
- /home/robit/catkin_ws/src/best_supporting_spot/src/bestsupportspotmaker.h
  /home/robit/catkin_ws/src/best_supporting_spot/src/main_window.cpp
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -1194,6 +1199,7 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/main_window.cpp.o
  /usr/include/qt4/QtGui/QGraphicsScene
  /usr/include/qt4/QtGui/QGraphicsView
  /usr/include/qt4/QtGui/QHeaderView
+ /usr/include/qt4/QtGui/QLabel
  /usr/include/qt4/QtGui/QLayout
  /usr/include/qt4/QtGui/QMainWindow
  /usr/include/qt4/QtGui/QMatrix4x4
@@ -1447,10 +1453,10 @@ best_supporting_spot/CMakeFiles/best_supporting_spot.dir/src/qnode.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/best_supporting_spot/include/best_supporting_spot/qnode.hpp
  /home/robit/catkin_ws/src/best_supporting_spot/src/qnode.cpp
  /opt/ros/melodic/include/ros/advertise_options.h

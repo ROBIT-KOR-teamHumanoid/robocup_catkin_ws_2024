@@ -8,7 +8,7 @@ import struct
 
 
 class robocup_vision23(genpy.Message):
-  _md5sum = "e7c23af0ec42fde2be9393d1f1e88db0"
+  _md5sum = "bbd6c2605c09df8b25874d0d14f93108"
   _type = "msg_generate/robocup_vision23"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int64 Ball_cam_X
@@ -20,13 +20,16 @@ float64 PAN
 float64 TILT
 float64 Ball_speed_X
 float64 Ball_speed_Y
+float64 Robot_2d_X
+float64 Robot_2d_Y
 float64[] ROBOT_VEC_X
 float64[] ROBOT_VEC_Y
 int64 Ball_speed_level
 int64 Scan_mode
+
 """
-  __slots__ = ['Ball_cam_X','Ball_cam_Y','Ball_2d_X','Ball_2d_Y','Ball_D','PAN','TILT','Ball_speed_X','Ball_speed_Y','ROBOT_VEC_X','ROBOT_VEC_Y','Ball_speed_level','Scan_mode']
-  _slot_types = ['int64','int64','float64','float64','float64','float64','float64','float64','float64','float64[]','float64[]','int64','int64']
+  __slots__ = ['Ball_cam_X','Ball_cam_Y','Ball_2d_X','Ball_2d_Y','Ball_D','PAN','TILT','Ball_speed_X','Ball_speed_Y','Robot_2d_X','Robot_2d_Y','ROBOT_VEC_X','ROBOT_VEC_Y','Ball_speed_level','Scan_mode']
+  _slot_types = ['int64','int64','float64','float64','float64','float64','float64','float64','float64','float64','float64','float64[]','float64[]','int64','int64']
 
   def __init__(self, *args, **kwds):
     """
@@ -36,7 +39,7 @@ int64 Scan_mode
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       Ball_cam_X,Ball_cam_Y,Ball_2d_X,Ball_2d_Y,Ball_D,PAN,TILT,Ball_speed_X,Ball_speed_Y,ROBOT_VEC_X,ROBOT_VEC_Y,Ball_speed_level,Scan_mode
+       Ball_cam_X,Ball_cam_Y,Ball_2d_X,Ball_2d_Y,Ball_D,PAN,TILT,Ball_speed_X,Ball_speed_Y,Robot_2d_X,Robot_2d_Y,ROBOT_VEC_X,ROBOT_VEC_Y,Ball_speed_level,Scan_mode
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -63,6 +66,10 @@ int64 Scan_mode
         self.Ball_speed_X = 0.
       if self.Ball_speed_Y is None:
         self.Ball_speed_Y = 0.
+      if self.Robot_2d_X is None:
+        self.Robot_2d_X = 0.
+      if self.Robot_2d_Y is None:
+        self.Robot_2d_Y = 0.
       if self.ROBOT_VEC_X is None:
         self.ROBOT_VEC_X = []
       if self.ROBOT_VEC_Y is None:
@@ -81,6 +88,8 @@ int64 Scan_mode
       self.TILT = 0.
       self.Ball_speed_X = 0.
       self.Ball_speed_Y = 0.
+      self.Robot_2d_X = 0.
+      self.Robot_2d_Y = 0.
       self.ROBOT_VEC_X = []
       self.ROBOT_VEC_Y = []
       self.Ball_speed_level = 0
@@ -99,7 +108,7 @@ int64 Scan_mode
     """
     try:
       _x = self
-      buff.write(_get_struct_2q7d().pack(_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y))
+      buff.write(_get_struct_2q9d().pack(_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_2d_X, _x.Robot_2d_Y))
       length = len(self.ROBOT_VEC_X)
       buff.write(_struct_I.pack(length))
       pattern = '<%sd'%length
@@ -124,8 +133,8 @@ int64 Scan_mode
       end = 0
       _x = self
       start = end
-      end += 72
-      (_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y,) = _get_struct_2q7d().unpack(str[start:end])
+      end += 88
+      (_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_2d_X, _x.Robot_2d_Y,) = _get_struct_2q9d().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -159,7 +168,7 @@ int64 Scan_mode
     """
     try:
       _x = self
-      buff.write(_get_struct_2q7d().pack(_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y))
+      buff.write(_get_struct_2q9d().pack(_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_2d_X, _x.Robot_2d_Y))
       length = len(self.ROBOT_VEC_X)
       buff.write(_struct_I.pack(length))
       pattern = '<%sd'%length
@@ -185,8 +194,8 @@ int64 Scan_mode
       end = 0
       _x = self
       start = end
-      end += 72
-      (_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y,) = _get_struct_2q7d().unpack(str[start:end])
+      end += 88
+      (_x.Ball_cam_X, _x.Ball_cam_Y, _x.Ball_2d_X, _x.Ball_2d_Y, _x.Ball_D, _x.PAN, _x.TILT, _x.Ball_speed_X, _x.Ball_speed_Y, _x.Robot_2d_X, _x.Robot_2d_Y,) = _get_struct_2q9d().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -221,9 +230,9 @@ def _get_struct_2q():
     if _struct_2q is None:
         _struct_2q = struct.Struct("<2q")
     return _struct_2q
-_struct_2q7d = None
-def _get_struct_2q7d():
-    global _struct_2q7d
-    if _struct_2q7d is None:
-        _struct_2q7d = struct.Struct("<2q7d")
-    return _struct_2q7d
+_struct_2q9d = None
+def _get_struct_2q9d():
+    global _struct_2q9d
+    if _struct_2q9d is None:
+        _struct_2q9d = struct.Struct("<2q9d")
+    return _struct_2q9d

@@ -52,6 +52,16 @@
     :initarg :Ball_speed_Y
     :type cl:float
     :initform 0.0)
+   (Robot_2d_X
+    :reader Robot_2d_X
+    :initarg :Robot_2d_X
+    :type cl:float
+    :initform 0.0)
+   (Robot_2d_Y
+    :reader Robot_2d_Y
+    :initarg :Robot_2d_Y
+    :type cl:float
+    :initform 0.0)
    (ROBOT_VEC_X
     :reader ROBOT_VEC_X
     :initarg :ROBOT_VEC_X
@@ -126,6 +136,16 @@
 (cl:defmethod Ball_speed_Y-val ((m <robocup_vision23>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader msg_generate-msg:Ball_speed_Y-val is deprecated.  Use msg_generate-msg:Ball_speed_Y instead.")
   (Ball_speed_Y m))
+
+(cl:ensure-generic-function 'Robot_2d_X-val :lambda-list '(m))
+(cl:defmethod Robot_2d_X-val ((m <robocup_vision23>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader msg_generate-msg:Robot_2d_X-val is deprecated.  Use msg_generate-msg:Robot_2d_X instead.")
+  (Robot_2d_X m))
+
+(cl:ensure-generic-function 'Robot_2d_Y-val :lambda-list '(m))
+(cl:defmethod Robot_2d_Y-val ((m <robocup_vision23>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader msg_generate-msg:Robot_2d_Y-val is deprecated.  Use msg_generate-msg:Robot_2d_Y instead.")
+  (Robot_2d_Y m))
 
 (cl:ensure-generic-function 'ROBOT_VEC_X-val :lambda-list '(m))
 (cl:defmethod ROBOT_VEC_X-val ((m <robocup_vision23>))
@@ -223,6 +243,24 @@
     (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
   (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'Ball_speed_Y))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+  (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'Robot_2d_X))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+  (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'Robot_2d_Y))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
@@ -374,6 +412,26 @@
       (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
     (cl:setf (cl:slot-value msg 'Ball_speed_Y) (roslisp-utils:decode-double-float-bits bits)))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'Robot_2d_X) (roslisp-utils:decode-double-float-bits bits)))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'Robot_2d_Y) (roslisp-utils:decode-double-float-bits bits)))
   (cl:let ((__ros_arr_len 0))
     (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
@@ -440,18 +498,20 @@
   "msg_generate/robocup_vision23")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<robocup_vision23>)))
   "Returns md5sum for a message object of type '<robocup_vision23>"
-  "e7c23af0ec42fde2be9393d1f1e88db0")
+  "bbd6c2605c09df8b25874d0d14f93108")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'robocup_vision23)))
   "Returns md5sum for a message object of type 'robocup_vision23"
-  "e7c23af0ec42fde2be9393d1f1e88db0")
+  "bbd6c2605c09df8b25874d0d14f93108")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<robocup_vision23>)))
   "Returns full string definition for message of type '<robocup_vision23>"
-  (cl:format cl:nil "int64 Ball_cam_X~%int64 Ball_cam_Y~%float64 Ball_2d_X~%float64 Ball_2d_Y~%float64 Ball_D~%float64 PAN~%float64 TILT~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64[] ROBOT_VEC_X~%float64[] ROBOT_VEC_Y~%int64 Ball_speed_level~%int64 Scan_mode~%~%~%"))
+  (cl:format cl:nil "int64 Ball_cam_X~%int64 Ball_cam_Y~%float64 Ball_2d_X~%float64 Ball_2d_Y~%float64 Ball_D~%float64 PAN~%float64 TILT~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64 Robot_2d_X~%float64 Robot_2d_Y~%float64[] ROBOT_VEC_X~%float64[] ROBOT_VEC_Y~%int64 Ball_speed_level~%int64 Scan_mode~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'robocup_vision23)))
   "Returns full string definition for message of type 'robocup_vision23"
-  (cl:format cl:nil "int64 Ball_cam_X~%int64 Ball_cam_Y~%float64 Ball_2d_X~%float64 Ball_2d_Y~%float64 Ball_D~%float64 PAN~%float64 TILT~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64[] ROBOT_VEC_X~%float64[] ROBOT_VEC_Y~%int64 Ball_speed_level~%int64 Scan_mode~%~%~%"))
+  (cl:format cl:nil "int64 Ball_cam_X~%int64 Ball_cam_Y~%float64 Ball_2d_X~%float64 Ball_2d_Y~%float64 Ball_D~%float64 PAN~%float64 TILT~%float64 Ball_speed_X~%float64 Ball_speed_Y~%float64 Robot_2d_X~%float64 Robot_2d_Y~%float64[] ROBOT_VEC_X~%float64[] ROBOT_VEC_Y~%int64 Ball_speed_level~%int64 Scan_mode~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <robocup_vision23>))
   (cl:+ 0
+     8
+     8
      8
      8
      8
@@ -478,6 +538,8 @@
     (cl:cons ':TILT (TILT msg))
     (cl:cons ':Ball_speed_X (Ball_speed_X msg))
     (cl:cons ':Ball_speed_Y (Ball_speed_Y msg))
+    (cl:cons ':Robot_2d_X (Robot_2d_X msg))
+    (cl:cons ':Robot_2d_Y (Robot_2d_Y msg))
     (cl:cons ':ROBOT_VEC_X (ROBOT_VEC_X msg))
     (cl:cons ':ROBOT_VEC_Y (ROBOT_VEC_Y msg))
     (cl:cons ':Ball_speed_level (Ball_speed_level msg))

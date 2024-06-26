@@ -1,0 +1,8 @@
+prefix=/home/robit/catkin_ws/devel
+
+Name: motion_operator
+Description: Description of motion_operator
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

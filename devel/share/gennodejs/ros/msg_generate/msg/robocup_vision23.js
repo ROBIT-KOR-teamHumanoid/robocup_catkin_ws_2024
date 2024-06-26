@@ -27,6 +27,8 @@ class robocup_vision23 {
       this.TILT = null;
       this.Ball_speed_X = null;
       this.Ball_speed_Y = null;
+      this.Robot_2d_X = null;
+      this.Robot_2d_Y = null;
       this.ROBOT_VEC_X = null;
       this.ROBOT_VEC_Y = null;
       this.Ball_speed_level = null;
@@ -87,6 +89,18 @@ class robocup_vision23 {
       else {
         this.Ball_speed_Y = 0.0;
       }
+      if (initObj.hasOwnProperty('Robot_2d_X')) {
+        this.Robot_2d_X = initObj.Robot_2d_X
+      }
+      else {
+        this.Robot_2d_X = 0.0;
+      }
+      if (initObj.hasOwnProperty('Robot_2d_Y')) {
+        this.Robot_2d_Y = initObj.Robot_2d_Y
+      }
+      else {
+        this.Robot_2d_Y = 0.0;
+      }
       if (initObj.hasOwnProperty('ROBOT_VEC_X')) {
         this.ROBOT_VEC_X = initObj.ROBOT_VEC_X
       }
@@ -134,6 +148,10 @@ class robocup_vision23 {
     bufferOffset = _serializer.float64(obj.Ball_speed_X, buffer, bufferOffset);
     // Serialize message field [Ball_speed_Y]
     bufferOffset = _serializer.float64(obj.Ball_speed_Y, buffer, bufferOffset);
+    // Serialize message field [Robot_2d_X]
+    bufferOffset = _serializer.float64(obj.Robot_2d_X, buffer, bufferOffset);
+    // Serialize message field [Robot_2d_Y]
+    bufferOffset = _serializer.float64(obj.Robot_2d_Y, buffer, bufferOffset);
     // Serialize message field [ROBOT_VEC_X]
     bufferOffset = _arraySerializer.float64(obj.ROBOT_VEC_X, buffer, bufferOffset, null);
     // Serialize message field [ROBOT_VEC_Y]
@@ -167,6 +185,10 @@ class robocup_vision23 {
     data.Ball_speed_X = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [Ball_speed_Y]
     data.Ball_speed_Y = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [Robot_2d_X]
+    data.Robot_2d_X = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [Robot_2d_Y]
+    data.Robot_2d_Y = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [ROBOT_VEC_X]
     data.ROBOT_VEC_X = _arrayDeserializer.float64(buffer, bufferOffset, null)
     // Deserialize message field [ROBOT_VEC_Y]
@@ -182,7 +204,7 @@ class robocup_vision23 {
     let length = 0;
     length += 8 * object.ROBOT_VEC_X.length;
     length += 8 * object.ROBOT_VEC_Y.length;
-    return length + 96;
+    return length + 112;
   }
 
   static datatype() {
@@ -192,7 +214,7 @@ class robocup_vision23 {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'e7c23af0ec42fde2be9393d1f1e88db0';
+    return 'bbd6c2605c09df8b25874d0d14f93108';
   }
 
   static messageDefinition() {
@@ -207,10 +229,13 @@ class robocup_vision23 {
     float64 TILT
     float64 Ball_speed_X
     float64 Ball_speed_Y
+    float64 Robot_2d_X
+    float64 Robot_2d_Y
     float64[] ROBOT_VEC_X
     float64[] ROBOT_VEC_Y
     int64 Ball_speed_level
     int64 Scan_mode
+    
     
     `;
   }
@@ -282,6 +307,20 @@ class robocup_vision23 {
     }
     else {
       resolved.Ball_speed_Y = 0.0
+    }
+
+    if (msg.Robot_2d_X !== undefined) {
+      resolved.Robot_2d_X = msg.Robot_2d_X;
+    }
+    else {
+      resolved.Robot_2d_X = 0.0
+    }
+
+    if (msg.Robot_2d_Y !== undefined) {
+      resolved.Robot_2d_Y = msg.Robot_2d_Y;
+    }
+    else {
+      resolved.Robot_2d_Y = 0.0
     }
 
     if (msg.ROBOT_VEC_X !== undefined) {

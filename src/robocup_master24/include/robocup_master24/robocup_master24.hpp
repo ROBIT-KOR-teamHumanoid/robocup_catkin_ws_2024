@@ -14,12 +14,12 @@
 #include <msg_generate/imu_msg.h>
 
 //vision
-#include <msg_generate/robocup_vision23.h>
-#include <msg_generate/master_2_robocup_vision23.h>
+#include <msg_generate/robocup_vision24.h>
+#include <msg_generate/master_2_robocup_vision24.h>
 
 //localization_v2
-#include <msg_generate/robocup_localization23.h>
-#include <msg_generate/master2localization23.h>
+#include <msg_generate/robocup_localization24.h>
+#include <msg_generate/master2localization24.h>
 
 //ikwalk
 #include <msg_generate/ik_msg.h>
@@ -30,7 +30,7 @@
 #include <msg_generate/motion_end.h>
 
 //udp_com
-#include <msg_generate/robocup23_master2udp.h>
+#include <msg_generate/robocup24_master2udp.h>
 #include <msg_generate/localv2_msg.h>
 
 //gamecontroller
@@ -79,16 +79,16 @@ public:
 
     msg_generate::imu_msg imu;
 //    msg_generate::localv2_msg local;
-    msg_generate::robocup_localization23 local;
-    msg_generate::master2localization23 master2local;
-    msg_generate::robocup_vision23 vision;
-    msg_generate::master_2_robocup_vision23 master2vision;
+    msg_generate::robocup_localization24 local;
+    msg_generate::master2localization24 master2local;
+    msg_generate::robocup_vision24 vision;
+    msg_generate::master_2_robocup_vision24 master2vision;
     msg_generate::ik_msg ik;
     msg_generate::ikend_msg ikEnd;
     msg_generate::motionNum_msg motion;
     msg_generate::motion_end motionEnd;
     msg_generate::localv2_msg udp[4];
-    msg_generate::robocup23_master2udp master2udp;
+    msg_generate::robocup24_master2udp master2udp;
     msg_generate::game_control_data gameControlData;
     msg_generate::game_control_return_data gameControlReturnData;
     msg_generate::pid_tuning pid;
@@ -119,8 +119,8 @@ private:
     char** init_argv;
 
     void imuCallback(const msg_generate::imu_msg::ConstPtr &msg);
-    void localCallback(const msg_generate::robocup_localization23::ConstPtr &msg);
-    void visionCallback(const msg_generate::robocup_vision23::ConstPtr &msg);
+    void localCallback(const msg_generate::robocup_localization24::ConstPtr &msg);
+    void visionCallback(const msg_generate::robocup_vision24::ConstPtr &msg);
     void ikCallback(const msg_generate::ikend_msg::ConstPtr &msg);
     void motionCallback(const msg_generate::motion_end::ConstPtr &msg);
     void udpCallback(const msg_generate::localv2_msg::ConstPtr &msg);

@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libzmp_position_control.so -o /home/robit/catkin_ws/devel/lib/libzmp_position_control.so CMakeFiles/zmp_position_control.dir/src/zmp_position_control.cpp.o 
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libzmp_position_control.so -o /home/robit/catkin_ws/devel/lib/libzmp_position_control.so CMakeFiles/zmp_position_control.dir/src/zmp_position_control.cpp.o 

@@ -3,7 +3,7 @@
 
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: udpcom/include/udpcom/moc_main_window.cxx
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
-udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/main_window.hpp
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/qnode.hpp
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: /opt/ros/melodic/include/ros/advertise_options.h
@@ -375,7 +375,7 @@ udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_main_window.cxx.o: udpcom/ui_mai
 
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: udpcom/include/udpcom/moc_qnode.cxx
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
-udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/qnode.hpp
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: /opt/ros/melodic/include/ros/advertise_options.h
 udpcom/CMakeFiles/udpcom.dir/include/udpcom/moc_qnode.cxx.o: /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -564,7 +564,7 @@ udpcom/CMakeFiles/udpcom.dir/qrc_images.cxx.o: /usr/include/qt4/QtCore/qfeatures
 udpcom/CMakeFiles/udpcom.dir/qrc_images.cxx.o: /usr/include/qt4/QtCore/qglobal.h
 
 udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
-udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/main_window.hpp
 udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/qnode.hpp
 udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /home/robit/catkin_ws/src/udpcom/src/main.cpp
@@ -1113,7 +1113,7 @@ udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: /usr/include/qt4/QtNetwork/qurlinfo
 udpcom/CMakeFiles/udpcom.dir/src/main.cpp.o: udpcom/ui_main_window.h
 
 udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
-udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/main_window.hpp
 udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/qnode.hpp
 udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /home/robit/catkin_ws/src/udpcom/src/main_window.cpp
@@ -1663,7 +1663,7 @@ udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: /usr/include/qt4/QtNetwork/q
 udpcom/CMakeFiles/udpcom.dir/src/main_window.cpp.o: udpcom/ui_main_window.h
 
 udpcom/CMakeFiles/udpcom.dir/src/qnode.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
-udpcom/CMakeFiles/udpcom.dir/src/qnode.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
+udpcom/CMakeFiles/udpcom.dir/src/qnode.cpp.o: /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
 udpcom/CMakeFiles/udpcom.dir/src/qnode.cpp.o: /home/robit/catkin_ws/src/udpcom/include/udpcom/qnode.hpp
 udpcom/CMakeFiles/udpcom.dir/src/qnode.cpp.o: /home/robit/catkin_ws/src/udpcom/src/qnode.cpp
 udpcom/CMakeFiles/udpcom.dir/src/qnode.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h

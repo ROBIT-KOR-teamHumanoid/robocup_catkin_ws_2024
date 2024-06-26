@@ -11,14 +11,14 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/forward.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
  /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
  /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/robocup_master24/include/./master_controller_PID/pidcontroll.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/RoboCupGameControlData.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/SPLCoachMessage.h
@@ -94,14 +94,14 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/goalkeeper.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
  /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
  /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/robocup_master24/include/./master_controller_PID/pidcontroll.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/RoboCupGameControlData.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/SPLCoachMessage.h
@@ -177,14 +177,14 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/main.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
  /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
  /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/robocup_master24/include/./master_controller_PID/pidcontroll.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/RoboCupGameControlData.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/SPLCoachMessage.h
@@ -261,14 +261,14 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/player.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
  /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
  /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/robocup_master24/include/./master_controller_PID/pidcontroll.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/RoboCupGameControlData.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/SPLCoachMessage.h
@@ -346,14 +346,14 @@ robocup_master24/CMakeFiles/robocup_master24.dir/src/robocup_master24.cpp.o
  /home/robit/catkin_ws/devel/include/msg_generate/ikend_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/imu_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/localv2_msg.h
- /home/robit/catkin_ws/devel/include/msg_generate/master2localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master2localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/master_2_robocup_vision24.h
  /home/robit/catkin_ws/devel/include/msg_generate/motionNum_msg.h
  /home/robit/catkin_ws/devel/include/msg_generate/motion_end.h
  /home/robit/catkin_ws/devel/include/msg_generate/pid_tuning.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup23_master2udp.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization23.h
- /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision23.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup24_master2udp.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_localization24.h
+ /home/robit/catkin_ws/devel/include/msg_generate/robocup_vision24.h
  /home/robit/catkin_ws/src/robocup_master24/include/./master_controller_PID/pidcontroll.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/RoboCupGameControlData.h
  /home/robit/catkin_ws/src/robocup_master24/include/robocup_master24/SPLCoachMessage.h

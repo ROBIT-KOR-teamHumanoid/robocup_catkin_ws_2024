@@ -57,7 +57,7 @@ bool QNode::init() {
     udp_RB3_pub = n.advertise<msg_generate::localv2_msg>("udp_RB3",100);
     udp_RB4_pub = n.advertise<msg_generate::localv2_msg>("udp_RB4",100);
 
-    udp_dataSub = n.subscribe("robocup23_master2udp", 100, &QNode::udpDataCallback, this);
+    udp_dataSub = n.subscribe("robocup24_master2udp", 100, &QNode::udpDataCallback, this);
     start();
     return true;
 }
@@ -67,7 +67,7 @@ void QNode::run() {
     Q_EMIT rosShutdown(); // used to signal the gui for a shutdown (useful to roslaunch)
 }
 
-void QNode::udpDataCallback(const msg_generate::robocup23_master2udp::ConstPtr& msg)
+void QNode::udpDataCallback(const msg_generate::robocup24_master2udp::ConstPtr& msg)
 {
     robot_num = msg->robot_num;
     robot_case = msg->robot_state;
