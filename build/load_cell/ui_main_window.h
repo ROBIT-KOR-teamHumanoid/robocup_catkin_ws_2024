@@ -425,7 +425,7 @@ public:
         LC_Zero_Value_02->setGeometry(QRect(59, 106, 85, 25));
         label_20 = new QLabel(centralwidget);
         label_20->setObjectName(QString::fromUtf8("label_20"));
-        label_20->setGeometry(QRect(350, 20, 211, 41));
+        label_20->setGeometry(QRect(338, 20, 211, 41));
         QFont font4;
         font4.setFamily(QString::fromUtf8("Tibetan Machine Uni"));
         font4.setPointSize(24);
@@ -433,7 +433,7 @@ public:
         label_20->setAlignment(Qt::AlignCenter);
         label_21 = new QLabel(centralwidget);
         label_21->setObjectName(QString::fromUtf8("label_21"));
-        label_21->setGeometry(QRect(570, 30, 81, 31));
+        label_21->setGeometry(QRect(558, 30, 81, 31));
         QFont font5;
         font5.setFamily(QString::fromUtf8("Tibetan Machine Uni"));
         font5.setPointSize(16);
@@ -441,7 +441,7 @@ public:
         label_21->setAlignment(Qt::AlignCenter);
         label_22 = new QLabel(centralwidget);
         label_22->setObjectName(QString::fromUtf8("label_22"));
-        label_22->setGeometry(QRect(320, 10, 361, 51));
+        label_22->setGeometry(QRect(312, 10, 361, 51));
         label_22->setFocusPolicy(Qt::TabFocus);
         label_22->setFrameShape(QFrame::Box);
         label_22->setLineWidth(3);

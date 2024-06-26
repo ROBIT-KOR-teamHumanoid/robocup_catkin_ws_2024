@@ -321,9 +321,9 @@ c_robocup_vision23_yolov4_EXTERNAL_OBJECTS =
 /home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/lib/x86_64-linux-gnu/libQtGui.so
 /home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/lib/x86_64-linux-gnu/libQtCore.so
 /home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /opt/ros/melodic/lib/libcv_bridge.so
-/home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/local/lib/libopencv_core.so.4.5.2
-/home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/local/lib/libopencv_imgproc.so.4.5.2
-/home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/local/lib/libopencv_imgcodecs.so.4.5.2
+/home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/local/lib/libopencv_core.so.4.8.0
+/home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/local/lib/libopencv_imgproc.so.4.8.0
+/home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /usr/local/lib/libopencv_imgcodecs.so.4.8.0
 /home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /opt/ros/melodic/lib/libimage_transport.so
 /home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /opt/ros/melodic/lib/libmessage_filters.so
 /home/robit/catkin_ws/devel/lib/c_robocup_vision23_yolov4/c_robocup_vision23_yolov4: /opt/ros/melodic/lib/libclass_loader.so

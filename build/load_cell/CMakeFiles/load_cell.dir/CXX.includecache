@@ -103,8 +103,6 @@ ros/message_operations.h
 -
 
 /home/robit/catkin_ws/src/load_cell/include/load_cell/main_window.hpp
-/home/robit/catkin_ws/src/robot_config.h
--
 QtGui/QMainWindow
 -
 ui_main_window.h
@@ -283,8 +281,6 @@ sstream
 -
 ../include/load_cell/qnode.hpp
 /home/robit/catkin_ws/src/load_cell/include/load_cell/qnode.hpp
-
-/home/robit/catkin_ws/src/robot_config.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
